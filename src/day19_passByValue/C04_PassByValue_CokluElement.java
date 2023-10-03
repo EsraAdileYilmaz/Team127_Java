@@ -40,7 +40,7 @@ public class C04_PassByValue_CokluElement {
         System.out.println("eleman artir method'unda degistirilen arr: "+ Arrays.toString(arr));
 
         /*
-        bu method icinde arr degismedi
+        bu method icinde arr degismedi,
         sadece her bir elemanina 2 eklendi.
          */
 
@@ -48,7 +48,7 @@ public class C04_PassByValue_CokluElement {
 
     public static void arrayiDegistir(int [] arr){
 
-        // yeni 3 elemanli bir array olusturup
+        // yeni 3 elemanli bir array olusturup,
         // icine rastgele 100'den kucuk sayilar koyun.
         // arr'ye bu yeni degeri atayin
         // ve arr'yi yazdirin

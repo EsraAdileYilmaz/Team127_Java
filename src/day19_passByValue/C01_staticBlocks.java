@@ -35,6 +35,7 @@ public class C01_staticBlocks {
             obje olusturmadan once
             yapilmasi gereken on ayarlar varsa static olmayan block
             olustururlur.
+            {}
 
             Static olmayan block'lar obje olusturmadan once calisir.
             ve her objeden once ayri ayri calisir.
