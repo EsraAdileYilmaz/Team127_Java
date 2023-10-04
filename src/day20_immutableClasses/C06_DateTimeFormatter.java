@@ -21,12 +21,22 @@ public class C06_DateTimeFormatter {
         DateTimeFormatter istenenFormat = DateTimeFormatter.ofPattern("dd MMM yyyy  EEEE");
         System.out.println(ldt.format(istenenFormat)); // 03 oct. 2023  mardi
 
+
+        // saati 09:55 AM seklinde yazdiralim
+        DateTimeFormatter istenenSaatFormati1 = DateTimeFormatter.ofPattern("hh:mm a");
+        System.out.println(ldt.format(istenenSaatFormati1)); // 09:58 AM
+
+
+        // saati 9:55  24 saate gore
+        DateTimeFormatter istenenSaatFormati2 = DateTimeFormatter.ofPattern("H:mm");
+        System.out.println(ldt.format(istenenSaatFormati2)); // 10:00
+
          /*
 		 format olustururken
 		 GUN
-		 d : basta 0 varsa onu yazmadan gun numarasi
+		 d : basta 0 varsa onu yazmadan gun numarasi (3 oct...)
 		 dd: tek haneli gunleri 01 gibi basina sifir yazarak gun numarasi
-		 DDD : yilin kacinci gunu oldugunu yazar
+		 DDD : yilin kacinci gunu oldugunu yazar (365 gun uzerinden )
 		 E, EE, EEE : gun isminin ilk 3 harfi
 		 EEEE : gun isminin tamamini
 
