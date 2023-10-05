@@ -23,7 +23,7 @@ public class C06_DateTimeFormatter {
 
 
         // saati 09:55 AM seklinde yazdiralim
-        DateTimeFormatter istenenSaatFormati1 = DateTimeFormatter.ofPattern("hh:mm a");
+        DateTimeFormatter istenenSaatFormati1 = DateTimeFormatter.ofPattern("hh:mm a");//burada once format olusturuyoruz
         System.out.println(ldt.format(istenenSaatFormati1)); // 09:58 AM
 
 

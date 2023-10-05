@@ -1,4 +1,4 @@
-package day01_javaGiris;
+package day01_java;
 
 public class C01_HelloWorld {
     public static void main(String[] args) {

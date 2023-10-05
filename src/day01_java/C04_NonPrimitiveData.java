@@ -1,6 +1,4 @@
-package day01_javaGiris;
-
-import java.util.Locale;
+package day01_java;
 
 public class C04_NonPrimitiveData {
     public static void main(String[] args) {
