@@ -41,6 +41,7 @@ public class C06_StringBuilder_length_capacity {
         System.out.println("sb2: "+sb2);// sb2: Ali Can okula gitmek istiyor.
         System.out.println("sb2 length: "+ sb2.length());// sb2 length: 29
         System.out.println("sb2 capacity: "+ sb2.capacity());// sb2 capacity: 29
+        //capacity 48 iken length 'in uzunluguyla esitledi.
 
     }
 }

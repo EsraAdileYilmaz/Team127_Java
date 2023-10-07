@@ -14,7 +14,7 @@ public class C07_StringBuilder_Insert_Delete {
          */
 
         StringBuilder sb= new StringBuilder("Java Candir");
-        sb.append(".");// elemani sona ekler
+        sb.append(".");// elemani sona ekler ve kalici olur
         System.out.println(sb);// Java Candir.
 
 
@@ -23,11 +23,11 @@ public class C07_StringBuilder_Insert_Delete {
         System.out.println(sb);// Java Candir.cok
 
 
-        sb.insert(5,"cok ");//yani sb'nin 5.indexine cok'u ekle
+        sb.insert(5,"cok ");//yani sb'nin 5.indexine "cok" u ekle
         System.out.println(sb);// Java cok Candir.cok
 
         sb.insert(19,str,8,14);
-        //sb'nin 19.indexine str'in 8.indexi ile 14.indexi arasini ekle
+        //sb'nin 19.indexine, str'in 8.indexi ile 14.indexi arasini ekle
         System.out.println(sb);// Java cok Candir.cok guzel
 
 
@@ -40,10 +40,10 @@ public class C07_StringBuilder_Insert_Delete {
         System.out.println(sb);// Java cok Candir  (. nokta silindi)
 
 
-        //indexini saymadan "cok" u silin.
-        int indexCok=sb.indexOf("cok");// "cok " un indexini bulduk
+        //indexini saymadan "cok " u silin.
+        int indexCok=sb.indexOf("cok");// "cok " un indexini bulduk.
         sb.delete(indexCok,indexCok+4);
-        // "cok " un icinde 4 karakter bulundugu icin +4 yaparak 4 karakter sil demis olduk.
+        // "cok " un icinde 4 karakter bulundugu icin +4 yaparak; 4 karakter sil demis olduk.
         System.out.println(sb);// Java Candir
     }
 }
