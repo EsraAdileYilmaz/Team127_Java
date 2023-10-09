@@ -18,7 +18,7 @@ public class C01_StringBuilder {
         StringBuilder sb= new StringBuilder("Java Candir");
         sb.reverse();// metni ters cevirdik.
         System.out.println(sb);// ridnaC avaJ
-        sb.reverse();//tekrar ters cevirirsek duze metin doner.
+        sb.reverse();//tekrar ters cevirirsek metin eski haline doner.
         System.out.println(sb);// Java Candir
 
         StringBuilder sb2= new StringBuilder("Java Guzeldir");
@@ -35,9 +35,9 @@ public class C01_StringBuilder {
 
           /*
             StringBuilder'larin esitligini anlamak icin equals() methodu KULLANILAMAZ.
-            Eger iki StringBuilder'in ayni oldugunu kontrol etmek istersek
+            Eger iki StringBuilder'in ayni oldugunu kontrol etmek istersek;
             compareTo() mehodunu kullaniriz.
-            sb1.compareTo(sb2) yazariz; sonuc olarak bize 0 dondururse iki StringBuilder aynidir.
+            sb1.compareTo(sb2) yazariz; sonuc olarak bize 0 dondururse iki StringBuilder birebir aynidir.
             Ayni degilse bastan kontrol ederek ilerler
             ve buldugu ilk farkli harflerin arasinda (ascii table) kac sayi oldugunu dondurur.
          */
@@ -47,7 +47,7 @@ public class C01_StringBuilder {
             Java'da farkli non-primitive datalar == ile karsilastirilamaz.
             Bir String ile bir StringBuilder'i
             equals() ile karsilastirmaniza java CTE vermez,
-            AMMA metinler ayni olsa bile false doner.True donme ihtimali yoktur.
+            AMA metinler ayni olsa bile false doner.True donme ihtimali yoktur.
          */
 
         String str= "Java Candir";
@@ -56,7 +56,7 @@ public class C01_StringBuilder {
 
        System.out.println(str.equals(sb));// false java CTE vermez ama herzaman false dondurur.
 
-        sb.replace(0,4,"Hava");
+        sb.replace(0,4,"Hava");//sb'nin 0.indexi ile 4.indexi arasina Hava kelimesini update et.
         System.out.println(sb);// Hava Candir
 
 

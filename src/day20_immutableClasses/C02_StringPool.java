@@ -20,7 +20,7 @@ public class C02_StringPool {
 
         ==(double equal sign) ile karsilastirma yapilirken ise hem metinler hemde referanslar
         esas alinir.Metinler ayni fakat referanslari(havuz ici durumu) farkli ise yine de
-        false dondurur.Hem metinler ayni hemde ayni referanstan geliyorsa ancak ozaman
+        false dondurur.Hem metinler ayni, hemde ayni referanstan geliyorsa ancak ozaman
         true dondurur.
          */
 
@@ -33,7 +33,7 @@ public class C02_StringPool {
         /*
             Basit sekilde olusturulan String objeler icin
             Java oncelikle bir String Pool olusturur ve bu String Pool'u kontrol eder.
-            Eger Pool'da ayni degere sahip baska bir String varsa
+            Eger Pool'da ayni degere sahip baska bir String varsa,
             yeni obje ile eski objenin referansini ve degerini eslestirir.
 
             ==(double equal sign) kullaniminda havuzda olan ve degeri ayni olanlar true verir,

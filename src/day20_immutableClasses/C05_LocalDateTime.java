@@ -10,6 +10,14 @@ public class C05_LocalDateTime {
         LocalDateTime class'i bize ayni anda tarih ve saati dondurur.
          */
 
+        /*
+       getDayOfMonth() methodu bize bulundugumuz ayin gununu dondurur
+       getMonth() methodu bize bulundugumuz ayi dondurur
+       getYear() methodu bize bulundugumuz yili dondurur
+       getDayOfWeek() methodu bize bulundugumuz haftadaki gunu ismiyle dondurur.
+
+        */
+
         LocalDateTime ldt = LocalDateTime.now();//Anin tarih ve saatini dondurur.
         System.out.println(ldt); //2023-10-03 T 20:15:22.492350 (tarih T saat)
 
@@ -23,12 +31,6 @@ public class C05_LocalDateTime {
         // 3 OCTOBER 2023 TUESDAY
         // 03 Oct 2023 Tue
 
-       /*
-       getDayOfMonth() bize bulundugumuz ayin gununu dondurur
-       getMonth() bize bulundugumuz ayi dondurur
-       getYear() bize bulundugumuz yili dondurur
-       getDayOfWeek() bize bulundugumuz haftadaki gunu ismiyle dondurur.
 
-        */
     }
 }

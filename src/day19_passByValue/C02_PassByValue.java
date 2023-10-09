@@ -20,15 +20,15 @@ public class C02_PassByValue {
 
         /*
         burada method 2 kere calisti:
-        1)yazdirma isleminde. 11.satirdaki
-        2)atama isleminde. 16.satirdaki
+        1)yazdirma isleminde. 11.satirda
+        2)atama isleminde. 16.satirda
          */
     }
 
-    public static int sayiDegistir(int sayi) {//local'de yeni bir variable olustu.int sayi=20;
+    public static int sayiDegistir(int sayi) {//local'de yeni bir variable olustu.int sayi=20; variable'i olustu.
                                                //sadece main methoddaki sayinin degeri buraya aktarilir.
 
-        sayi +=5;
+        sayi +=5; //methoddaki variable'in degeri 5 artti.
         System.out.println("method icinde sayi :"+ sayi);
 
         return sayi;// bu sayi methoddaki sayidir.

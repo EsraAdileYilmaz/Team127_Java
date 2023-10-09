@@ -17,7 +17,7 @@ public class C03_PassByValue {
 
 
         System.out.println("indirimli fiyatlar yazdirildiktan sonra fiyat : "+ fiyat);//bu fiyat main icinde olusturulan variable'dir.
-        //indirimli fiyatlar yazdirildiktan sonra fiyat : 100.0
+        //indirimli fiyatlar yazdirildiktan sonra fiyat : 100.0 kalir,degismez.
 
 
 

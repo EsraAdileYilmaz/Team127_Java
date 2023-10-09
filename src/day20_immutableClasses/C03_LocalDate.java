@@ -9,10 +9,20 @@ public class C03_LocalDate {
         /*
         LocalDate class'inin hazir methodlarindan faydalaniyoruz.
         Ama once bir obje olusturmamiz gerekiyor.
+
+        now() methodu, bugunun tarihini dondurur.
+        plus() methodu, sonraki tarihleri verir.
+        minus() methodu, onceki tarihleri dondurur.
+        with() methodu, icinde bulundugumuz tarihin degistirmek istedigimiz kismini degistirmeye yarar.
+        isLeapYear() methodu artik yili bize verir.artik yil mi?
+        isBefore() methodu once mi?sorusunun cevabidir.
+        isAfter() methodu sonra mi?sorusunun cevabidir.
+        getDayOfYear() methodu ile yilin kacinci gununde oldugumuzu buluruz.
+        getDayOfWeek() methodu ile hangi gunde oldugumuzu ismiyle dondurur.
          */
 
         // now() methodu, bugunun tarihini dondurur
-        LocalDate localdate= LocalDate.now();//once objemizi olusturduk.bu obje uzerinden methodlari cagiriyoruz.
+        LocalDate localdate= LocalDate.now();//LocalDate class'indan once objemizi olusturduk.bu obje uzerinden methodlari cagiriyoruz.
         System.out.println(localdate);//2023-10-03 (yil-ay-gun)
 
         //plus() methodu, sonraki tarihleri verir.
@@ -27,7 +37,7 @@ public class C03_LocalDate {
 
 
         //with() methodu, icinde bulundugumuz tarihin degistirmek istedigimiz kismini
-        //degistirmeye yarar.
+        //                degistirmeye yarar.
         System.out.println(localdate.withMonth(5));//2023-05-03 (ayini biz sectik oda degistirdi.)
         System.out.println(localdate.withDayOfYear(200));//2023-07-19 (2023 yilinin 200. gununu dondurur)
 
@@ -56,7 +66,7 @@ public class C03_LocalDate {
         System.out.println(dogumTarihi1.getDayOfWeek()); // FRIDAY (1996,7,12 tarihi hangi gune denk geliyor)
 
         LocalDate dogumTarihim=LocalDate.of(1980,1,3);
-        System.out.println(dogumTarihim.getDayOfWeek());//THURSDAY
+        System.out.println(dogumTarihim.getDayOfYear());//THURSDAY
 
         LocalDate hacer=LocalDate.of(2009,7,10);
         System.out.println(hacer.getDayOfWeek());//FRIDAY

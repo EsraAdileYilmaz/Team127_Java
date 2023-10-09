@@ -2,8 +2,8 @@ package day21_varargs_StringBuilder;
 
 public class C05_Varargs_ChosesConsiderer {
 
-    // SORU:istenen kadar int parametre alip
-    //      ilk sayi disindaki tum sayilari toplayip
+    // SORU:Istenen kadar int parametre alip
+    //      ilk sayi disindaki tum sayilari toplayip,
     //      bulunan toplami ilk sayi ile carpip yazdiran
     //      bir method olusturun
 
@@ -18,9 +18,6 @@ public class C05_Varargs_ChosesConsiderer {
         //      son sayi disindaki tum sayilari toplayip
         //      bulunan toplami son sayi ile carpip yazdiran
         //      bir method olusturun
-
-
-
 
 
     }

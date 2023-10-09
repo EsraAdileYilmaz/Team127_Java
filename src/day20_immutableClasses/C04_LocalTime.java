@@ -12,6 +12,7 @@ public class C04_LocalTime {
             olusturuldugu anda sistemin saat bilgisini kaydeden bir variable'dir.
 
             Olusturuldugu anin saat,dakika,saniye ve nanosaniyesini verir.
+            now() methodu anin saat,dakika,saniye ve nanosaniyesini verir.
          */
 
         //now() methodu anin saat,dakika,saniye ve nanosaniyesini verir.

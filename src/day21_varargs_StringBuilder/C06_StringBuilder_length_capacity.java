@@ -5,15 +5,15 @@ public class C06_StringBuilder_length_capacity {
     public static void main(String[] args) {
 
         /*
-        StringBuilder Class'i string gibi calisir ama mutable bir class'dir.
-        String methodlarinin cogu kullanilir.
+        StringBuilder Class'i String gibi calisir ama mutable bir class'dir.
+        String methodlarinin cogu kullanilabilir.
         Ayrica ;
         capacity() methodu ile kapasitesi bulunur ve sinirlandirilabilir.
         length() methodu ile uzunlugu bulunabilir.
         trimToSize() methodu ile  kapasite ve length'i esitlenebilir.
 
          */
-
+        //Oncelikle StringBuilder class'indan obje olusturulur.or:sb1 ,sb2 ,...
         StringBuilder sb1= new StringBuilder();//icinde hic bir yazi yok, length ==> 0
         System.out.println("sb1 length: "+ sb1.length());//0
         System.out.println("sb1 capacity:"+ sb1.capacity());//16 standart kapasitedir

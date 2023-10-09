@@ -31,14 +31,14 @@ public class C04_Encapsulation {
         class uyelerine kimlerin ulasabileceginin ve degistirebileceginin belirlenmesidir.
         Bu sinirlamayi en kolay olarak access modifier ile yapabiliriz.
         Access modifier ile bir variable'a ulasabilirseniz;
-        o variable hem deger atayabilir
+        o variable'a hem deger atayabilir
                    hem de degerini okuyup kullanabilirsiniz.
 
         Gercek hayatta degerleri gorme(read) ve yeni deger atayabilme (write)
         YETKILERININ AYRILMASI istenebilir.
 
         Yekileri ayirmak istiyorsaniz;
-        1- Oncelikle access modifier ile erisimi engelleyin (hepsini private yaptik.
+        1- Oncelikle access modifier ile erisimi engelleyin (private yaparak)
         2- Istenen yetkiyi saglayan getter ve/veya setter method'u olusturun
 
      */

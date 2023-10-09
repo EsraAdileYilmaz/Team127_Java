@@ -1,6 +1,6 @@
 package day21_varargs_StringBuilder;
 
-public class C08_StringBuilder_StringMethodlari {
+public class C08_StringBuilder_StringMethods {
 
     public static void main(String[] args) {
 

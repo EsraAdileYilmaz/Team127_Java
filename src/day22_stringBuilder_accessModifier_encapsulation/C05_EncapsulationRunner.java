@@ -5,7 +5,7 @@ public class C05_EncapsulationRunner {
     public static void main(String[] args) {
 
         C04_Encapsulation obj= new C04_Encapsulation();// bir obje olusturduk
-        //Bu sayede deger classlardaki variable'lara ulasabiliriz.
+        //Bu sayede diger classlardaki variable'lara ulasabiliriz.
 
         System.out.println(obj.getGorulebilsin());//Bu variable gorulebilir ama degistirilemez
         //getGorulebilsin methodunu sout ile gorebilirim.
@@ -13,7 +13,7 @@ public class C05_EncapsulationRunner {
 
         obj.setDegerAtanabilsin("Ali");
         //bu methodun return'u void oldugu icin yeni deger atayabilirsin.
-        //ama yazdiramazsin
+        //ama goremezsin, atadigin degeri yazdiramazsin.
 
         //obj.setDegerAtanabilsin("esra").sout  (yazdirmayi kabul etmiyor.)
         //Bizim argument olarak yazdigimiz degerleri atama yapiyor.

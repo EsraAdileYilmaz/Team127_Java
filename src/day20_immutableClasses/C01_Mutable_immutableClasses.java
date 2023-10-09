@@ -23,8 +23,8 @@ public class C01_Mutable_immutableClasses {
         str.toLowerCase();//eger yazdirirsak sadece bu satirda degisir.
 
         /*
-        Aslinda String'de her atama yaptigimizda,string classes'ta yeni bir obje olusuyor
-        ve biz atadigimiz degeri yeni objeye atamis oluyoruz.eski objenin pointer'i
+        Aslinda String'de her atama yaptigimizda,String class'ta yeni bir obje olusuyor
+        ve biz atadigimiz degeri yeni objeye atamis oluyoruz.Eski objenin pointer'i
         siliniyor ve bir sure sonra garbage collector'lar yardimiyla bu eski obje
         imha ediliyor.
          */
@@ -43,7 +43,7 @@ public class C01_Mutable_immutableClasses {
         System.out.println(isimler);//[Senayda, Esra, Asli]
 
         /*
-        burada da goruldugu uzere ArrayListler mutable classes'dir.cunku kullanilan
+        Burada da goruldugu uzere ArrayListler mutable classes'dir.Cunku kullanilan
         tum methodlar sonucunda yapilan degisiklikler kalici oluyor.
          */
 
