@@ -10,7 +10,7 @@ public class G_Auris extends E_Toyota {//Toyota class'ini kendine parent class e
             o class ve o class'in parent class'larindaki tum ozelliklere
             OTOMATIK olarak sahip olur.
 
-            Child class
+            Child class;
             isterse parent classlardaki ozellikleri sahiplenir,
             isterse o bilgileri gunceller (update eder),
             isterse de parent class'larda olan ozelliklere ilave olarak
@@ -37,7 +37,7 @@ public class G_Auris extends E_Toyota {//Toyota class'ini kendine parent class e
         System.out.println(auris.aku);// Toyota class'indan aku atanmadi
 
         //toplamda 9 ozelligi oldu. ama bu ozelliklerde spesifik ozellikler yoktur`.
-        // parent'lardaki genel ozelliklere sahiptir.
+        // parent ve grand parent'taki genel ozelliklere sahiptir.
     }
 
 

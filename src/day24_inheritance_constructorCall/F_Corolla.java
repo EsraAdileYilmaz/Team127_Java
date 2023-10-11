@@ -1,7 +1,7 @@
-package day23_inheritance;
+package day24_inheritance_constructorCall;
 
-public class F_Corolla extends E_Toyota{//bu class'ta kendisine E_Toyota class'ini parent class secti.
-    //bu secimlede D_Car class'i grand parent class'i oldu.
+public class F_Corolla extends E_Toyota {
+
 
     String model="Corolla";//bunu update ettik.bunlar grand parent class'tan geliyor.
     String uretimYeri="Turkiye";//bunu update ettik.bunlar grand parent class'tan geliyor.
@@ -10,6 +10,11 @@ public class F_Corolla extends E_Toyota{//bu class'ta kendisine E_Toyota class'i
     String tekerCapi="19 inc";
     String guvenlik="Safe drive";//bunu update ettik.bunlar parent class'tan geliyor.
     String bagajHacmi="200 litre";
+
+    F_Corolla(){//parametresiz cons.
+
+        super();//once parent'taki parametresiz constructor calisir.
+    }
 
     public static void main(String[] args) {
 
@@ -36,6 +41,27 @@ public class F_Corolla extends E_Toyota{//bu class'ta kendisine E_Toyota class'i
 
         // toplamda 11 ozellige sahip oldu.parent ve grand parent class'lardaki tum ozelliklere
         //sahip oldu.
+
+        /*
+            Bir obje olusturuldugunda
+            ilk deger atamasi (initialization) icin MUTLAKA constructor calismalidir.
+            Child class'da olusturulan bir objenin,
+            parent class(lar)'daki ozellikleri de tasimasi icin
+            parent class(lar)'daki CONSTRUCTOR'lar da CALISMALIDIR.
+
+            Java bunun icin ozel bir konsept olusturmustur:
+            Java'nin olusturulan her class'a
+            obje olusturulmasina izin vermek icin
+            DEFAULT CONSTRUCTOR koydugu gibi,
+
+            AYNI SEKILDE
+            extends kullanan her class'da olusturulan
+            HER CONSTRUCTOR'in ilk satirina da
+            super() koyar. super() =super constructor call, bu default'ta olabilir.
+            super() sayesinde parent class'in constructor'una gider ve
+            oradaki ozellikleri alir.
+         */
+
 
 
     }

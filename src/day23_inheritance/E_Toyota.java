@@ -4,7 +4,7 @@ public class E_Toyota extends D_Car {//burada E_Toyota class'i D_Car class'ini p
     //bu class'a yazilan ozellikler tum toyota'lar icin gecerli olmalidir.
     //bu class toyota'lar icin cati class dir.
     String marka="Toyota";// D_Car class'indan aldigimiz markayi update ettik.
-    String uretimYeri= "Japonya ve Turkiye";
+    String uretimYeri= "Japonya ve Turkiye";//D_Car class'indan aldigimiz uretim yerini update ettik.
     String sanziman="Otomatik veya manuel";
     String lastik= "Pirelli";
     String guvenlik="Toyota araclar ekstra guvenlik donanimina sahiptir.";

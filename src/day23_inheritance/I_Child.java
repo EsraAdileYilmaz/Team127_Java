@@ -4,12 +4,12 @@ public class I_Child extends H_Parent{
 
     public static void main(String[] args) {
 
-        I_Child child1=new I_Child();//kendi class'indan bir obje olusturduk
+        I_Child child1=new I_Child();//kendi class'indan bir obje olusturduk.
 
         //child1.araba (araba variable'i private oldugu icin ulasamadik)
         System.out.println(child1.kasa);
         //burda sariya boyadi cunku kasa variable'i static oldugu icin
-        //objeye gerek olmadan ulasilabilir.yani objeye bagli deildir.
+        //objeye gerek olmadan ulasilabilir uyarisi veriyor.yani objeye bagli deildir.
         kasa="75";
         System.out.println(kasa);//75
 
