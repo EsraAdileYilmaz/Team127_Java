@@ -1,4 +1,4 @@
-package day03_WrapperClasses_MatematikselIslemler;
+package day03_WrapperClasses_Mathematiqs;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package day03_WrapperClasses_MatematikselIslemler;
+package day03_WrapperClasses_Mathematiqs;
 
 public class C06_Concatenation {
     public static void main(String[] args) {
