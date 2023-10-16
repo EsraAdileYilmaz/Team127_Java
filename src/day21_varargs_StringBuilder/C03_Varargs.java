@@ -19,7 +19,7 @@ public class C03_Varargs {
     }
 
     public static void islemYap(int sayi,String... strings){
-        //(String...) array gibi davranir ve array methodlari kullanilir. String [] arr olusacak
+        //(String...) array gibi davranir ve array methodlari kullanilir. String [] strings olusacak
         System.out.println(sayi* strings.length);
     }
 }
