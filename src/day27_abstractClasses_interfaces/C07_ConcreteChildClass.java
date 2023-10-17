@@ -9,11 +9,11 @@ public class C07_ConcreteChildClass extends C06_AbstractParent{
     */
 
     /*
-    GP'deki method1() parent'ta concrete hale donustu.
+    GP'deki method1() parent'ta concrete class'a hale donustu.
     GP'de abstract method2() ve abstract method3() kaldi.
 
     Parent'ta ise abstract method5() ve abstract method6() kaldi.
-    bunlar bu class tarafindan implement edilip concrete hale donusturulmek ZORUNDADIR.
+    bunlar bu class tarafindan implement edilip concrete class'a donusturulmek ZORUNDADIR.
      */
 
 

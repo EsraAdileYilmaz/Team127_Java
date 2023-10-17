@@ -1,6 +1,5 @@
-package day16_ArrayList_ForEachLoop;
+package day16_arrayList_forEachLoop;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

@@ -3,9 +3,9 @@ package day27_abstractClasses_interfaces;
 public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
 
     public void method1(){
-        // method1 I08 ve I10 da var
-        // her ikisinde olsa da, ikisi de void oldugundan
-        // hangisini implement ettigimizin bir onemi yok
+        // method1() hem I08 ve hemde I10 da var.
+        // her ikisinde olsa da, ikisininde return type'i void oldugundan
+        // hangisini implement ettigimizin bir onemi yoktur.
     }
 
     public void method2(){
@@ -32,12 +32,12 @@ public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
 
     public static void main(String[] args) {
 
-        System.out.println(I08_Interface.sayi1); // 20 (burada iki interface'deki sayi1'den birini sectik.)
+        System.out.println(I08_Interface.sayi1); // 20 (burada iki interface'deki sayi1 variable'indan birini sectik.)
         // sayi2 = 30;
-        // interface'lerdeki tum variable'lar final oldugundan, sonradan deger atanamaz
+        // interface'lerdeki tum variable'lar final oldugundan, sonradan deger atanamaz.
 
         System.out.println(I10_Interface.isim); // veli Cem
-        //burada da iki interface'deki isimden birini sectik.
+        //burada da iki interface'deki isim variable'indan birini sectik.
     }
 
 }

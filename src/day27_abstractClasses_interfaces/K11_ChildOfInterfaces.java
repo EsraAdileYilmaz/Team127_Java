@@ -5,9 +5,9 @@ import day26_overriding_polyMorphism.C03_Parent;
 public class K11_ChildOfInterfaces extends C03_Parent implements I08_Interface,I10_Interface{
 
      /*
-     bir class istedigi kadar interface'i implement edebilir
+     Bir class istedigi kadar interface'i implement edebilir.
 
-     Bir class sadece 1 class'a extends edebilir
+     Bir class sadece 1 class'i extends edebilir.
      AMA istedigi kadar interface'i IMPLEMENT edebilir
   */
 

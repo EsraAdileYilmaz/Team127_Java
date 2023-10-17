@@ -1,4 +1,4 @@
-package day07_StringManipulations;
+package day07_stringManipulations;
 
 public class C06_isEmpty_isBlank {
     public static void main(String[] args) {

@@ -8,7 +8,7 @@ public interface I08_Interface {
            tum method'lar public ve abstract'tir.
         3- Interface'de olusturulan her variable
            yazsak da yazmasak da
-           public, static ve final'dir.
+           public,final ve static'tir.
 
      */
 

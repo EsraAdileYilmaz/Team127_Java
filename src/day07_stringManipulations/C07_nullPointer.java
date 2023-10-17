@@ -1,4 +1,4 @@
-package day07_StringManipulations;
+package day07_stringManipulations;
 
 public class C07_nullPointer {
     public static void main(String[] args) {

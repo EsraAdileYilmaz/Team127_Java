@@ -1,4 +1,4 @@
-package day03_WrapperClasses_Mathematiqs;
+package day03_wrapperClasses_mathematiqs;
 
 public class C05_PreIncrement_PostIncrement {
     public static void main(String[] args) {
