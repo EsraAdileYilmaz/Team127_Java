@@ -26,6 +26,7 @@ public class C01_ChildOfInterfaces implements I01_InterfaceIstisnaiDurum {
 
 
         System.out.println(I01_InterfaceIstisnaiDurum.methodIstisna2());//44
+        //(methodIstisna2() methodu static oldugu icin direk interfaceismi ile ulasildi.
 
         C01_ChildOfInterfaces obj=new C01_ChildOfInterfaces();
         obj.methodIstisna();//default istisnai method

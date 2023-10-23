@@ -8,14 +8,14 @@ public class C04_DifferentsExceptions {
 
         // Integer sayi=str;
 
-        Object obj=str; // arada parent-child iliskisi oldugundan auto-widening
+        Object obj=str; // arada parent-child iliskisi oldugundan auto-widening olur.
 
         // Integer sayi= (Integer) obj;// arada parent-child iliskisi oldugundan explicit narrowing yapilabilir
-        //System.out.println(sayi);// ClassCastException
+        //System.out.println(sayi);// ClassCastException firlatir.
 
 
       // Arama sonuc sayisinin 100'den fazla oldugunu test edin.
-        String aramaSonucuStr= "123";//NumberFormatException verir 123a olursa
+        String aramaSonucuStr= "123"; //NumberFormatException (verirdi 123a olsaydi)
         Integer aramaSonucuInt=Integer.parseInt(aramaSonucuStr);
 
         if(aramaSonucuInt>100){

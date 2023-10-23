@@ -12,7 +12,7 @@ public class C02_CheckedExceptions {
 
 
         /*
-            Eger birden fazla exception olusma ihtimali varsa
+            Eger birden fazla exception olusma ihtimali varsa,
             ve biz try-catch yerine throws keyword kullanmak istiyorsak
             en genis yakalama kapasitesi olan (en ince elek araligi olan)
             parent exception'i yazmamiz yeterli olacaktir

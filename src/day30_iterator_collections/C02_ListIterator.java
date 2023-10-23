@@ -22,7 +22,7 @@ public class C02_ListIterator {
         ListIterator listIterator=sayilar.listIterator();
 
         //biz iterator olusturdugumuzda, listenin basina konumlanir.
-        //Eger osndan basa dogru islem yapmak istiyorsak,
+        //Eger sondan basa dogru islem yapmak istiyorsak,
         //once iterator'i sona gondermeliyiz.
 
         while (listIterator.hasNext()){

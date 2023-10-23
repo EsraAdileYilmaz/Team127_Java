@@ -13,8 +13,8 @@ public class C04_Queue {
         2)remove() elementleri bastan baslayarak siler
         3)element() methodu queue'nun ilk elemanini silmeden bize getirir.bulamazsa exception firlatir
         4)peek() methodu queue'nun ilk elemanini silmeden bize getirir.bulamazsa null dondurur
-        5)offer() methodu eger kapasite sinirlamasi yoksa, verdigimiz elementi queue'ya ekler
-        6)poll() methodu Queue'nun ilk elementini siler ve bize dondurur
+        5)offer() methodu eger kapasite sinirlamasi yoksa, verdigimiz elementi queue'nun sonuna ekler
+        6)poll() methodu Queue'nun ilk elementini siler ve bize dondurur.bulamazsa null dondurur
 
         add() methodu ile offer() methodu arasindaki fark=
         add() methodu verilen elementi her halukarda eklerken,
@@ -60,7 +60,7 @@ public class C04_Queue {
         System.out.println(harfler);//[K, s, M, M, Z]
 
 
-        // poll() methodu Queue'nun ilk elementini siler ve bize dondurur
+        // poll() methodu Queue'nun ilk elementini siler ve bize dondurur.list bossa null dondurur
         System.out.println(harfler.poll());//K
         System.out.println(harfler);//[s, M, M, Z]
 

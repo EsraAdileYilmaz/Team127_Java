@@ -8,7 +8,7 @@ public class K11_ChildOfInterfaces extends C03_Parent implements I08_Interface,I
      Bir class istedigi kadar interface'i implement edebilir.
 
      Bir class sadece 1 class'i extends edebilir.
-     AMA istedigi kadar interface'i IMPLEMENT edebilir
+     AMA istedigi kadar interface'i IMPLEMENT edebilir.
   */
 
     @Override

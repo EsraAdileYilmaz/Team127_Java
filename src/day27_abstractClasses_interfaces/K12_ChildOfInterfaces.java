@@ -4,7 +4,7 @@ public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
 
     public void method1(){
         // method1() hem I08 ve hemde I10 da var.
-        // her ikisinde olsa da, ikisininde return type'i void oldugundan
+        // Her ikisinde olsa da, ikisininde return type'i void oldugundan
         // hangisini implement ettigimizin bir onemi yoktur.
     }
 
@@ -22,7 +22,7 @@ public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
     }
     public int method5(){
         // birden fazla interface'i implement ettigimizde,
-        // birden fazla interface'de ayni isimde method varsa,
+        // bu interface'lerde ayni isimde method varsa,
         // EGER return type'lari ayni ise sorun olmaz,
         // ama return type'lar farkli ise bir karar vermemiz gerekir:
         //  1- ya iki interface'den birini implement etmekten vazgececegiz.

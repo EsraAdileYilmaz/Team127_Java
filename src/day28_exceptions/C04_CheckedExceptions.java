@@ -33,11 +33,9 @@ public class C04_CheckedExceptions {
                exception olussa da yoluna devam etmesini saglariz.
             2- veya exception olustugunda kodun durmasini istiyorsak
                sadece altindaki kirmizi cizginin gitmesini ve calismasini istiyorsak
-               method deklarasyonunun yanina
+               method deklarasyonunun yanina (throws FileNotFoundException) yazarak,
                bu riskin farkinda oldugumuzu ve bu method'un
                belirtilen exception'i firlatabilecegini yazariz.
-
-
          */
 
 

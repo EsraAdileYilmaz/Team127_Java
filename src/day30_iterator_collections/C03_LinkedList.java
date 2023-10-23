@@ -20,8 +20,8 @@ public class C03_LinkedList {
         LinkedList <String> ll1=new LinkedList<>();
 
         List<Integer> ll2=new LinkedList<>();
-        // Eger data turu olarak List<> secilirse
-        // bizim simdiye kadar kullandigimiz ArrayList<> ile ayni ozelliklere sahip olur
+        // Eger data turu olarak List<> secilirse,
+        // bizim simdiye kadar kullandigimiz ArrayList<> ile ayni ozelliklere sahip olur.
 
 
         Queue <String> ll3=new LinkedList<>();
@@ -42,7 +42,7 @@ public class C03_LinkedList {
         System.out.println(ll2.remove(1));//9 (1.indexteki elementi siler yani 9'u siler)
         System.out.println(ll2);//[4, 5, 8]
 
-        //ama element olarak 8'i silmek icin=once bir variable'a 8'i atamamiz lazim.
+        //Ama element olarak 8'i silmek icin, once bir variable'a 8'i atamamiz lazim.
         //sonra onu remove() methodu ile sileriz.
         Integer silinecekSayi= 8;
         System.out.println(ll2.remove(silinecekSayi));//true (yani bu elementi buldum,sildim)
@@ -68,8 +68,8 @@ public class C03_LinkedList {
             ilk listte sadece ortak elemanlar kalir,gerisi silinir.
             ikinci listte ise hicbir degisiklik olmaz.
             ornegin;System.out.println(list.retainAll(ll2));
-            list'den ll2'da olmayan elemanlari siler
-            eger herhangi bir elemani silerse true
+            list'den ll2'da olmayan elemanlari siler.
+            Eger herhangi bir elemani silerse true
             hic bir elemani silemezse false doner.
          */
 

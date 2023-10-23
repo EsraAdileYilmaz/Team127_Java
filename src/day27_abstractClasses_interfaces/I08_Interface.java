@@ -15,7 +15,7 @@ public interface I08_Interface {
     public final static int sayi1 = 20;
     final int sayi2 = 10;
     static String isim = "Ali Can";
-    //her bir variable public-final-static oldugu icin bunlar griye boyandi.yani yazmana gerek yok diyor java.
+    //her bir variable public-final-static oldugu icin bunlar griye boyandi.yani java yazmana gerek yok diyor.
 
 
 

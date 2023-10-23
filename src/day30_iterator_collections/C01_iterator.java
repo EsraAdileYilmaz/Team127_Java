@@ -40,11 +40,11 @@ public class C01_iterator {
         //SORU3:index kullanmadan cift sayilari silin
         Iterator iterator= sayilar.iterator();
         /*
-        1)hasNext() methodu=yanda element var mi? true/false
+        1)hasNext() methodu=yaninda element var mi? true/false
         2)next() methodu=siradaki element.(bir sonraki elemente geciyor)
         3)remove() methodu=element siliyor.
          */
-        System.out.println(iterator.hasNext());//true(yani yanda element var mi?true)
+        System.out.println(iterator.hasNext());//true(yani yanda element var mi? evet)
 
         System.out.println(iterator.next());//3 (1 element ileri gider.arkasinda kalan elementi yazdirir)
         System.out.println(iterator.hasNext());//true(yani yanda element var mi?true)
@@ -57,7 +57,7 @@ public class C01_iterator {
         //yaninda eleman oldugu muddetce tum cift sayilari sil=while(iterator.hasNext()){
         while(iterator.hasNext()){//yaninda eleman oldugu muddetce ilerle
 
-            if((Integer)iterator.next() % 2==0){
+            if((Integer)iterator.next() % 2==0){//next() methodu object dondurur.onu cast etmek lazim
                 //getirdigin bir sonraki eleman cift sayi ise once cast et
                 iterator.remove();//sonrada onu sil
             }
@@ -76,7 +76,7 @@ public class C01_iterator {
         while(iterator.hasNext()){//yaninda eleman oldugu muddetce ilerle
 
             int sayi=(Integer)iterator.next();
-            //next bize object dondurdugu icin bizim bunu integer'a cast etmemiz lazim.
+            //next() methodu object dondurdugu icin bizim bunu integer'a cast etmemiz lazim.
 
             if(sayi>5){
                 iterator.remove();

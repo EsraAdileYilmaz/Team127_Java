@@ -22,7 +22,7 @@ public class C01_Exceptions {
         while(devamMI){//true oldugu muddetce devam
             System.out.println("Lutfen toplanmak uzere sayi giriniz," +
                     "\nBitirmek icin Q'ya basiniz.");
-            //2 hata ihtimali var.1)Sayi yerine karakter girilebilir.2)Q ile baslayan birsey yazabilir.
+            //2 hata ihtimali var.Kullanici=> 1)Sayi yerine karakter girilebilir.2)Q ile baslayan birsey yazabilir.
             try {//girilenSayi sorunsuz oldugunda calisacak blok
                 girilenSayi= scanner.nextDouble();
                 toplam +=girilenSayi;

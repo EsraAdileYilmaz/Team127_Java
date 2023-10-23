@@ -11,7 +11,8 @@ public class C05_throwKeyword {
 
         try {
 
-            if(sayi<0)throw new RuntimeException("sayi sifirdan kucuk");
+            if(sayi<0) throw new RuntimeException("sayi sifirdan kucuk");
+            //sayi sifirdan kucukse RuntimeException firlat
             System.out.println(1);
             System.out.println(2);
             System.out.println(3);
@@ -35,9 +36,10 @@ public class C05_throwKeyword {
         try {
             if(yas < 0){
                 throw new IllegalArgumentException("Yas negatif olamaz");
+                //yas sifirdan kucukse IllegalArgumentException firlat
             }
         } catch (IllegalArgumentException e) {
-            e.printStackTrace();
+            e.printStackTrace();//bununla detayli hata raporu aliyoruz.
         }
         //java.lang.IllegalArgumentException: Yas negatif olamaz
         //	at day29_exceptions_garbageCollector.C05_throwKeyword.main(C05_throwKeyword.java:37)
