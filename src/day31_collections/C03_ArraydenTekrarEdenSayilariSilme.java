@@ -27,19 +27,19 @@ public class C03_ArraydenTekrarEdenSayilariSilme {
         int silinecekElemanSayisi=0;
         for (int i = 0; i < arr.length-1 ; i++) {
 
-            if(arr[i] == arr[i+1]){//ornegin 0.index==1.index ise ,1.index==2.index ise gibi
+            if(arr[i] == arr[i+1]){//ornegin 0.index==1.index ise ,1.index==2.index ise gibi ...
                 silinecekElemanSayisi ++;
 
             }
         }//bu loop ile silinecek eleman sayisini bulduk
         System.out.println(silinecekElemanSayisi);//9
 
-        int [] yeniArr=new int[arr.length-silinecekElemanSayisi];//13-6=7 [0,0,0,0,0,0,0] olustu
+        int [] yeniArr=new int[arr.length-silinecekElemanSayisi];//17-9=8 [0,0,0,0,0,0,0,0] olustu
         //unique elementleri icine koymak icin bos bir array olusturduk.
         int konulacakIndex=0;
         for (int i = 0; i < arr.length-1 ; i++) {
             if(arr[i] != arr[i+1]){
-                yeniArr[konulacakIndex] = arr[i+1];
+                yeniArr[konulacakIndex] = arr[i+1];//yeniArr[0] = arr[0+1]...
                 konulacakIndex ++;
             }
 
