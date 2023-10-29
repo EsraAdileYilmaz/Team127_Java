@@ -57,7 +57,7 @@ public class C09_FarkliDataTurleriIleMapOlusturma {
         System.out.println(ornekMap);
         //{initial=A, id=102, title=foo, body=bar, isActive=true, userId=11}
 
-
+        // yeni
 
 
 
