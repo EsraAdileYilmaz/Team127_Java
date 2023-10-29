@@ -23,7 +23,8 @@ public class C01_deque {
         // harfler.remove(); ilk elementi siler yani A yi siler.
         // harfler.remove("A"); A'nin ilk kullanimini siler
         // harfler.removeFirst(); ilk elementi siler
-        // harfler.removeFirstOccurrence("A"); // A'nin ilk kullanimini siler
+        // harfler.removeFirstOccurrence("A"); // A'nin ilk kullanimini siler.yani ilk buldugu A'yi siler
+        //harfler.removeLastOccurrence("A"); A'nin son kullanimini siler.yani en son A'yi siler
 
         //System.out.println(harfler.poll()); // A (ilk elementi siler)
         System.out.println(harfler.pollFirst()); // A

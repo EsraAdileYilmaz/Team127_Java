@@ -6,7 +6,7 @@ public class C01_StringManipulations {
 
     public static void main(String[] args) {
 
-        // SORU:Bir ogrencinin bilgileri arada "-"olarak String bir variable'a atanmistir.
+        // SORU:Bir ogrencinin bilgileri arada "-" olarak String bir variable'a atanmistir.
         // isim-soyisim-sinif-sube-bolum
         // bu formatta verilen bilgiden, subeyi yazdiran bir method olusturun
 

@@ -26,6 +26,7 @@ public class C03_Maps {
         System.out.println(ogrenciMap.size());//6
 
         System.out.println(ogrenciMap.keySet());//[101, 102, 103, 104, 105, 106]
+        //keyset()  Set<Integer>
 
         System.out.println(ogrenciMap.values());//[Ali-Can-11-H-MF,
         // Veli-Cem-10-K-TM,

@@ -11,7 +11,7 @@ public class C07_VerilenNumaraAraligindakiOgrenciListesi {
 
         Map<Integer,String> ogrenciMap=MapMethodDepo.okulMapDondur();
 
-        MapMethodDepo.numaraAraligindakiOgrenciListesi(ogrenciMap,100,110);
+        MapMethodDepo.numaraAraligindakiOgrenciListesi(ogrenciMap,105,110);
 
 
 

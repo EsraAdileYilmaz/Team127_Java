@@ -112,8 +112,9 @@ public class MapMethodDepo {
         // numara, isim, soyisim ve subelerini yazdiran bir method olusturun.
         Set<Integer> keySeti =ogrenciMap.keySet();//keyleri elde ediyoruz ve Set'e atiyoruz
         // [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
-        String [] valueArr;
+
         String valueEach;//keylerin getirdigi bilgileri icine atayacagiz.
+        String [] valueArr;
 
         System.out.println("======= Numarali "+ sinifNo + ". sinif listesi ========");
         for (Integer each:keySeti
@@ -143,11 +144,287 @@ public class MapMethodDepo {
                 valueEach=ogrenciMap.get(each);//each'in getirdigi bilgiler buraya atanir.
                 valueArr=valueEach.split("-");
                 System.out.println(each+" "+valueArr[0]+" "+valueArr[1]);
+                sayac++;
             }
 
         }
         if(sayac==0){
             System.out.println("Verilen aralikta ogrenci bulunmamaktadir");
         }
+    }
+
+    public static Map<Integer, String> numaraIleSoyisimUpdate(Map<Integer, String> ogrenciMap, int ogrenciNo, String yeniSoyisim) {
+
+        //once istenen ogrenci numarasina ait value'u alalim.
+        //Ali-Cem-11-K-TM
+
+        String ogrenciValue=ogrenciMap.get(ogrenciNo);//ogrenciNo'nun bilgilerini getirecek.
+
+
+        //split() ile datayi manipule edilebilir hale getirelim.
+        //[Ali, Cem, 11, K, TM]
+
+        String [] ogrenciValueArr=ogrenciValue.split("-");//gelen bilgileri rahat kullanmak icin array'e cevirdik.
+
+        //array'in 1.index'indeki soyismi yeniSoyisim olarak update edelim.
+        //[Ali, Celik, 11, K, TM]
+        ogrenciValueArr[1] =yeniSoyisim;
+
+        //array'deki elemanlari, yeniden value formatina sokmamiz lazim.
+        //String olarak "Ali-Celik-11-K-TM" toplama yoluyla elde ederiz.
+
+        String yeniValue=ogrenciValueArr[0]+"-"+
+                         ogrenciValueArr[1]+"-"+
+                         ogrenciValueArr[2]+"-"+
+                         ogrenciValueArr[3]+"-"+
+                         ogrenciValueArr[4];
+
+
+        //elimizde key var(ogrenciNo),elimizde yeniValue de var
+        ogrenciMap.put(ogrenciNo,yeniValue);
+
+
+        return ogrenciMap;
+    }
+
+    public static Map<Integer, String> subedekiOgrencileriTasi(Map<Integer, String> ogrenciMap, String eskiSube, String yeniSube) {
+
+        //1)Hangi ogrenci numarasinin subesi degisecek bilmedigimden
+        //once keySet() ile tum key'leri alalim.
+        //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+
+        Set<Integer> keySeti=ogrenciMap.keySet();
+
+        //2)for-each loop ile her key'e ait value'yu ele alalim
+        //Ali-Cem-11-K-TM
+
+        String [] valueArr;
+
+        for (Integer each: keySeti
+             ) {//each'in getirdigi herbir key'in value'sune ulasmaliyim.
+            //3)Value'deki bilgileri kullanabilmek icin split() ile array'e cevirelim.
+            //[Ali, Cem, 11, K, TM]
+            valueArr=ogrenciMap.get(each).split("-");
+
+            //4)array[3]'e bakip istenen eskiSube degerine esit ise
+            //yeni Sube olarak update edelim.[Ali, Cem, 11, C, TM]
+            if(valueArr[3].equalsIgnoreCase(eskiSube)){
+                valueArr[3]=yeniSube;
+            }
+            //5)Map'i update edebilmek icin,
+            //array'i value formatina uygun String'e donusturelim.
+
+            String yeniValue=valueArr[0]+"-"+
+                             valueArr[1]+"-"+
+                             valueArr[2]+"-"+
+                             valueArr[3]+"-"+
+                             valueArr[4];
+
+            //6)key ve yeni value'yu kullanarak
+            //Map'i update edelim.
+
+            ogrenciMap.put(each,yeniValue);
+        }
+        return ogrenciMap;
+    }
+
+    public static Map<Integer, String> yilSonuSinifArtir(Map<Integer, String> ogrenciMap) {
+
+       Set<Integer> keySeti= ogrenciMap.keySet();
+
+       String [] valueArr;
+
+        for (Integer each: keySeti
+             ) {
+            valueArr=ogrenciMap.get(each).split("-");
+
+            //array'deki sinif bilgisini 1 artirmam lazim
+            switch (valueArr[2]){
+                case "9":
+                    valueArr[2]="10";
+                    break;
+                case "10":
+                    valueArr[2]="11";
+                    break;
+                case "11":
+                    valueArr[2]="12";
+                    break;
+                case "12":
+                    valueArr[2]="Mezun";
+                    break;
+                default:
+                    valueArr[2]=null;
+            }
+
+            String yeniValue=valueArr[0]+"-"+
+                    valueArr[1]+"-"+
+                    valueArr[2]+"-"+
+                    valueArr[3]+"-"+
+                    valueArr[4];
+
+            ogrenciMap.put(each,yeniValue);
+        }
+
+
+        return ogrenciMap;
+    }
+
+    public static void sinifListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif, String sube) {
+
+        //numara,isim,soyisim
+       Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet();//map'i entrySet() ile entry'e cevirdik
+
+       //entry'leri elden gecirip (for-each loop ile),
+        //sinif ve sube bilgisi istenen degere esit olanlari yazdiralim.
+
+        String eachValue;
+        String [] valueArr;
+        System.out.println("====="+sinif+"/"+sube+" sinif listesi =====");
+
+        for (Map.Entry<Integer,String> eachEntry: entrySeti
+             ) {//eachEntry=>110=Azim-Kayisi-11-K-TM  (key ve value'yu beraber getirdi)
+            eachValue=eachEntry.getValue();//herbir value elde edilir=> "Azim-Kayisi-11-K-TM"
+            valueArr=eachValue.split("-");//[Ali, Cem, 11, C, TM]
+
+            //SORU:verilen sinif ve sube bilgisi ile dedigi icin
+            if(valueArr[2].equals(sinif) && valueArr[3].equalsIgnoreCase(sube)){
+                //sinif listesini numara,isim,soyisim olarak yazdirin
+                System.out.println(eachEntry+" "+valueArr[0]+" "+valueArr[1]);
+                //System.out.println(eachEntry.getKey() + " " + valueArr[0] +" " +valueArr[1]); ahmet hoca boyle yapmis
+            }
+        }
+
+
+    }
+
+    public static Map<Integer, String> isimDuzenle(Map<Integer, String> ogrenciMap) {
+
+        //Bir entrySeti olusturalim
+        Set<Map.Entry<Integer,String>> entrySeti=ogrenciMap.entrySet();
+        /*
+        Collection<String> values=ogrenciMap.values();
+        Set<Integer> keyler=ogrenciMap.keySet();
+        == Set<Map.Entry<Integer,String>> keyValues=ogrenciMap.entrySet();
+         */
+
+        String eachValue;
+        String [] valueArr;
+        String isim;
+        //her bir entry'i ele almak icin for-each kullanalim
+        for (Map.Entry<Integer,String> eachEntry:entrySeti
+             ) {//herbir key+value'yu aldik
+            //her bir entry'deki value'yu alalim
+            eachValue=eachEntry.getValue();//"Ali-Can-11-H-MF"
+
+            //value'yu degistirebilmek icin array yapalim
+            valueArr=eachValue.split("-");
+
+            //array[0] da bulunan isim bilgisini istenen formata getirelim
+            isim=valueArr[0];
+            valueArr[0]=isim.substring(0,1).toUpperCase()+isim.substring(1).toLowerCase();
+            // valueArr[0]=valueArr[0].substring(0,1).toUpperCase()+valueArr[0].substring(1).toLowerCase();
+
+            //Map'i update edebilmek icin array'i String olarak birlestirelim
+            String yeniValue=valueArr[0]+"-"+
+                    valueArr[1]+"-"+
+                    valueArr[2]+"-"+
+                    valueArr[3]+"-"+
+                    valueArr[4];
+
+
+            //setValue() methodu ile guncellenen value'yu update edelim.
+            eachEntry.setValue(yeniValue);
+
+        }
+
+
+        return ogrenciMap;
+    }
+
+    public static Map<Integer, String> soyisimleriBuyukHarfyap(Map<Integer, String> ogrenciMap) {
+
+        Set<Map.Entry<Integer,String>> entrySeti=ogrenciMap.entrySet();
+
+        String eachValue;
+        String [] valueArr;
+
+        //her bir entry'i ele almak icin for-each kullanalim
+        for (Map.Entry<Integer,String> eachEntry:entrySeti
+        ) {
+            //her bir entry'deki value'yu alalim
+            eachValue=eachEntry.getValue();
+
+            //value'yu degistirebilmek icin array yapalim
+            valueArr=eachValue.split("-"); //[Ali, Cem, 11, C, TM]
+
+            //array[1] de bulunan soyisim bilgisini istenen formata getirelim
+            valueArr[1]=valueArr[1].toUpperCase();
+
+            //Map'i update edebilmek icin array'i String olarak birlestirelim
+            String yeniValue=valueArr[0]+"-"+
+                    valueArr[1]+"-"+
+                    valueArr[2]+"-"+
+                    valueArr[3]+"-"+
+                    valueArr[4];
+
+
+            //setValue() methodu ile guncellenen value'yu update edelim.
+            eachEntry.setValue(yeniValue);
+
+        }
+
+
+        return ogrenciMap;
+    }
+
+    public static void isimdenOgrenciBulma(Map<Integer, String> ogrenciMap, String istenenIsim) {
+
+        //values'leri al/ornek "Ali-Can-11-H-MF"
+        Collection<String> valueCollection=ogrenciMap.values();
+
+        //aldigim values'leri parcalayip icine koyacagim array olustur
+        String [] valueArr;
+        System.out.println("========"+istenenIsim + "  ogrenci Listesi"+"======");
+        //herbir value'yu alalim
+        for (String each: valueCollection
+             ) {
+            //array'e atama yapmak icin herbir value parcala
+            valueArr=each.split("-");//[Ali, Can, 11, H, MF]
+
+            //sartini yaz
+            if(valueArr[0].equalsIgnoreCase(istenenIsim)){
+                //soyisim, sinif, sube, bilgilerini yazdiran bir method olusturun.
+                System.out.println(valueArr[1]+" "+valueArr[2]+" "+valueArr[3]);
+            }
+        }
+    }
+
+    public static void numaraliSubeListesi(Map<Integer, String> ogrenciMap, String istenenSube) {
+
+        //key'leri al.ornek:[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
+        Set<Integer> keySeti=ogrenciMap.keySet();
+
+        //key'lerin value'lerini atayacagim String variable olustur
+        String valueEach;
+        //Stringi array'e cevirince atayacgim array olustur
+        String [] valueArr;
+        System.out.println("========"+istenenSube + " subesi ogrenci Listesi"+"======");
+
+        //her bir key'e ulas esra
+        for (Integer each :keySeti
+             ) {
+            //her bir value'ye ulas
+            valueEach=ogrenciMap.get(each);//get(Object key).....(value)String "Ali-Cem-11-K-MF"
+            //her bir value parcala
+            valueArr=valueEach.split("-");//[Ali, Can, 11, H, MF]
+
+            //Verilen subedeki ogrencilerin =Ali-Can-11-H-MF
+            if(valueArr[3].equalsIgnoreCase(istenenSube)){
+                //numara, isim, soyisim yazdiran bir method olusturun
+                System.out.println(each+" "+ valueArr[0]+" "+valueArr[1]);
+
+            }
+        }
+
     }
 }

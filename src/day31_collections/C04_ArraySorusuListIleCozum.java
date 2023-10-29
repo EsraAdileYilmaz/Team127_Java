@@ -32,10 +32,10 @@ public class C04_ArraySorusuListIleCozum {
                 tekrarsizList.add(each);
             }
         }//bu loop ile list'te unique elementleri olustu
-        System.out.println(tekrarsizList);//[2, 4, 6, 1, 5, 7, 9, 8]
+        System.out.println("List olarak tekrarsiz elementler: "+tekrarsizList);//[2, 4, 6, 1, 5, 7, 9, 8]
 
         // array'e list'in uzunlugunu tasiyan yeni bir deger atayalim
-        arr=new int[tekrarsizList.size()];//[0,0,0,.....] bos bir arr olustu
+        arr=new int[tekrarsizList.size()];//[0,0,0,.....] bos bir array olustu
 
         // bir loop ile ArrayList'teki elementleri array'e kaydedelim
         for (int i = 0; i < arr.length ; i++) {

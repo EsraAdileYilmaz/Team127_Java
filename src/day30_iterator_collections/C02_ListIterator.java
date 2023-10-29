@@ -46,7 +46,7 @@ public class C02_ListIterator {
 
         while (listIterator.hasNext()){//yanda eleman oldugu muddetce ilerle
             sayi=(Integer)listIterator.next();//bir sonrakini integer olarak getir
-            listIterator.set(sayi+1);
+            listIterator.set(sayi+1);//integer olarak getirdigini 1 artir
         }
         System.out.println(sayilar);//[4, 6, 7, 3, 10, 8, 5, 1, 2, 4, 5, 3, 6, 7, 8, 3]
 
@@ -67,7 +67,7 @@ public class C02_ListIterator {
         //SORU4: 5'den buyuk olanlari 1 azaltin, diger sayilari 1 artirin.
 
         //iterator basta. bastan sona gidicez
-        System.out.println(listIterator.nextIndex());//0.indexte
+        System.out.println(listIterator.nextIndex());//0 (yani en basta)
 
         while (listIterator.hasNext()){
 
@@ -85,11 +85,11 @@ public class C02_ListIterator {
         //SORU5: Tum sayilari iterator ile silin.
 
         //iterator suanda sonda
-        System.out.println(listIterator.previousIndex());//7.indexte iterator
+        System.out.println(listIterator.previousIndex());//7 (yani en son indexte)
 
         while (listIterator.hasPrevious()){
-            listIterator.previous();//bir oncekine git
-            listIterator.remove();//ve sil
+            listIterator.previous();//bir oncekine git yani sondan basa dogru ilerle
+            listIterator.remove();//ve arkanda kalani sil
         }
         System.out.println(sayilar);//[]
 

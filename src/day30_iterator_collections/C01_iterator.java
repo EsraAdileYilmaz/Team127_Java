@@ -13,9 +13,9 @@ public class C01_iterator {
         List<Integer> sayilar=new ArrayList<>();
         for (Integer each:arr
              ) {
-            sayilar.add(each);//[3, 5, 6, 2, 9, 7, 4, 0, 1, 3, 4, 2, 5, 6, 7, 2]
+            sayilar.add(each);
         }
-        System.out.println(sayilar);
+        System.out.println(sayilar);//[3, 5, 6, 2, 9, 7, 4, 0, 1, 3, 4, 2, 5, 6, 7, 2]
 
         //SORU1:index kullanmadan sadece cift elementleri yazdirin
 
@@ -76,7 +76,7 @@ public class C01_iterator {
         while(iterator.hasNext()){//yaninda eleman oldugu muddetce ilerle
 
             int sayi=(Integer)iterator.next();
-            //next() methodu object dondurdugu icin bizim bunu integer'a cast etmemiz lazim.
+            //next() methodu Object dondurdugu icin bizim bunu integer'a cast etmemiz lazim.
 
             if(sayi>5){
                 iterator.remove();

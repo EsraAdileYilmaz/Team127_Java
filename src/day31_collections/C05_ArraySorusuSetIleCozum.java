@@ -14,7 +14,7 @@ public class C05_ArraySorusuSetIleCozum {
 
         Set <Integer> tekrarsizSet=new TreeSet<>();//dogal sirali olacak
 
-        // set unique elementlerden olustugu icin,
+        // Set<> unique elementlerden olustugu icin,
         // array'deki elementleri set'e eklersek
         // tekrar edenler yok olur.
 
@@ -28,7 +28,7 @@ public class C05_ArraySorusuSetIleCozum {
         // for-each loop kullanmaliyiz.
 
         arr=new int[tekrarsizSet.size()];//array'e yeni deger atadik
-        // for-each loop ile yapacagimiz icin arr'in index'ini biz takip etmeliyiz.
+        // for-each loop ile yapacagimiz icin array'in index'ini biz takip etmeliyiz.
         int index=0;
         for (Integer each:tekrarsizSet
              ) {

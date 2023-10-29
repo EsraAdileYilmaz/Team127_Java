@@ -16,7 +16,7 @@ public class C04_Queue {
         5)offer() methodu eger kapasite sinirlamasi yoksa, verdigimiz elementi queue'nun sonuna ekler
         6)poll() methodu Queue'nun ilk elementini siler ve bize dondurur.bulamazsa null dondurur
 
-        add() methodu ile offer() methodu arasindaki fark=
+        **add() methodu ile offer() methodu arasindaki fark=
         add() methodu verilen elementi her halukarda eklerken,
         offer() methodu kapasite uygunsa ekler.
 
@@ -40,13 +40,13 @@ public class C04_Queue {
         harfler.add("M");
 
         System.out.println(harfler.remove("M"));//true (yani M'yi buldum,sildim)
-        System.out.println(harfler);//[K, s, M, M] ilk M silindi
+        System.out.println(harfler);//[K, s, M, M] ilk buldugu M silindi
 
-        //element() methodu queue'nun ilk elemanini silmeden bize getirir.bulamazsa exception firlatir
+        //element() methodu Queue'nun ilk elemanini silmeden bize getirir.bulamazsa exception firlatir
         System.out.println(harfler.element());//K
         System.out.println(harfler);//[K, s, M, M]
 
-        //peek() methodu queue'nun ilk elemanini silmeden bize getirir.bulamazsa null dondurur
+        //peek() methodu Queue'nun ilk elemanini silmeden bize getirir.bulamazsa null dondurur
         System.out.println(harfler.peek());//K
         System.out.println(harfler);//[K, s, M, M]
 
@@ -55,7 +55,7 @@ public class C04_Queue {
         //System.out.println(deneme.element());//NoSuchElementException (boyle bir element yok)
         System.out.println(deneme.peek());//null
 
-        // offer() methodu eger kapasite sinirlamasi yoksa, verdigimiz elementi queue'ya ekler
+        // offer() methodu eger kapasite sinirlamasi yoksa, verdigimiz elementi Queue'ya ekler
         System.out.println(harfler.offer("Z"));//sona ekleme yapti
         System.out.println(harfler);//[K, s, M, M, Z]
 

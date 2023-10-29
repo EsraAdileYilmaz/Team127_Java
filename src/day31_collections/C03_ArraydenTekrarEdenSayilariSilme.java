@@ -11,7 +11,7 @@ public class C03_ArraydenTekrarEdenSayilariSilme {
 
         int[] arr = {2,4,6,4,1,2,5,7,9,4,5,7,2,6,8,2,1};
 
-        Arrays.sort(arr);
+        Arrays.sort(arr);//burda array'i siraladik.
         System.out.println(Arrays.toString(arr));//[1, 1, 2, 2, 2, 2, 4, 4, 4, 5, 5, 6, 6, 7, 7, 8, 9]
         //boylece tekrar eden sayilari gormus olduk.
 
@@ -20,7 +20,7 @@ public class C03_ArraydenTekrarEdenSayilariSilme {
 
         // 2.yontem bir loop ile elemanlari gozden gecirip
         // bir oncekine esit olan element varsa, olusturacagim ayri bir method'la
-        // o elemnti silip, arrayi degistiririm
+        // o elementi silip, arrayi degistiririm.
 
         //1.YONTEMLE YAPALIM:
 
@@ -38,8 +38,8 @@ public class C03_ArraydenTekrarEdenSayilariSilme {
         //unique elementleri icine koymak icin bos bir array olusturduk.
         int konulacakIndex=0;
         for (int i = 0; i < arr.length-1 ; i++) {
-            if(arr[i] != arr[i+1]){
-                yeniArr[konulacakIndex] = arr[i+1];//yeniArr[0] = arr[0+1]...
+            if(arr[i] != arr[i+1]){//ornegin 0.index!=1.index ise ,1.index!=2.index ise gibi ...
+                yeniArr[konulacakIndex] = arr[i];
                 konulacakIndex ++;
             }
 
