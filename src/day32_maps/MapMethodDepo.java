@@ -427,4 +427,39 @@ public class MapMethodDepo {
         }
 
     }
+
+    public static Map<String, Object> rezervasyonOlustur(String firstname, String lastname, int totalprice ,
+                                                         boolean depositpaid, String checkin,
+                                                         String checkout, String additionalneeds) {
+
+          /*
+        {
+            "firstname" : "Ahmet",
+            "lastname" : "Bulut",
+            "totalprice" : 500,
+            "depositpaid" : false,
+            "bookingdates" : {
+                   "checkin" : "2023-07-21",
+                   "checkout" : "2023-08-10"
+                      },
+            "additionalneeds" : "wi-fi" }
+         */
+
+        Map<String,Object> rezervasyonMap =new HashMap<>();
+        rezervasyonMap.put("firstname",firstname);
+        rezervasyonMap.put("lastname",lastname);
+        rezervasyonMap.put("totalprice",totalprice);
+        rezervasyonMap.put("depositpaid",depositpaid);
+
+        Map<String,String> innerMap=new HashMap<>();//inner Map'taki degerlere ulasmak icin yeni bir Map yaptik
+        innerMap.put("checkin",checkin);
+        innerMap.put("checkout",checkout);
+        rezervasyonMap.put("bookingdates",innerMap);//values'sune Map olarak ekledik
+        rezervasyonMap.put("additionalneeds",additionalneeds);
+        //boylece tum data girislerini rezervasyon Map'ine yapmis olduk.
+
+        return rezervasyonMap;
+
+
+    }
 }
