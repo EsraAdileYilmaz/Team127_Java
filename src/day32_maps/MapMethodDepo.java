@@ -445,7 +445,7 @@ public class MapMethodDepo {
             "additionalneeds" : "wi-fi" }
          */
 
-        Map<String,Object> rezervasyonMap =new HashMap<>();
+        Map<String,Object> rezervasyonMap =new HashMap<>();//outer Map
         rezervasyonMap.put("firstname",firstname);
         rezervasyonMap.put("lastname",lastname);
         rezervasyonMap.put("totalprice",totalprice);

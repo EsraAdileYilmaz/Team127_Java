@@ -16,8 +16,8 @@ public class C06_ComputeMethodlari {
         System.out.println(harfler);//{A=24, C=12, Y=28, K=15}
 
         //SORU:A'nin degerini 5 artirin
-       Integer value=harfler.get("A");
-       harfler.put("A",value+5);
+       Integer valueA=harfler.get("A");
+       harfler.put("A",valueA+5);
         System.out.println(harfler);//{A=29, C=12, Y=28, K=15}
 
 
@@ -30,9 +30,9 @@ public class C06_ComputeMethodlari {
 
 
         //SORU:Eger Y varsa degerini 2 katina cikarin
-        int eskiKullanim=harfler.get("Y");
+        int valueY=harfler.get("Y");
         if(harfler.containsKey("Y")){
-            harfler.put("Y",eskiKullanim*2);
+            harfler.put("Y",valueY*2);
         }
         System.out.println(harfler);//{A=29, C=12, Y=56, K=15}
 
@@ -49,6 +49,7 @@ public class C06_ComputeMethodlari {
 
         //SORU:X varsa degerini 10 artirin
         harfler.computeIfPresent("X",(k,v)-> v+10);
+        System.out.println(harfler);
 
 
         //SORU:K varsa degerini 10 artirin

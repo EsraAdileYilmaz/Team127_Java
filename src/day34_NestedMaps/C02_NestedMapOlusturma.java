@@ -41,7 +41,7 @@ public class C02_NestedMapOlusturma {
 
         Map<String,String> ogrMap=new HashMap<>();
         ogrMap.put("isim",isim);//isim=isim degeri olacak.key=Value oluyor
-        ogrMap.put("soyisim",soyisim);//key:soyisim, value:soyisim degeri
+        ogrMap.put("soyisim",soyisim);//key:soyisim, value:soyisim parametre degeri
         ogrMap.put("sinif",sinif);
         ogrMap.put("sube",sube);
         ogrMap.put("bolum",bolum);//boylece 101 nolu ogrenci olusturuldu.

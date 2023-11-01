@@ -32,11 +32,11 @@ public class C04_Maps {
 
             // map'i kontrol edecegim
             // bizim oglanin getirdigi sayi map'de yoksa, kullanim adedi = 1 olarak ekleyelim.
-            if(!kullanimMiktariMap.containsKey(each)){//herbir sayi Map'te yoksa
+            if(!kullanimMiktariMap.containsKey(each)){//array'den gelen herbir sayi Map'te yoksa;
                 kullanimMiktariMap.put(each,1);
             }else{
-                // bizim oglanin getirdigi sayi map'de varsa, kullanim adedini 1 artiralim.
-                Integer eskiKullanimMiktari=kullanimMiktariMap.get(each);
+                // bizim oglanin array'den getirdigi herbir sayi map'de varsa, kullanim adedini 1 artiralim.
+                Integer eskiKullanimMiktari=kullanimMiktariMap.get(each);//herbir array'in valuesunu getirir
                 kullanimMiktariMap.put(each,eskiKullanimMiktari+1);
             }
         }

@@ -23,7 +23,7 @@ public class C01_NestedMapOlusturma {
         Map<Integer, Map<String,String>> ogrenciMap=new HashMap<>();//Outer Map
 
         //101 numarali ogrenciyi eklemek istersek,once value Map'ini olusturmamiz lazim.
-        Map<String,String> ogrMap101=new HashMap<>();
+        Map<String,String> ogrMap101=new HashMap<>();//inner Map
         ogrMap101.put("isim","Ali");//isim=Ali olacak.key=Value oluyor
         ogrMap101.put("soyisim","Can");//key:soyisim, value:Can
         ogrMap101.put("sinif","11");

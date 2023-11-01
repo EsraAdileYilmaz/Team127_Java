@@ -15,7 +15,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
 
             Eger value data turu olarak Object secilirse
             value'lara erismek istedigimizde
-            casting yapmamiz gerekebilir
+            casting yapmamiz gerekebilir.
          */
 
           /*
