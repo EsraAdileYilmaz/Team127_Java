@@ -1,4 +1,4 @@
-package day34_NestedMaps;
+package day34_nestedMaps;
 
 import java.util.HashMap;
 import java.util.Map;

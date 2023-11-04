@@ -1,8 +1,7 @@
-package day34_NestedMaps;
+package day34_nestedMaps;
 
 import java.util.HashMap;
 import java.util.Map;
-import java.util.TreeMap;
 
 public class C02_NestedMapOlusturma {
 

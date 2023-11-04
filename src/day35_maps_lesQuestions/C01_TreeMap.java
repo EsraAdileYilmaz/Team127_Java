@@ -1,4 +1,4 @@
-package day35_Maps_GenelTekrar;
+package day35_maps_lesQuestions;
 
 import java.util.Map;
 import java.util.TreeMap;

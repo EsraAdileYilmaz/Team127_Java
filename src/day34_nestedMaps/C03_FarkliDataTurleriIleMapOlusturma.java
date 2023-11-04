@@ -1,8 +1,7 @@
-package day34_NestedMaps;
+package day34_nestedMaps;
 
 import day32_maps.MapMethodDepo;
 
-import java.util.HashMap;
 import java.util.Map;
 
 public class C03_FarkliDataTurleriIleMapOlusturma {

@@ -1,4 +1,4 @@
-package day35_Maps_GenelTekrar;
+package day35_maps_lesQuestions;
 
 public class C02_ForLoop {
 

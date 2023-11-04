@@ -1,6 +1,5 @@
-package day34_NestedMaps;
+package day34_nestedMaps;
 
-import java.lang.management.ManagementPermission;
 import java.util.HashMap;
 import java.util.Map;
 
