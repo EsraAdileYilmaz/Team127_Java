@@ -37,7 +37,7 @@ public class D_Runner {
 
 
         B_Kuslar kartal2 = new C_AvciKuslar();//burda objenin data turu ile objenin constructor'i
-        //farkli classlardandir.buyuzden variablelari aramaya data turunun oldugu class'dan baslar.
+        //farkli classlardandir.buyuzden variablelari aramaya data turunun oldugu B_Kuslar class'indan baslar.
         System.out.println(kartal2.hareket); // A hareket ederler
         System.out.println(kartal2.solunum); // B akcigerle nefes alirlar
         System.out.println(kartal2.beslenme); // A beslenirler
@@ -49,7 +49,7 @@ public class D_Runner {
 
 
         A_Hayvanlar kartal3 = new C_AvciKuslar();//burda objenin data turu ile objenin constructor'i
-        //farkli classlardandir.buyuzden variablelari aramaya data turunun oldugu class'dan baslar.
+        //farkli classlardandir.buyuzden variablelari aramaya data turunun oldugu A_Hayvanlar class'indan baslar.
         System.out.println(kartal3.hareket); // A hareket ederler
         System.out.println(kartal3.solunum); // A solunum yaparlar
         System.out.println(kartal3.beslenme); // A beslenirler

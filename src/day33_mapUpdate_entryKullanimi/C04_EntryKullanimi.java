@@ -10,7 +10,7 @@ public class C04_EntryKullanimi {
     public static void main(String[] args) {
 
         /*
-        1)entrySet() methodu ile map listesi entry'e cevrilir.
+        1)entrySet() methodu ile Map listesi entry'e cevrilir.
         2)getKey() methodu ile key'ler elde edilir.
         3)getValue() methodu ile value'ler elde edilir.
         4)setValue() methodu ile value'ler update edilir.

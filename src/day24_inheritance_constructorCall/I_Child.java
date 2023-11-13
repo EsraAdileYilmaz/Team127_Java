@@ -8,17 +8,17 @@ public class I_Child extends H_Parent{
     }
 
     I_Child(String str){//bu class'ta string parametreli cons olusturuldu
-        super(5);//parent class'taki int parametreli cons call yapildi
+        super(5);//parent class'taki int parametreli constructor'a cons. call yapildi
         System.out.println("C String");
     }
 
     I_Child(int sayi){//bu class'ta int parametreli cons olusturuldu
-        super("a");//parent class'taki string parametreli cons call yapildi
+        super("a");//parent class'taki string parametreli constructor'a cons. call yapildi
         System.out.println("C int");
     }
 
     I_Child(boolean bl){//bu class'ta boolean parametreli cons olusturuldu
-        super(true);//parent class'taki boolean parametreli cons call yapildi
+        super(true);//parent class'taki boolean parametreli constructor'a cons. call yapildi
         System.out.println("C boolean");
     }
 
@@ -58,7 +58,7 @@ public class I_Child extends H_Parent{
         eger extends kullanan bir class'daki
         herhangi bir constructor'in ilk satirina
         gorunur bir constructor call yazarsak( super(5) gibi)
-        Java default super() siler.
+        Java default super() constructor call'u siler.
 
      */
 }

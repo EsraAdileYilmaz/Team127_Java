@@ -37,8 +37,8 @@ public class H_Runner {
 
 
         F_Kuslar kartal5 = new G_AvciKuslar();//burada data turu ve constructor farkli class'lardandir.
-        //buyuzden method aramaya data turunun olusturuldugu class'tan baslar.
-        //ama methodlarda daha gunceli aranir.bunun icin cons. olusturuldugu class'a kadar inilir.
+        //buyuzden method aramaya data turunun olusturuldugu F_Kuslar class'indan baslar.
+        //ama methodlarda daha gunceli aranir.bunun icin cons. olusturuldugu G_AvciKuslar class'ina kadar inilir.
         kartal5.hareket(); // G Ucarlar
         kartal5.solunum(); // F Akcigerle
         kartal5.beslenme(); // G Et yerler
@@ -50,8 +50,8 @@ public class H_Runner {
 
 
         E_Hayvanlar kartal6 = new G_AvciKuslar();//burada data turu ve constructor farkli class'lardandir.
-        //buyuzden method aramaya data turunun olusturuldugu class'tan baslar.
-        //ama methodlarda daha gunceli aranir.bunun icin cons. olusturuldugu class'a kadar inilir.
+        //buyuzden method aramaya data turunun olusturuldugu E_Hayvanlar class'indan baslar.
+        //ama methodlarda daha gunceli aranir.bunun icin cons. olusturuldugu G_AvciKuslar class'ina kadar inilir.
         kartal6.hareket(); // G Ucarlar
         kartal6.solunum(); // F Akcigerle
         kartal6.beslenme(); // G Et yerler

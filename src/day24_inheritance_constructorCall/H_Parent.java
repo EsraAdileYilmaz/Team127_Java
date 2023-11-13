@@ -13,12 +13,12 @@ public class H_Parent extends G_GrandParent{
         System.out.println("P String");
     }
 
-    H_Parent(int sayi){//integer parametreli constructor olusturuldu
+    H_Parent(int sayi){//integer parametreli constructor olusturuldu.
         System.out.println("P int");
     }
 
     H_Parent(boolean bl){//boolean parametreli constructor olusturuldu
-        super(false);//parent class'taki boolean parametreli cons call yapildi
+        super(false);//parent class'taki boolean parametreli constructor'a cons. call yapildi
         System.out.println("P boolean");
     }
 

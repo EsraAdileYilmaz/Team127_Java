@@ -8,7 +8,7 @@ public class C04_HemsireRunner {
 
         hemsire1.hemsireAdi="Esra";
         hemsire1.hemsireAdresi="Yenimahalle";
-        //olusturulan ilk objenin adi esra ve adresi yeni mahalle olur.
+        //olusturulan ilk objenin adi esra ve adresi yenimahalle olur.
 
 
         C03_Hemsire hemsire2= new C03_Hemsire();// 2.hemsire objemiz.yeniden tum instance variable'lar atanir

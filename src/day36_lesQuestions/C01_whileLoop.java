@@ -31,7 +31,7 @@ public class C01_whileLoop {
             if(girilenAd.equals(kullaniciAdi) && girilenSifre.equals(kullaniciSifre)){
                 System.out.println("Hesabınızdasınız!");
                 sifreDogrumu=true;
-            } else if (sayac >=3) {//2 kez daha girme islemi yapabilir
+            } else if (sayac >=3) {//2 kez daha girme islemi yapabilir ve onlarida yanlis girerse;
                 System.out.println("Hesabınız bloke edilmiştir");
                 break;
             }

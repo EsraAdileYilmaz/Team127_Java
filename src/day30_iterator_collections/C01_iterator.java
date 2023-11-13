@@ -48,7 +48,7 @@ public class C01_iterator {
 
         System.out.println(iterator.next());//3 (1 element ileri gider.arkasinda kalan elementi yazdirir)
         System.out.println(iterator.hasNext());//true(yani yanda element var mi?true)
-        iterator.next();//5 getirir
+        iterator.next();//5 getirir.Yani ustunden gectigi elementi getirir
         System.out.println(iterator.next());//6 (artik getirilen bu cift sayiyi silmek istiyorsam)
         iterator.remove();//bunu yaptigimizda 6'yi sildik
 

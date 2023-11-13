@@ -19,7 +19,7 @@ public class C06_StringBuilder_length_capacity {
         System.out.println("sb1 capacity:"+ sb1.capacity());//16 standart kapasitedir
 
         StringBuilder sb2= new StringBuilder("Ali Can");
-        System.out.println("sb2 length: "+ sb2.length());//sb2 length: 7 (icindeki Ali Can indexlerinin toplmami)
+        System.out.println("sb2 length: "+ sb2.length());//sb2 length: 7 (icindeki Ali Can indexlerinin toplami)
         System.out.println("sb2 capacity:" + sb2.capacity());//sb2 capacity:23 (standart kapasite=16+7=23)
 
         StringBuilder sb3= new StringBuilder(11);// // icinde hic bir yazi yok, length ==> 0
@@ -28,12 +28,12 @@ public class C06_StringBuilder_length_capacity {
 
         // Eger StringBuilder'a ekleme yaparsaniz,
         // java eklenecek metni de alabilmesi icin kapasitesini otomatik olarak genisletir.
-        // sb'in kapasitesitini=( 2 * eski kapasite + 2 ) seklinde genisletir.
+        // sb'in kapasitesitini=( 2 * eski capacity + 2 ) seklinde genisletir.
 
         sb2.append(" okula gitmek istiyor.");
         System.out.println("sb2 :"+ sb2);// sb2 :Ali Can okula gitmek istiyor.
         System.out.println("sb2 length:"+ sb2.length());// sb2 length:29
-        System.out.println("sb2 capacity: "+ sb2.capacity());// sb2 capacity: 48 = 2 * 23 +2 eski capacity 23 du.
+        System.out.println("sb2 capacity: "+ sb2.capacity());// sb2 capacity: 48 = 2 * 23 +2 (eski capacity=23)
 
         // Eger kapasite ve length'i esitlemek isterseniz; trimToSize() bu method kullanilir.
 

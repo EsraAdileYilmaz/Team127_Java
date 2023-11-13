@@ -38,13 +38,13 @@ public class C02_Child extends C01_Parent{
     overridding ise direk parent class'daki method'u
     degistirerek child class'a uyarlamaktir.
 
-    final method'lar OVERRIDE EDILEMEZ.
+    final method'lar OVERRIDE EDILEMEZLER.
      */
 
     public static void method4(){
         // static methodlar objeden bagimsizdirlar.
         // static method'lari cagirmak icin obje kullanilmaz.
-        // static method'lar override edilemezler.
+        // static method'lar OVERRIDE EDILEMEZLER.
         // zaten yanda OK da cikmadi.
     }
 

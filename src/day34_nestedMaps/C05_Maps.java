@@ -7,9 +7,8 @@ public class C05_Maps {
 
     public static void main(String[] args) {
 
-        //Soru : Verilen bir array’de kullanilan sayilari ve kacar defa kullanildigini yazdirin.
-        //
-        //Input : {a,b,c,d,e,c,d,b,e,a,c,b,d,a}
+        //Soru : Verilen bir array’de kullanilan harfleri ve kacar defa kullanildigini yazdirin.
+        //String[] input= {"a","b","c","d","e","c","d","b","e","a","c","b","d","a"} ;
         //output : a kullanimi : 3 adet
         //	       b kullanimi : 3 adet
         //	       c kullanimi : 3 adet
@@ -19,7 +18,7 @@ public class C05_Maps {
         String[] input = {"a","b","c","d","e","c","d","b","e","a","c","b","d","a"} ;
 
         Map<String,Integer> kullanimMiktarlariMap=new TreeMap<>();
-        Integer eskiKullanimMiktari;
+        Integer eskiKullanimMiktari;//Integer sayac; ayni amacta kullanilir.Bu herbir harfin value'sune esittir.
         for (String each: input
              ) {
 

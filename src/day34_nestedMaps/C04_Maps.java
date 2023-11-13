@@ -36,6 +36,7 @@ public class C04_Maps {
             }else{
                 // bizim oglanin array'den getirdigi herbir sayi map'de varsa, kullanim adedini 1 artiralim.
                 Integer eskiKullanimMiktari=kullanimMiktariMap.get(each);//herbir array'in valuesunu getirir
+                //Integer eskiKullanimMiktari=sayac
                 kullanimMiktariMap.put(each,eskiKullanimMiktari+1);
             }
         }

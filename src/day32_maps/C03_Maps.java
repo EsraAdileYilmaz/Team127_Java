@@ -26,14 +26,18 @@ public class C03_Maps {
         System.out.println(ogrenciMap.size());//6
 
         System.out.println(ogrenciMap.keySet());//[101, 102, 103, 104, 105, 106]
-        //keyset()  Set<Integer>
+        //keyset() methodu Set<Integer> dondurur ve bize key'leri getirir.
 
-        System.out.println(ogrenciMap.values());//[Ali-Can-11-H-MF,
+        System.out.println(ogrenciMap.values());
+        //values() methodu Collection<String> dondurur ve bize value'leri getirir.
+        //[
+        // Ali-Can-11-H-MF,
         // Veli-Cem-10-K-TM,
         // Ali-Cem-11-K-TM,
         // Ayse-Can-10-H-MF,
         // Sevgi-Cem-11-M-TM,
-        // Sevgi-Can-10-K-MF]
+        // Sevgi-Can-10-K-MF
+        // ]
 
         // SORU:verilen sube'deki ogrencilerin isim ve soyisimlerini yazdiran bir method olusturun
 

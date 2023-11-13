@@ -9,7 +9,7 @@ public class C03_PassByValue {
         // Main method’dan bu 3 method’u arka arkaya cagirip,
         // return edilen fiyatlari yazdirin.
 
-        double fiyat= 100;
+        double fiyat= 100;//buradaki degerde hicbir sey degismez.
 
         System.out.println("% 10 indirimli fiyat : "+ indirim10(fiyat));//% 10 indirimli fiyat : 90.0
         System.out.println("% 20 indirimli fiyat : "+ indirim20(fiyat));//% 20 indirimli fiyat : 80.0

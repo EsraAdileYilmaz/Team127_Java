@@ -5,7 +5,7 @@ public interface I08_Interface {
       /*
         1- Interface'ler full abstraction saglar.
         2- full abstraction sagladigi icin yazsak da yazmasak da
-           tum method'lar public ve abstract'tir.
+           tum method'lar= public ve abstract'tir.
         3- Interface'de olusturulan her variable
            yazsak da yazmasak da
            public,final ve static'tir.

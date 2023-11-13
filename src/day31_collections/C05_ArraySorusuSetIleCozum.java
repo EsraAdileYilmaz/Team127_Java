@@ -24,7 +24,7 @@ public class C05_ArraySorusuSetIleCozum {
         }//her bir unique elementi set'e ekledik.
         System.out.println("Set :"+tekrarsizSet);//Set :[1, 2, 4, 5, 6, 7, 8, 9]
 
-        // Set index kullanmadigi icin for-loop kullanamayiz.
+        // Set index kullanmadigi icin fori-loop kullanamayiz.
         // for-each loop kullanmaliyiz.
 
         arr=new int[tekrarsizSet.size()];//array'e yeni deger atadik
@@ -37,12 +37,5 @@ public class C05_ArraySorusuSetIleCozum {
         }
         System.out.println("Array'in son hali: "+ Arrays.toString(arr));
         //Array'in son hali: [1, 2, 4, 5, 6, 7, 8, 9]
-
-
-
-
-
-
-
     }
 }

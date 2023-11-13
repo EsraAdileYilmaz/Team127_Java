@@ -10,9 +10,9 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
 
          /*
             Eger value olarak farkli data turlerinden degerler girilecekse
-            Map olusturulurken Map<? , Object> secilebilir
+            Map olusturulurken Map<? , Object> secilebilir.
 
-            Eger value data turu olarak Object secilirse
+            Eger value data turu olarak Object secilirse,
             value'lara erismek istedigimizde
             casting yapmamiz gerekebilir.
          */
@@ -31,7 +31,8 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
          */
 
         Map<String,Object> bookingMap=MapMethodDepo.rezervasyonOlustur("Hasan","Yan",300,
-                                                  true,"2023-12-01","2023-12-10","wi-fi");
+                                                                   true,"2023-12-01",
+                                                                "2023-12-10","wi-fi");
 
         System.out.println(bookingMap);
         //{

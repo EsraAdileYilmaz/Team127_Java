@@ -69,7 +69,7 @@ public class C03_LinkedList {
             ikinci listte ise hicbir degisiklik olmaz.
             ornegin;System.out.println(list.retainAll(ll2));
             list'den ll2'da olmayan elemanlari siler.
-            Eger herhangi bir elemani silerse true
+            Eger herhangi bir elemani silerse true,
             hic bir elemani silemezse false doner.
          */
 

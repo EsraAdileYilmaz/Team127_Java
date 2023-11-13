@@ -7,16 +7,16 @@ import java.util.Set;
 
 public class MapMethodDepo {
     /*
-        Map kompleks bilgiler barindirabilir
+        Map kompleks bilgiler barindirabilir.
         Ne kadar cok bilgi barindirirsa, bilgilere erismek o kadar islem gerektirebilir.
-        Ama temel olarak map key ve value'dan olusur.
+        Ama temel olarak Map <key ve value'dan> olusur.
 
-        value bir cok bilgi barindiran bir String ise
-        bilgilere ulasmak icin split() ile String'i array'e ceviririz.
+        value bir cok bilgi barindiran bir String ise;
+        bilgilere ulasmak icin split() methodu ile String'i array'e ceviririz.
 
         1- Eger sadece value'dan bilgiler istenirse;
-           - ogrenciMap.values() ile value'ler bir collection'a kaydedilir
-           - sonra collection'daki String'ler for-each loop ile ele alinip
+           - ogrenciMap.values() ile value'ler bir Collection'a kaydedilir
+           - sonra Collection'daki String'ler for-each loop ile ele alinip
            - split() ile array'e cevrilir
            - ve ISTENEN SARTLARA uyan value'lardan ISTENEN BILGILER kullanilir
 
@@ -272,7 +272,7 @@ public class MapMethodDepo {
     public static void sinifListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif, String sube) {
 
         //numara,isim,soyisim
-       Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet();//map'i entrySet() ile entry'e cevirdik
+       Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet();//Map'i entrySet() ile entry'e cevirdik
 
        //entry'leri elden gecirip (for-each loop ile),
         //sinif ve sube bilgisi istenen degere esit olanlari yazdiralim.
@@ -302,9 +302,9 @@ public class MapMethodDepo {
         //Bir entrySeti olusturalim
         Set<Map.Entry<Integer,String>> entrySeti=ogrenciMap.entrySet();
         /*
-        Collection<String> values=ogrenciMap.values();
+        Collection<String> values=ogrenciMap.values(); +
         Set<Integer> keyler=ogrenciMap.keySet();
-        == Set<Map.Entry<Integer,String>> keyValues=ogrenciMap.entrySet();
+        = Set<Map.Entry<Integer,String>> keyValues=ogrenciMap.entrySet();
          */
 
         String eachValue;
@@ -313,7 +313,7 @@ public class MapMethodDepo {
         //her bir entry'i ele almak icin for-each kullanalim
         for (Map.Entry<Integer,String> eachEntry:entrySeti
              ) {//herbir key+value'yu aldik
-            //her bir entry'deki value'yu alalim
+               //her bir entry'deki value'yu alalim
             eachValue=eachEntry.getValue();//"Ali-Can-11-H-MF"
 
             //value'yu degistirebilmek icin array yapalim

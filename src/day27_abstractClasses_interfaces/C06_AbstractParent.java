@@ -3,12 +3,12 @@ package day27_abstractClasses_interfaces;
 public abstract class C06_AbstractParent extends C05_AbstractGrandParent{
 
      /*
-        Abstract olan child class'lardan da OBJE OLUSTURULAMAYACAGI icin
+        Abstract olan child class'lardan da OBJE OLUSTURULAMAYACAGI icin,
         child olsalar da parent'larindaki abstract method'lari
-        UYARLAMAK ZORUNDA KALMAZLAR
+        UYARLAMAK ZORUNDA KALMAZLAR.
 
         Abstract parent - child arasindaki iliski
-        normal inheritance kullanan parent - child class'lar gibidir
+        normal inheritance kullanan parent - child class'lar gibidir.
         YANI isterse uyarlar, istemezse uyarlamaz
      */
 

@@ -6,10 +6,9 @@ public class C02_Varargs {
 
         /*
         Method call() sirasinda istedigim kadar argument yazabilmek istiyorsam;
-        Java variety of arguments(Varargs) kullanir.
+        Java -> variety of arguments(Varargs) kullanir.
         Varargs array alt yapisini kullanarak,
         istedigimiz kadar argument yazmamiza imkan tanir.
-
       */
         topla(4,9);//Toplam : 13
         topla(3,5,7);//Toplam : 15

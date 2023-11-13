@@ -36,16 +36,20 @@ public class C02_NestedMapOlusturma {
 
     }
 
-    public static Map<Integer, Map<String, String>> ogrenciEkle(Map<Integer, Map<String, String>> ogrenciMap, int ogrNo, String isim, String soyisim, String sinif, String sube, String bolum) {
+    public static Map<Integer, Map<String, String>> ogrenciEkle(Map<Integer, Map<String, String>> ogrenciMap,
+                                                                int ogrNo, String isim, String soyisim,
+                                                                String sinif, String sube, String bolum) {
 
         Map<String,String> ogrMap=new HashMap<>();
         ogrMap.put("isim",isim);//isim=isim degeri olacak.key=Value oluyor
         ogrMap.put("soyisim",soyisim);//key:soyisim, value:soyisim parametre degeri
         ogrMap.put("sinif",sinif);
         ogrMap.put("sube",sube);
-        ogrMap.put("bolum",bolum);//boylece 101 nolu ogrenci olusturuldu.
+        ogrMap.put("bolum",bolum);
+        //boylece inner Map icindeki her bir ogrenci icin,
+        // {sinif=sinif, sube=sube, soyisim=soyisim, bolum=bolum, isim=isim}  olusturuldu.
 
-        //ogrMap101 bitince bunu ogrenciMap'e ekleyelim
+        //ogrMap isimli inner Map hazir olunca bunu ogrenciMap'e ekleyelim
         ogrenciMap.put(ogrNo,ogrMap);
         return ogrenciMap;
     }

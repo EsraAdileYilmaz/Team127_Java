@@ -45,8 +45,8 @@ public class C02_ListIterator {
         int sayi;
 
         while (listIterator.hasNext()){//yanda eleman oldugu muddetce ilerle
-            sayi=(Integer)listIterator.next();//bir sonrakini integer olarak getir
-            listIterator.set(sayi+1);//integer olarak getirdigini 1 artir
+            sayi=(Integer)listIterator.next();//bir sonrakini integer'a cast yapip kaydet
+            listIterator.set(sayi+1);//integer'a cast yaptigin her bir sayiyi 1 artir
         }
         System.out.println(sayilar);//[4, 6, 7, 3, 10, 8, 5, 1, 2, 4, 5, 3, 6, 7, 8, 3]
 

@@ -3,9 +3,8 @@ package day27_abstractClasses_interfaces;
 public class C07_ConcreteChildClass extends C06_AbstractParent{
 
     /*
-    Bir abstract zincirden sonra gelen ILK CONCRETE CLASS
-
-    abstract KALAN TUM METHOD'lari implement ETMEK ZORUNDADIR
+    Bir abstract zincirden sonra gelen ILK CONCRETE CLASS,
+    abstract KALAN TUM METHOD'lari implement ETMEK ZORUNDADIR.
     */
 
     /*

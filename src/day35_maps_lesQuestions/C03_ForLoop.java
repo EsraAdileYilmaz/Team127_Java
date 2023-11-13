@@ -40,21 +40,21 @@ public class C03_ForLoop {
         String[] cocukHarfler = cocuk1.split("");
 
        //Array'e cevrilen isimleri rahat kullanmak icin List'e ceviricez;
-        List<String> anneSessizler = new ArrayList<>();
+        List<String> anneSessizler = new ArrayList<>();//[]
         List<String> babaSessizler = new ArrayList<>();
         List<String> cocukSessizler = new ArrayList<>();
 
         //sessiz harfleri karsilastiracagimiz icin sesli harflerden kurtulmamiz gerekiyor.
         String[] sesliHarfler ={"a","e","i","ı","o","ö","u","ü"};//sesli harfler array'i
         //sesli harfler array'ini asList() methodu ile List'e cevirdik.
-        List<String> sesliHarflerList = Arrays.asList(sesliHarfler);
+        List<String> sesliHarflerList = Arrays.asList(sesliHarfler);//[a,"e","i","ı","o","ö","u","ü"]
 
 
         for (String each:anneHarfler
         ) {
 
             if (!sesliHarflerList.contains(each)){//sesli harfler icermiyorsa;
-                anneSessizler.add(each);//anne isminin sessiz harflerini anneSessizler list'ine ekle
+                anneSessizler.add(each);//anne isminin sessiz harflerini anneSessizler list'ine ekle [s,r,d,l]
             }
         }
 
@@ -74,7 +74,7 @@ public class C03_ForLoop {
             }
         }
 
-        // cocugun ismindeki harfleri anne ve babanin harfleri ile karsilastirip
+        // cocugun ismindeki harfleri anne ve babanin sessiz harfleri ile karsilastirip
         // ortak harfleri sayalim.
 
         boolean anneOrtakHarf = false;
@@ -84,19 +84,24 @@ public class C03_ForLoop {
         boolean cocukTumHarfler = true;//cocugun tum harfleri anne veya babada varsa true olcak yoksa false olcak
         boolean cocukHarfKontrol = false;//cocugun bir harfi anne veya babada varsa true olcak
 
+        /*
+         List<String> anneSessizler = new ArrayList<>();[srdl]
+        List<String> babaSessizler = new ArrayList<>();
+        List<String> cocukSessizler = new ArrayList<>();
+         */
         for (int i = 0; i < cocukSessizler.size() ; i++) {//cocugun sessiz harfleri List'inin uzunlugunca
 
             cocukHarf = cocukSessizler.get(i);
             //cocukSessizler list'inden herbir sessiz harfini getir
 
             if (anneSessizler.contains(cocukHarf)){//annenin sessizleri,cocugun herbir sessiz harfini iceriyorsa
-                anneOrtakHarf =true;
+                anneOrtakHarf =true;//anne ile ortak sessiz harf var anneortak++;
                 cocukHarfKontrol = true;//yani en az 1 harf anne ile ortak
             }
 
             if (babaSessizler.contains(cocukHarf)){//babanin sessizleri,cocugun herbir sessiz harfini iceriyorsa
-                babaOrtakHarf = true;
-                cocukHarfKontrol = true;//yani en az 1 harf anne ile ortak
+                babaOrtakHarf = true;//
+                cocukHarfKontrol = true;//yani en az 1 harf baba ile ortak
             }
 
             if (!cocukHarfKontrol){ // (cocukHarfKontrol == false) yerine (!cocukHarfKontrol) yaptik
@@ -114,8 +119,8 @@ public class C03_ForLoop {
 
 
         // artik cocugun her harfinin anne babada olup olmadigini biliyorum
-        // cocukHerHarf = false ise tum harfler anne babada yok
-        // cocukHerHarf = true ise tum harfler anne babada var
+        // cocukTumHarf = false ise tum harfler anne babada yok
+        // cocukTumHarf = true ise tum harfler anne babada var
 
 
         if (anneOrtakHarf && babaOrtakHarf && cocukTumHarfler){

@@ -18,7 +18,7 @@ public class C06_ComputeMethodlari {
         //SORU:A'nin degerini 5 artirin
        Integer valueA=harfler.get("A");
        harfler.put("A",valueA+5);
-        System.out.println(harfler);//{A=29, C=12, Y=28, K=15}
+       System.out.println(harfler);//{A=29, C=12, Y=28, K=15}
 
 
         //SORU:// Eger C yoksa degeri 40 olarak ekleyin
@@ -63,7 +63,7 @@ public class C06_ComputeMethodlari {
         //System.out.println(harfler);//{A=39, C=12, X=10, Y=56, K=25}
 
         //2.yontem
-        harfler.computeIfAbsent("X",k->10);
+        harfler.computeIfAbsent("X",v->10);
         System.out.println(harfler);//{A=39, C=12, X=10, Y=56, K=25}
 
 

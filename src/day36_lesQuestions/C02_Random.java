@@ -20,7 +20,7 @@ public class C02_Random {
         */
 
         //LocalDate class'indan bir array olusturuyoruz.ve soruda istendigi gibi 10 elementli belirliyoruz.
-        LocalDate [] tarihler=new LocalDate[10];
+        LocalDate [] tarihler=new LocalDate[10];//[0,0,0........]
 
         //simdi bir for loop ile herbir array'i tarihUret() methoduna atayalim.
         for (int i = 0; i < tarihler.length ; i++) {
@@ -29,7 +29,7 @@ public class C02_Random {
 
         //method olusturduktan sonra,olusturulan tarihleri siralayalim.
         Arrays.sort(tarihler);
-        //method call yapalim
+
         System.out.println(Arrays.toString(tarihler));
     }
 

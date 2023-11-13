@@ -18,7 +18,7 @@ public class C01_Mutable_immutableClasses {
         String str = new String("Java Candir");
 
         System.out.println(str.toUpperCase());//JAVA CANDIR (str sadece bu satirda degisti orjinalinde hicbir degisiklik olmadi)
-        System.out.println(str);//Java Candir(ilk olusturulan str degismedi)
+        System.out.println(str);//Java Candir (ilk olusturulan str degismedi)
 
         str.toLowerCase();//eger yazdirirsak sadece bu satirda degisir.
 

@@ -14,7 +14,7 @@ public class C03_Exceptions {
             iyi bir kod yazarinin gorevidir.
 
             Java'da ongorulen bir hatayi
-            exception olusmadan cozmek icin (handle etmek)
+            exception olusmadan cozmek icin (handle etmek icin)
             try-catch/finally bloklari kullanilir.
             Sirasiyla;
             1- hatanin olusabilecegi satirlari bir try blog'unun icine alin
@@ -24,8 +24,8 @@ public class C03_Exceptions {
                catch() { catch blogu} na yaz
 
              Eger birden fazla olasi exception varsa;
-             1- ic ice try-catch bloklari olusturabiliriz
-             2- bir try birden fazla catch yazabiliriz
+             1- ic ice try-catch bloklari olusturabiliriz,
+             2- bir try birden fazla catch yazabiliriz,
              3- Eger tum olasi exception'lari kapsayan bir exception varsa
                 tek catch ile genis kapsamli exception yazilabilir.
                 Bu durumda hatayi spesifik olarak bilemeyecegimiz icin
@@ -75,7 +75,7 @@ public class C03_Exceptions {
         */
 
 
-        //3- Eger tum olasi exception'lari kapsayan bir Exception
+        //3- Eger tum olasi exception'lari kapsayan bir Exception varsa;
         System.out.println("Lutfen iki tamsayi giriniz");
         try {
             int sayi1 = scanner.nextInt();
@@ -103,7 +103,7 @@ public class C03_Exceptions {
             catch() icinde yazdigimiz e
             yakalanan exception'in kaydedildigi obje olacaktir.
 
-            Eger exception ile ilgili daha detayli bilgi almak istersek
+            Eger exception ile ilgili daha detayli bilgi almak istersek;
             e objesi kullanilarak
             hatanin detayi yazdirilabilir.
 

@@ -3,10 +3,12 @@ package day25_inheritanceDataTypes_overriding;
 public class E_Hayvanlar {
 
     protected void hareket(){
+
         System.out.println("hareket ederler");
     }
 
     protected void solunum(){
+
         System.out.println("nefes alirlar");
     }
 

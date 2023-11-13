@@ -23,9 +23,9 @@ public class M_GrandChild extends K_Child{
         int sayi = 5;
         int sansliSayi= 44;
 
-        System.out.println(sayi); // 5
-        System.out.println(this.sayi); // 100
-        System.out.println(super.sayi); // 25
+        System.out.println(sayi); // 5 bu scope daki sayi
+        System.out.println(this.sayi); // 100 bu class'taki sayi
+        System.out.println(super.sayi); // 25 parent'taki sayi
 
         System.out.println(sinif); // 8
         System.out.println(isim); // Ali Can
@@ -65,11 +65,11 @@ public class M_GrandChild extends K_Child{
             2- icinde oldugumuz class'in class level'ina
             3- parent'lara bakar.
 
-            Ama biz siralamaya uymadan
+           * Ama biz siralamaya uymadan
             direk class level'daki degerlere ulasmak istersek
             this.variableIsmi kullaniriz.
 
-            Ayrica yine siralamaya uymadan
+            * Ayrica yine siralamaya uymadan
             direk parentlar'taki degerlere ulasmak istersek
             super.variableIsmi kullaniriz.
          */

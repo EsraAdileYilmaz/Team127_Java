@@ -10,14 +10,14 @@ public class C03_Array {
 
         // SORU=Verilen iki String array'deki
         // ortak elementleri bulup,
-        // bir array olarak donduren bir method yazin
+        // bir array olarak donduren bir method yazin.
 
         String[] arr1 = {"A","C","B","J","V","G","Z","L","M"} ;
         String[] arr2 = {"S","R","B","S","R","T","T","B","K","G","Z","L"};
 
 
         //method call yapalim
-        System.out.println(Arrays.toString(ortakElemanBul(arr1,arr2)));
+        System.out.println(Arrays.toString(ortakElemanBul(arr1,arr2)));//[B, G, Z, L]
 
 
 
@@ -26,7 +26,7 @@ public class C03_Array {
     public static String [] ortakElemanBul(String[] arr1,String[] arr2){
 
         //Arraylerde islem yapmak zor oldugundan bir List olusturalim.
-        List<String> ortakElemanListi=new ArrayList<>();
+        List<String> ortakElemanListi=new ArrayList<>();//[]
 
         //Herbir arrayi(arr1 ve arr2'yi) nested for loop ile ele alip ortak elemanlarini List'e ekleyelim
         for (int i = 0; i < arr1.length ; i++) {//arr1[i]= herbir eleman

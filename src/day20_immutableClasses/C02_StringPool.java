@@ -20,7 +20,7 @@ public class C02_StringPool {
 
         ==(double equal sign) ile karsilastirma yapilirken ise hem metinler hemde referanslar
         esas alinir.Metinler ayni fakat referanslari(havuz ici durumu) farkli ise yine de
-        false dondurur.Hem metinler ayni, hemde ayni referanstan geliyorsa ancak ozaman
+        false dondurur.Hem metinler ayni, hemde ayni referanstan (ayni havuzdan) geliyorsa ancak ozaman
         true dondurur.
          */
 
