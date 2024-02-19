@@ -65,7 +65,7 @@ public class C07_OrtalamaUstundekiOgrenciSayisi {
                 +"\nNot ortalamasi : " + ortalamaNot
                 +"\nOrtalama ustundeki ogrenci sayisi : " + ortalamaUstundekiOgrenciSayisi);
 
-        //java bitti
+        //java bitti.
     }
 
 }
