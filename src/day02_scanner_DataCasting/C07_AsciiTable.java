@@ -12,6 +12,11 @@ public class C07_AsciiTable {
 
         int sayi1=chr1;// char'i int'a atayabiliriz
 
+        char chr3='1';
+        char chr4='2';
+        System.out.println(chr3+chr4);// 1 ve 2 nin ascii tablosundaki degerlerini alip
+                                      // toplar. 49+50=99
+
            /*
             char data turu ozel bir duruma sahiptir.
             Eger char data turundeki bir degeri

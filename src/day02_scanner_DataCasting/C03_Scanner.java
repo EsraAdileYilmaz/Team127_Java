@@ -14,6 +14,8 @@ public class C03_Scanner {
         char isim=scanner.nextLine().charAt(0);
         // burada next() methodunu tercih etseydik asagida
         //nextLine() methodu kullandigimizda sorun cikarabiliyor.
+        //next() methodu space karakterine kadarki olan ilk kelimeyi alir,
+        //nextLine() methodu tum satiri alir
 
         System.out.println("Lutfen soyisminizi giriniz");
         String soyisim=scanner.nextLine();
