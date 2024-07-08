@@ -13,10 +13,11 @@ public class C03_VariableOlusturma {
 
         /*
         java'da esittir isareti ATAMA islemidir
-        = 'in solunda sadece variable olur.
-        ='in saginda ise deger olur
+        = 'in solunda sadece variable olur.Yani data turu ve variable'in adi olur.
+        ='in saginda ise deger olur.
         java = isareti gorunce once sag taraftaki degeri hesaplar,
         buldugu sonucu deger olarak soldaki variable'a atar.
+        Declaration sadece 1 kere yapilir ancak atama islemi istenen kadar yapilabilir
          */
 
         int a=10;
@@ -24,7 +25,7 @@ public class C03_VariableOlusturma {
         a=2*a+1;//a=2*30+1  a=61 olur
 
         float sayiFl=3.4f;
-        float sayi3=20f;
+        float sayi3=20F;
         float sayi4=6f;
         System.out.println(sayi3/sayi4); //3.3333333
 

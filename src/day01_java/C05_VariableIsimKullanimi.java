@@ -8,7 +8,7 @@ public class C05_VariableIsimKullanimi {
 
        /*
         double not=44.5; //Variable 'not' is already defined in the scope(not isminde variable
-        olusturdun tekrar ayni isimde olusturamazsin
+        olusturdun tekrar ayni isimde olusturamazsin)
         */
         double Not=44.6;
         int NOt=56;
