@@ -24,7 +24,8 @@ public class C06_Concatenation {
         System.out.println(a+(b+s1));
 
 
-
+        // 7 Java Kolaydir
+        System.out.println((a+b)+s3+s1+s3+s2);
 
     }
 }

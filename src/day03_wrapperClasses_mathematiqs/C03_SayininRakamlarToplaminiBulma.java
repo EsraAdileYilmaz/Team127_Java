@@ -7,7 +7,7 @@ public class C03_SayininRakamlarToplaminiBulma {
 
 
         //SORU: Kullanicidan 3 basamakli pozitif bir tamsayi alip
-        // sayinin rakamlar toplamini yazdirin
+        //      sayinin rakamlar toplamini yazdirin.
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen 3 basamakli pozitif bir tamsayi giriniz");
@@ -19,12 +19,12 @@ public class C03_SayininRakamlarToplaminiBulma {
         // Ornegin:girilen sayi : 257 , rakam : 0 , rakamlar toplami = 0
         birlerBas = girilenSayi % 10 ; // 257 sayisinin birler basamagi olan 7'yi aldik.
         rakamlarToplami = rakamlarToplami + birlerBas ; // 0 + 7 = 7
-        girilenSayi = girilenSayi / 10; //  257 / 10 ==> 25,7 ==> 25 birler basamagindan kurtulduk
+        girilenSayi = girilenSayi / 10; //  257 / 10 ==> 25,7 ==> 25 kaldi.Birler basamagindan kurtulduk
 
         // girilen sayi : 25 , rakam : 7 , rakamlar toplami = 7
         birlerBas= girilenSayi % 10 ; // 25 % 10 ==> 5'i aldik
         rakamlarToplami = rakamlarToplami + birlerBas ; // 7 + 5 ==> 12
-        girilenSayi = girilenSayi / 10 ; // 25 / 10 ==> 2 birler basamagindan kurtulduk
+        girilenSayi = girilenSayi / 10 ; // 25 / 10 ==> 2 kaldi.Birler basamagindan kurtulduk
 
         // girilen sayi : 2 , rakam : 5 , rakamlar toplami = 12
         birlerBas = girilenSayi % 10 ; // 2 % 10 ==> 2

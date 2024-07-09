@@ -18,7 +18,7 @@ public class C01_WrapperClasses {
         Double dbl = 3.5;
         Float flt = 2.3f;
         /*
-        1) primitive data turleri ile o turun wrapper class'i arasinda gecis mumkundur.
+        1) primitive data turleri ile o turun wrapper class'i arasinda gecis kolay ve mumkundur.
          birbirine sorunsuz olarak deger atamasi  yapilabilir.
 
          2)Wrapper classlarin hazir methodlari vardir. ayni non-primitivler gibi.
@@ -40,11 +40,11 @@ public class C01_WrapperClasses {
         chr1 = 'a';
         System.out.println(Character.isDigit(chr1)); // false (isDigit=sayi mi?)
         System.out.println(Character.isLetter(chr1)); // true (isLetter=kelime mi?)
-        System.out.println(Character.toUpperCase(chr1)); // A
+        System.out.println(Character.toUpperCase(chr1)); // A (Buyuk harfe cevir)
 
 
         // int olarak verilen bir sayiyi, String'e nasil ceviririz ?
-        // hiclik+ (""+) ekleyerek int sayiyi string'e ceviririz.
+        // hiclik + (""+) ekleyerek int sayiyi string'e ceviririz.
 
         String metin = 23 + "";
         System.out.println(metin);
