@@ -3,13 +3,19 @@ package day04_ifStatements;
 public class C01_BagimsizIfCumleleri {
     public static void main(String[] args) {
 
+        /*
+        Bir sayi araligi verilmisse &&, aralik disi verilmisse || kullaniriz.
+        Ornegin:sayi>=10 && sayi<100   2 basamakli sayilar icin
+                sayi>=10 || sayi<100   2 basamakli olmayan sayilar icin kullanilir.
+         */
 
           /*
-            bagimsiz if cumleleri kodun geriye kalani ile ilgilenmez
-            sadece kendi sartina odaklanir
+            if(SART)=> SART =BOOLEAN OLMAK ZORUNDA.
+            Bagimsiz if cumleleri kodun geriye kalani ile ilgilenmez
+            sadece kendi sartina odaklanir,
             birden fazla bagimsiz if cumlesi varsa
             butun if body'lerini calistiran durumlar olabilecegi gibi
-            hicbir if body'sinin calismayacagi durumlar da olabilir
+            hicbir if body'sinin calismayacagi durumlar da olabilir.
 
          */
 
@@ -23,12 +29,12 @@ public class C01_BagimsizIfCumleleri {
         }
 
         //a cift sayi mi?
-        if(a%2==0){
+        if(a%2 == 0){
             System.out.println("a cift sayi");
         }
 
         //b 5 ile tam bolunebiliyor mu?
-        if(b%5== 0){
+        if(b%5 == 0){
             System.out.println("b 5 ile tam bolunur");
         }
 
@@ -55,12 +61,6 @@ public class C01_BagimsizIfCumleleri {
         if(false){
             System.out.println("Bu if body'si hicbir zaman calismaz");
         }
-
-
-
-
-
-
 
     }
 }

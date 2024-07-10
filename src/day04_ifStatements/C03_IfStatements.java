@@ -22,7 +22,7 @@ public class C03_IfStatements {
             System.out.println("Maalesef kaldin");
         }
 
-        if(not>=50){
+        if(not>=50){ //Bu durum birbiriyle bagli durumlar.not ya 50 den buyuktur yada kucuktur.
             System.out.println("Sinifi Gectin");
         }else {
             System.out.println("Maalesef kaldin");

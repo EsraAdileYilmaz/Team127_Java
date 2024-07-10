@@ -21,9 +21,9 @@ public class C02_IfStatements {
 
         /*
          Java 2'li karsilastirmalari kabul eder,
-        daha fazla karsilastirmaya ihtiyac varsa,
-        mantiksal operatorler kullanilarak (&& veya || )
-        sartlar ayri ayri yazilip, birlestirilir.
+         daha fazla karsilastirmaya ihtiyac varsa,
+         mantiksal operatorler kullanilarak (&& veya || )
+         sartlar ayri ayri yazilip, birlestirilir.
          */
 
     }

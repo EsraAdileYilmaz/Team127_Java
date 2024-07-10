@@ -6,10 +6,10 @@ public class C07_IfElseIfStatements {
     public static void main(String[] args) {
 
         // SORU:Kullanicidan pozitif bir tamsayi isteyin
-        // sayi 3'e bolunuyorsa 3'e bolunuyor
-        // sayi 5'e bolunuyorsa 5'e bolunuyor
-        // hem 3, hem 5'e bolunuyorsa "super sayi"
-        // ne 3 ne de 5'e bolunmuyorsa "Sayi 3'e ve 5' e bolunmuyor" yazdirin
+        //      sayi 3'e bolunuyorsa 3'e bolunuyor
+        //      sayi 5'e bolunuyorsa 5'e bolunuyor
+        //      hem 3, hem 5'e bolunuyorsa "super sayi"
+        //      ne 3 ne de 5'e bolunmuyorsa "Sayi 3'e ve 5' e bolunmuyor" yazdirin.
 
 
         Scanner scanner=new Scanner(System.in);

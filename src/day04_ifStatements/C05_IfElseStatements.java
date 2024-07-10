@@ -16,11 +16,8 @@ public class C05_IfElseStatements {
         if('A'<=karakter && karakter<='Z'){
             System.out.println("Girilen karakter buyuk harftir");
         }else{
-            System.out.println("Girilen karakter buyuk harf deildir");
+            System.out.println("Girilen karakter buyuk harf degildir");
         }
-
-
-
 
     }
 }
