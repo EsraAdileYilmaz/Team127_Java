@@ -16,7 +16,7 @@ public class C11_SwitchStatements {
         char harf=scanner.next().charAt(0);
 
         switch (harf){
-            case 'I':
+            case 'I': //tek tirnak cunku char data turu
             case 'i':
                 System.out.println("International");
                 break;

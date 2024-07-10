@@ -33,6 +33,7 @@ public class C10_SwitchStatements {
             case s,S : OLMAZ yanlis yazim sekli
             case s :
             case S :
+            Yani && veya || kullanilmaz
          */
 
     }

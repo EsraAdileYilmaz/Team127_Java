@@ -5,6 +5,11 @@ import java.util.Scanner;
 public class C09_SwitchStatements {
     public static void main(String[] args) {
 
+        /*
+        switch statements if-else lerin alternatifidir.
+        ancak uzun if-else ler yerine kullanilir.
+         */
+
         // SORU:Kullanicinin girdigi gun numarasina gore
         //      gun isimlerini yazdirin
 

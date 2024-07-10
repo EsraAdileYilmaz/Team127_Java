@@ -7,10 +7,10 @@ public class C03_NestedIfElse {
 
         //Soru - Kullanicidan aldigi urun adedi ve urun fiyatini alin,
         //        kullaniciya musteri karti olup olmadigini sorun.
-        //        Musteri karti varsa
+        //        Musteri karti varsa;
         //              10 urun veya fazla alirsa %20,
         //              10 urunden az alirsa %15 indirim yapin,
-        //        Musteri karti yoksa
+        //        Musteri karti yoksa;
         //              10 urun veya fazla alirsa %15,
         //              10 urunden az %10 indirim yapin
 
