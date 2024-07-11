@@ -3,16 +3,16 @@ package day06_stringManipulations;
 public class C04_charAt {
     public static void main(String[] args) {
 
-        //charAt() methodu istenen indexteki karakteri dondurur.
+        //charAt() methodu istenen-parantez icine yazilan indexteki karakteri dondurur.
 
         String str ="Java gun gectikce guzellesiyor.";
 
         //Ilk harfini yazdirin
-        System.out.println(str.charAt(0)); //J
-        System.out.println(str.charAt(4)); // space var
+        System.out.println(str.charAt(0)); //J (0. indexteki)
+        System.out.println(str.charAt(4)); // 4. indexteki space var
 
-        //str'da 31 karakter var
-        //son karakter olan .'nin indeksi 30 olur
+        //str'da 31 karakter var.karakterleri sayarken 1 den baslanir
+        //son karakter olan .'nin indeksi 30 olur. Yani index=karakter-1
 
         //son karakteri yazdirin
         System.out.println(str.charAt(str.length()-1)); // . dir son karakter
@@ -24,7 +24,7 @@ public class C04_charAt {
 
         // str'da olmayan bir indexi istersek
         //System.out.println(str.charAt(44)); StringIndexOutOfBoundsException
-        //string de verilen index sinirlar disidir
+        //                                    String de verilen index sinirlar disidir
 
 
     }

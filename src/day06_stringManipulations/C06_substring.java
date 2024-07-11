@@ -21,7 +21,8 @@ public class C06_substring {
         /*
          2 SEKILDE DUSUNULEBILIR:
          0.index'den basla 4 karakter yazdir
-         veya 0.index(dahil) ile 4. index(haric) arasi
+         veya
+         0.index(dahil) ile 4. index(haric) arasi
          */
 
         //  cumledeki 2.space'in index'i 7 ise
@@ -36,11 +37,11 @@ public class C06_substring {
         String index6dakiHarf=str.substring(6,7);
         System.out.println(index6dakiHarf); //n
 
-
-        System.out.println("bas indexi ve bitis indexi ayni olursa:"+ str.substring(5,5)+"---"); //
+        //baslangic indexi ve bitis indexi ayni olursa
+        System.out.println("bas indexi ve bitis indexi ayni olursa:"+ str.substring(5,5)+"---");
         // "" hiclik dondurur
 
-        // System.out.println(str.substring(5,2));
+        // System.out.println(str.substring(5,2)); Java geriye gitmez
         // StringIndexOutOfBoundsException: begin 5, end 2, length 30
 
     }

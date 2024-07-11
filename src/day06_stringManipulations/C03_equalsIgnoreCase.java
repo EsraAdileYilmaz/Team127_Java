@@ -6,7 +6,7 @@ public class C03_equalsIgnoreCase {
     public static void main(String[] args) {
 
         //equalsIgnoreCase() methodu kucuk-buyuk harf onemsemeksizin
-        // SADECE 2 stringi karsilastirir.
+        //SADECE 2 Stringi karsilastirir.
 
 
         // SORU:Kullanicidan bir harf isteyin
@@ -25,7 +25,7 @@ public class C03_equalsIgnoreCase {
         //String'leri buyuk kucuk harf gozetmeksizin karsilastirabiliriz
 
         // Bazi durumlarda kullanicidan alinan bilgileri degistirmek sikintili
-        //olabilir.Buyuzden 2. yol olarak girilen bilgiyi stringlestirip
+        // olabilir.Buyuzden 2. yol olarak girilen bilgiyi stringlestirip
         // hazir methodlari kullaniyoruz.
 
 
@@ -51,13 +51,13 @@ public class C03_equalsIgnoreCase {
         String str7 = "vA";
         String str8 = str6+str7;
 
-        System.out.println(str1.equals(str2)); // Java java  false
+        System.out.println(str1.equals(str2)); // Java java ==> false
         System.out.println(str1.equalsIgnoreCase(str2)); //true
 
-        System.out.println(str1.equals(str3)); // Java JAva false
+        System.out.println(str1.equals(str3)); // Java JAva ==> false
         System.out.println(str1.equalsIgnoreCase(str3)); //true
 
-        System.out.println(str1.equals(str4));//Java JAVa false
+        System.out.println(str1.equals(str4));//Java JAVa ==> false
         System.out.println(str1.equalsIgnoreCase(str4)); //true
 
     }

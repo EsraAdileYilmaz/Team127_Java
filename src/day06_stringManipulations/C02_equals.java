@@ -25,12 +25,12 @@ public class C02_equals {
         System.out.println(str1.equals(str8)); //true
 
 
-         /*Bugune kadar karsilastirmalari hep ==(double equal sign) ile yapmistik
-         Ancak non-primitive data turleri icin == saglikli calismaz
+         /*Bugune kadar karsilastirmalari hep ==(double equal sign) ile yapmistik.
+         Ancak non-primitive data turleri icin == saglikli calismaz.
          ilerde String Pool konusunda asagidaki =='lerin
-         bazilarinin true bazilarinin false vermesinin sebebini ogrenecegiz
-         SIMDILIK
-         equals() String'leri karsilastirirken sadece metinlere bakar,
+         bazilarinin true bazilarinin false vermesinin sebebini ogrenecegiz.
+
+         equals() methodu String'leri karsilastirirken sadece metinlere bakar,
          == ise hem metinlere, hem de referanslara bakar,
          bundan dolayi ayni metin olsa bile bazen true, bazen false verir.
          */

@@ -16,8 +16,8 @@ public class C07_contains {
         System.out.println(str.contains("cok calis"));//true
 
         // contains() methodu char kabul etmez.
-        //CharSequence ister. buda char dizisi demektir.
-        //CharSequence=String
+        //charSequence ister. buda char dizisi demektir.
+        //charSequence=String
 
     }
 }
