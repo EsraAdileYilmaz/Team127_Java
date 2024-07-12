@@ -24,13 +24,15 @@ public class C07_nullPointer {
             str4'e hiclik degeri atanmistir
             str5'e Tava degeri atanmistir
             str3 ise null olarak ISARETLENMISTIR
+
             null bir deger degil ISARETCIDIR
             str3'un olusturuldugunu ve bir deger atanana kadar
             bu sekilde kullanilmak istendigini Java'ya soyler.
+
             null olarak isaretlenen bir String'i
             yazdirabilirsiniz,
-            ancak method'larda kullanamazsiniz.method() lar null ile
-            KULLANILAMAZ.
+            ancak method'larda kullanamazsiniz.
+            method() lar null ile KULLANILAMAZ.
          */
         // String str3 = true; Stringe boolean bir deger ATAYAMAZSINIZ
         // String str3 = 45 ;  Stringe integer bir deger ATAYAMAZSINIZ

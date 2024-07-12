@@ -8,10 +8,10 @@ public class C03_indexOf {
         // SORU:Verilen bir cumlede
         //      aranan bir metin icin asagidaki cumlelerden
         //      uygun olani yazdiracak bir program yaziniz
-        // - Cumle aranan metni icermiyor
-        // - Cumlede aranan metin sadece 1 kere kullanilmis
-        // - Cumlede aranan metin sadece 2 kere kullanilmis
-        // - Cumlede aranan metin 2'den fazla kullanilmis
+        //      - Cumle aranan metni icermiyor
+        //      - Cumlede aranan metin sadece 1 kere kullanilmis
+        //      - Cumlede aranan metin sadece 2 kere kullanilmis
+        //      - Cumlede aranan metin 2'den fazla kullanilmis
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("Lutfen bir cumle giriniz");
@@ -32,7 +32,7 @@ public class C03_indexOf {
             System.out.println("Cumlede aranan metin sadece 1 kere kullanilmis");
         }else{
             // ilk index -1 degil, ikinciIndex -1 degil.yani 2.kez aranan metin cumlede var
-            // simdiki sorumuz sadece 2 tane mi var, yoksa 2'den fazla mi ?
+            // simdiki sorumuz sadece 2 tane mi var, yoksa 2'den fazla mi var?
             ucuncuIndex = cumle.indexOf(metin,ikinciIndex+1);
             // ucuncuIndex == -1 veya bir index no verir
             if (ucuncuIndex == -1){

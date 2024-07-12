@@ -2,7 +2,7 @@ package day07_stringManipulations;
 
 import java.util.Scanner;
 
-public class C01_EndsWith {
+public class C01_endsWith {
     public static void main(String[] args) {
 
         //endsWith() methodu =ile mi biter? sorusunun cevabidir.

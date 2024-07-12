@@ -20,15 +20,15 @@ public class C02_indexOf {
         System.out.println(str.startsWith("Selenium"));//false
 
         // peki Selenium nerede?
-        System.out.println(str.indexOf("Selenium"));//13.indexte
+        System.out.println(str.indexOf("Selenium"));//13.indexte. yani S harfi 13. indexte
 
         //Olmayan bir metin aratilirsa;
-        System.out.println(str.indexOf("x"));//-1
-        System.out.println(str.indexOf("q"));//-1
-        System.out.println(str.indexOf("a")); //1
+        System.out.println(str.indexOf("x"));//-1  aranan kelime bulunamazsa -1 dondurur
+        System.out.println(str.indexOf('q'));//-1
+        System.out.println(str.indexOf("a")); //1 ilk buldugu a'nin indexini verir
 
         //contains() methodunu kullanmadan str'in java icerip icermedigini yazdirin
-        if(str.indexOf("java") ==-1){
+        if(str.indexOf("java") ==-1){ //java icermiyorsa
             System.out.println("str java kelimesi icermemektedir");
         }else{
             System.out.println("str java kelimesi icermektedir");
@@ -48,11 +48,11 @@ public class C02_indexOf {
 
         //str'da 4. a varsa index'ini yazdirin. [3. a'nin indexi=6]
         //yoksa "str sadece 3 tane a iceriyor" yazdirin
-        if(str.indexOf('a',7) == -1){ //4. a yoksa
+        if(str.indexOf('a',7) == -1){ //4. a yoksa (7. indexten sonra a'yi bul)
             System.out.println("str sadece 3 tane a iceriyor");
         }else{ //4. a varsa
             System.out.println("4. a'nin index'i : " + str.indexOf('a',7));
-        } //27. indexte
+        } // 4. a'nin indexi=27
 
         //str'da 5. a varsa indexini yazdirin [4. a'nin indexi=27]
         //yoksa "str sadece 4 tane a iceriyor" yazdirin

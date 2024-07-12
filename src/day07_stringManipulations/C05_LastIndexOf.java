@@ -8,9 +8,9 @@ public class C05_LastIndexOf {
         // SORU:Verilen bir cumlede
         //      aranan bir metin icin asagidaki cumlelerden
         //      uygun olani yazdiracak bir program yaziniz
-        // - Cumle aranan metni icermiyor
-        // - Cumlede aranan metin sadece 1 kere kullanilmis
-        // - Cumlede aranan metin sadece 1'den fazla kullanilmis
+        //      - Cumle aranan metni icermiyor
+        //      - Cumlede aranan metin sadece 1 kere kullanilmis
+        //      - Cumlede aranan metin sadece 1'den fazla kullanilmis
 
         Scanner scanner=new Scanner(System.in);
         System.out.println("Lutfen bir cumle giriniz");
