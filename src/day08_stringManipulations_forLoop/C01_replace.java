@@ -29,8 +29,8 @@ public class C01_replace {
         System.out.println(str.replace("i", "a").replace("a", "e"));
         // Jeve cender
 
-        //replaceFirst() methodunda degisecek elemanin ilk buldugu indextekini
-        //degistirir, gerisiyle ilgilenmez.
+        // replaceFirst() methodunda degisecek elemanin ilk buldugu indextekini
+        // degistirir, gerisiyle ilgilenmez.
         // degisecek metin sadece ilk deger icin degissin diyorsak
         // replace() yerine replaceFirst() kullanilir
         System.out.println(str.replaceFirst("a", "x")); // Jxva candir

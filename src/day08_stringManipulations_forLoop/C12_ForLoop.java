@@ -21,7 +21,7 @@ public class C12_ForLoop {
 
         if(bitis<basDeger){
             System.out.println("Bitis degeri baslangic degerinden buyuk olmali");
-        }else{ // bu durum toplam hesaplayacagimiz durumdur
+        }else{ // bu durum toplam hesaplayacagimiz durumdur. Yani basDeger<bitis
             for (int i = basDeger; i <= bitis; i++) {
 
                 toplam +=i;

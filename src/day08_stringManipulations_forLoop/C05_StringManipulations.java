@@ -15,7 +15,7 @@ public class C05_StringManipulations {
         System.out.println("Lutfen bir cumle giriniz");
         String cumle=scanner.nextLine();
 
-        String yeniCumle=cumle.toLowerCase();
+        String yeniCumle=cumle.toLowerCase();//kullanicinin girdigi degeri degistirmemek icin yeni bir variable olusturuyoruz.
 
         if(yeniCumle.contains("is") && yeniCumle.contains("ev")){
             System.out.println("Hem ev lazim hem is");

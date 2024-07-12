@@ -8,7 +8,8 @@ public class C09_ForLoop {
             System.out.print(i+ " ");
         }
 
-        System.out.println("");
+        System.out.println("");// bunu yerminalde alt satira insin diye yapiyoruz
+
         //100'den 200'e kadar (sinirlar dahil) cift sayilari yazdirin
         for (int i = 100; i <=200 ; i++) {
             if(i %2==0){
@@ -37,7 +38,7 @@ public class C09_ForLoop {
 
     // 200'den baslayip, 150'ye kadar(sinirlar dahil) 3'er 3'er atlayarak yazdirin
 
-        for (int i = 200; i >=150 ; i-=3) {
+        for (int i = 200; i >=150 ; i-=3) { //200 den baslayip 150 ye kadar geriye saydiracagiz
             System.out.print(i +" ");
 
         }

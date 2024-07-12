@@ -10,7 +10,7 @@ public class C10_ForLoopDikkatEdilecekler {
         /*
         for (int i = 10; i >0 ; i++) {
             System.out.print(i+" ");
-       }
+            }
          */
 
 
@@ -18,7 +18,7 @@ public class C10_ForLoopDikkatEdilecekler {
         // Eger ilk deger icin bile bitis kosulu false sonucunu veriyorsa
         // LOOP BODY'si hic devreye girmez
         for (int i = 10; i <5 ; i++) {
-            System.out.println(i);
+            System.out.println(i+ " ");
         }
     }
 }

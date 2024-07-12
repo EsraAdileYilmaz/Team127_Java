@@ -18,27 +18,28 @@ public class C07_StringManipulations {
         System.out.println("Lutfen sifrenizi giriniz");
         String sifre=scanner.nextLine();
 
-        //flag kullanalim
+        //flag kullanalim. flag her turlu variable secilebilir. ancak boolean tercih edilir.
+        //cunku flag da sadece 2 durum vardir. degisir yada degismez.
         boolean flag=true;
 
         //SARTLAR BIRBIRINDEN BAGIMSIZ OLDUGU ICIN, BAGIMSIZ IF CUMLELERI KULLANMALIYIZ
 
         //- ilk harf kucuk harf olmali
         char ilkHarf=sifre.charAt(0);
-        if(!('a'<=ilkHarf && ilkHarf<='z')){
+        if(!('a'<=ilkHarf && ilkHarf<='z')){ //ilkHarf a-z arasinda deilse
             System.out.println("ilk harf kucuk harf olmali");
             flag=false;
         }
 
        //- son karakter rakam olmali
       char sonKarakter=sifre.charAt(sifre.length()-1);
-        if(!('0'<=sonKarakter && sonKarakter<='9')){
+        if(!('0'<=sonKarakter && sonKarakter<='9')){ //sonKarakter 0-9 arasinda deilse
             System.out.println("son karakter rakam olmali");
             flag=false;
         }
 
         // - sifre bosluk icermemeli
-        if(sifre.contains(" ")){
+        if(sifre.contains(" ")){ //sifre bosluk iceriyorsa
             System.out.println("sifre bosluk icermemeli");
             flag=false;
         }
@@ -49,6 +50,8 @@ public class C07_StringManipulations {
             flag=false;
         }
 
+        // bagimsiz if cumlelerinden sonra
+        // flag ya true olacak ya da false.
         if(flag == true){
             System.out.println("Sifre basariyla kaydedildi");
         }

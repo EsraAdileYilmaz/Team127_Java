@@ -8,8 +8,8 @@ public class C02_replaceAll {
         //Bu method char kabul etmez
 
         String str = "990087J1a5v**&^%$8a +/can809--=7dir_";
-        // metindeki sayi ve karakterleri temizleyip
-        // sadece harflerden olusan "Java candir" sekline donusturun
+        // SORU:Metindeki sayi ve karakterleri temizleyip
+        //      sadece harflerden olusan "Java candir" sekline donusturun
 
         //1.ADIM:Tum sayilari yok edelim
         str=str.replaceAll("\\d","");

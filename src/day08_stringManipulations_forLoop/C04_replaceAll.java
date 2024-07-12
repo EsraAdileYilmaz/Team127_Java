@@ -6,7 +6,7 @@ public class C04_replaceAll {
     public static void main(String[] args) {
 
         // SORU:Kullanicidan isim soyisim ve kart numarasini alip
-        //      asagidaki sekilde yazdirin
+        //      asagidaki sekilde yazdirin.
         //      Isim soyisim  : S***** G****
         //      Kart No : 1234 **** **** ****
 
