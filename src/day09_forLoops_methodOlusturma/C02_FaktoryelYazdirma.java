@@ -16,10 +16,10 @@ public class C02_FaktoryelYazdirma {
 
         System.out.print(girilensayi +"! = "); //mesela 5 ! = yazmak icin
 
-        long faktoryelSonuc=1; // her seferinde 1 ile carpiyoruz
+        long faktoryelSonuc=1; // ilk seferinde 1 ile carpiyoruz
         for (int i = girilensayi; i >=1; i--) {
 
-            faktoryelSonuc *= i;
+            faktoryelSonuc *= i;// faktoryelSonuc= faktoryelSonuc * i
 
             if(i != 1){// i 1'e esit deilse
                 System.out.print(i +" * ");

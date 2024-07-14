@@ -14,11 +14,11 @@ public class C01_FaktoryelHesaplama {
         System.out.println("Lutfen 20'den kucuk pozitif bir tamsayi giriniz");
         int girilensayi= scanner.nextInt();
 
-        int faktoryelSonuc=1; //her seferinde 1 ile carpilacak.oyuzden 0 la baslayamaz
+        int faktoryelSonuc=1; // ilk seferinde 1 ile carpilacak.oyuzden 0 la baslayamaz.
 
         for (int i = girilensayi; i >=1 ; i--) {
 
-            faktoryelSonuc *=i;
+            faktoryelSonuc *=i; //faktoryelSonuc = faktoryelSonuc * i
         }
         System.out.println("Verilen sayinin faktoryel degeri : " + faktoryelSonuc);
     }

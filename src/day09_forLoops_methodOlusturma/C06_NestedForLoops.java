@@ -26,12 +26,12 @@ public class C06_NestedForLoops {
 
 
          /*
-        bu tur tekrar eden islemleri NESTED(icice) For-Loop ile yapabiliriz
+        Bu tur tekrar eden islemleri NESTED(icice) for-Loop ile yapabiliriz
         yukarida 3 kez ayni loop'u calistirdik (satir sayisi kadar)
         1 2 3 4
         2 4 6 8
         3 6 9 12
-        aralarindaki tek fark 1*i , 2*i, 3*i olmasi oldu
+        aralarindaki tek fark 1*i , 2*i, 3*i olmasi oldu.
          */
 
         System.out.println("=================");
@@ -40,10 +40,9 @@ public class C06_NestedForLoops {
 
             for (int j = 1; j <= 4; j++) { // inner loop (ic loop) sutunlari kontrol eder
 
-                System.out.println(i*j +" ");
+                System.out.print(i*j +" ");
             }
-            System.out.println("");
-
+            System.out.println("");//her inner loop calistiktan sonra bunu eklemek gerekiyorki alt satira gecsin
         }
     }
 }

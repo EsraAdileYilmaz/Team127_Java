@@ -22,13 +22,13 @@ public class C09_NestedForLoops {
         System.out.println("Lutfen satir sayisini giriniz");
         int satir= scanner.nextInt();
 
-        // ucgen sekiller icin de nested for loop kullanilir
-        // diktortgenden farki, sutun nosuna ihtiyacimiz yoktur
-        // her satirdaki sutun sayisi o satirin nosu ile aynidir
+        // ucgen sekiller icin de nested for loop kullanilir.
+        // diktortgenden farki, sutun nosuna ihtiyacimiz yoktur.
+        // her satirdaki sutun sayisi o satirin nosu ile aynidir.
 
 
-        for (int i = 1; i <= satir ; i++) {
-            for (int j = 1; j <= i ; j++) {
+        for (int i = 1; i <= satir ; i++) {//satir
+            for (int j = 1; j <= i ; j++) {//satir=sutun buyuzden j<=i olur
 
                 System.out.print(j +" ");
             }

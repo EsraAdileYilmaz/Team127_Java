@@ -25,7 +25,7 @@ public class C08_NestedForLoops {
 
             for (int j = 1; j <= sutun ; j++) { // sutunlari olusturur
 
-                System.out.print(i +" ");
+                System.out.print(i +" ");//sadece satir sayisi oldugu icin i yi yazdirdik
 
             }
             System.out.println("");

@@ -7,7 +7,7 @@ public class C05_StringTerseCevirme {
 
 
         //Soru  (interview)- Kullanicidan bir String isteyin
-        //                     ve String’i tersine cevirip kaydedin.
+        //                   ve String’i tersine cevirip kaydedin.
 
         Scanner scanner=new Scanner(System.in);
         System.out.println("Lutfen bir metin giriniz");
