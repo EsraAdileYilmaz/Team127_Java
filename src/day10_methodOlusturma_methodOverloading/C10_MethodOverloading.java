@@ -25,6 +25,7 @@ public class C10_MethodOverloading {
     }
 
     public static void toplama(double a , int b){ // toplama double int
+
         System.out.println("double ve int 2 sayinin toplami : " + (a+b));
     }
 

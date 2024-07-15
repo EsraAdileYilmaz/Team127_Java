@@ -7,10 +7,10 @@ public class C06_AsalSayilariBulma {
         // bir onceki class'da olusturulan method'u kullanarak
         // 3 basamakli sayilardan asal olanlari yazdirin
 
-        for (int i = 100; i < 1000; i++) {
+        for (int i = 100; i < 1000; i++) {//3 basamakli sayi araligini verdik
 
             if(C05_AsalSayiMiDondur.asalMiDondur(i)){ // sonucu true olanlar burda tesbit ediliyor
-                System.out.print(i +" ");
+                System.out.print(i +" ");//asal olanlari yazdirir
             }
         }
 

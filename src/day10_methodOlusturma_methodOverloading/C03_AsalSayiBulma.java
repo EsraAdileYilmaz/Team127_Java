@@ -25,7 +25,7 @@ public class C03_AsalSayiBulma {
 
             if( sayi % i == 0){
                 flag= false;
-                break;
+                break;//bolunen ilk sayiyi bulduktan sonra durdur gerisini kontrol etme.
             }
 
         }

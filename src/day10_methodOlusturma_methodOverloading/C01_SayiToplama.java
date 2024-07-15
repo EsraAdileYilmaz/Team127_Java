@@ -7,7 +7,7 @@ public class C01_SayiToplama {
 
         // Verilen iki sayiyi toplayip,sonucu yazdiran bir method olusturun
 
-        toplaYazdir(4,7); //Verilen iki sayinin toplami:11.0
+        toplaYazdir(4,7); //Verilen iki sayinin toplami:11.0 (method call yapilmali)
         toplaYazdir(5,6.4); //Verilen iki sayinin toplami: 11.4
 
 

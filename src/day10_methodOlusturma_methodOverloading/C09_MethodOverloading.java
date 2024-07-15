@@ -12,7 +12,7 @@ public class C09_MethodOverloading {
 
             Java'da method ismi ve parametrelerin data turleri birlikte kullanilarak
             method signature olusur.
-            METHOD SIGNATURE= ISIM + DATA TURU
+            METHOD SIGNATURE= METHOD ISMI + PARAMETRELERIN DATA TURU
             or:toplama int int
                toplama int double
 
@@ -38,16 +38,16 @@ public class C09_MethodOverloading {
 
     }
 
-    public static void toplama(int sayi1 , int sayi2){ //1. methodumuz
+    public static void toplama(int sayi1 , int sayi2){ //1. methodumuzun signature= toplama int int
         System.out.println("Iki int sayinin toplami : " + (sayi1+sayi2));
     }
 
 
-    public static void toplama(int a , double b){ //2. methodumuz
+    public static void toplama(int a , double b){ //2. methodumuzun signature= toplama int double
         System.out.println("int ve double turundeki 2 sayinin toplami : " + (a+b));
     }
 
-    public static void toplama(double a , int b){ //3. methodumuz
+    public static void toplama(double a , int b){ //3. methodumuzun signature= toplama double int
         System.out.println("double ve int turundeki 2 sayinin toplami : "  + (a+b));
     }
 }

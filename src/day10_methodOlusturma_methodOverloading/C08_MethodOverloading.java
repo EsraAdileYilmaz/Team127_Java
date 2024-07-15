@@ -13,7 +13,7 @@ public class C08_MethodOverloading {
             2- Argument sayisi ile parametre sayisi ayni olmalidir.Bunu kontroleder
             3- Argument olarak yazilan DEGERlerin data turu  ile PARAMETRElerin data turunun uyumlu olmasini kontrol eder
 
-            devami C10'da
+            devami detaylar C10'da
          */
 
         toplama(8,9); //Verilen iki int sayinin toplami: 17

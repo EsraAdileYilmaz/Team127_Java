@@ -9,22 +9,18 @@ public class C12_MethodOlusturma {
 
         str.toUpperCase();
 
-        // method bize bir sonuc donduruyorsa 2 sekilde o sonucu kullanabiliriz
-
-        // sadece o satirda, sonucu gormek istiyorsaniz, kalici bir degisiklik yapmayacak saniz
-        // direk yazdirabiliriz
+        // Method bize bir sonuc donduruyorsa 2 sekilde o sonucu kullanabiliriz.
+        // 1)sadece o satirda, sonucu gormek istiyorsaniz, kalici bir degisiklik yapmayacaksaniz
+        // direk yazdirabiliriz.
         System.out.println(str.toLowerCase()); // sevim bak kim gelmis ?
 
-        // veya degisikligin kalici olmasini istiyorsak
-        // yeni halini kaydedebiliriz
+        // 2)veya degisikligin kalici olmasini istiyorsak
+        // yeni halini kaydedebiliriz.
 
         String strBuyukharf = str.toUpperCase();
 
         System.out.println(str); // Sevim bak kim gelmis ?
         System.out.println(strBuyukharf); // SEVIM BAK KIM GELMIS ?
-
-        // Google === google  bug
-
 
 
     }

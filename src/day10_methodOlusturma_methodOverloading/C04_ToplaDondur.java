@@ -17,7 +17,7 @@ public class C04_ToplaDondur {
         // direk yazdirilabilir
         System.out.println(toplaDondur(1.5,2.5,4)); //8.0
 
-        //bir variable atayabiliriz
+        //bir variable'a atayabiliriz
         double toplam=toplaDondur(2.4,7.9,8);
         System.out.println(toplam); //18.3 olarak toplami goruruz
 
