@@ -3,7 +3,7 @@ package day11_whileLoop_doWhileLoop;
 public class C01_MethodOverloading {
     public static void main(String[] args) {
 
-                /*
+            /*
             Bir class'da ismi ayni ama signature'i farkli method'lar olusturmaya
             Method OVERLOADING denir.
 
@@ -28,7 +28,7 @@ public class C01_MethodOverloading {
 
             1- argument sayisi == parametre sayisi
             2- argument data turleri ve siralanisi == parametre data turleri ve siralanisi
-            3- argument'ler ile parametreler %100 uyumlu olmazsa
+            3- argument'ler ile parametreler %100 uyumlu olmazsa;
                casting ile calistirilabilir method var mi ? diye bakar
                casting ile calistirilabilecek birden fazla method varsa
                en az casting yaparak kullanabilecegini tercih eder
@@ -43,17 +43,13 @@ public class C01_MethodOverloading {
         System.out.println(str.substring(3)); // a Candir
         System.out.println(str.substring(3, 6)); // a C
         // bu iki method ayni isimde fakat farkli islevler yapmaktadir.
-        // yani bu methodlarin method signatureleri farklidir.
+        // yani bu methodlarin method signatureleri farklidir.yani farkli parametreler verilerek islem yapilir.
 
 
         System.out.println(str.replace('a', 'b')); // Jbvb Cbndir
         System.out.println(str.replace("Can", "Guzel")); // Java Guzeldir
         // bu iki methodda ayni isimde fakat farkli islevler yapmaktadir.
         // yani bu methodlarin method signatureleri farklidir.
-
-
-
-
 
     }
 }

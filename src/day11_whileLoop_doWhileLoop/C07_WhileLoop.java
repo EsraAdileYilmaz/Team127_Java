@@ -25,11 +25,11 @@ public class C07_WhileLoop {
 
         //or:sayi=3 ve us=5 olsa 3*3*3*3*3 olacak
 
-        int sonuc=1;
+        int sonuc=1;//carpma islemi yapilacagi icin 0 atanamaz
         int geciciUs=us;
         //bu islemi girilen us degerini korumak icin yaptik.boylece sout'da girilen us degismemis oldu.yoksa gecicius=0 oldu.
 
-        while(geciciUs> 0){ //burada us sayisi tekrar sayisini beliliyor.
+        while(geciciUs> 0){ //burada us sayisi tekrar sayisini belirliyor.
             sonuc *=sayi;
             geciciUs --;
         }

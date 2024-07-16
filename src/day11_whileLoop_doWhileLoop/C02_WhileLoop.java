@@ -20,7 +20,7 @@ public class C02_WhileLoop {
                }
         while loop yapisi boyle olusturulur.
         while loop'da
-         - loop icinde kullanilacak baslangic variable'i,
+         - loop icinde kullanilacak baslangic variable'i loop'un disinda olusturulur,
          - bitis sarti,() parantez icine yazilir
          - artis/azalis yontemini(loop un icinde yazilir) manuel olarak bizim yazmamiz gereklidir
          */
@@ -33,8 +33,12 @@ public class C02_WhileLoop {
             sayi ++;
         }
 
-        // for loop ile yapilabilecek bir islemi
+        // for loop ile yapilabilecek bir islemi,
         // for loop ile yapmak tercih edilir
+        /*
+            Tekrar sayisi bilinmeyen,dongu sayisi bilinmeyen islemlerde for loop yerine
+            while loop tercih edilir.
+         */
 
 
     }

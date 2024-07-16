@@ -24,12 +24,12 @@ public class C05_AsalSayiMiDondur {
     public static boolean asalMiDondur (int sayi){
 
         // flag yontemi ile cozelim
-        boolean flag=true;
+        boolean flag=true;//asal sayidir
 
         for (int i = 2; i < sayi; i++) {
 
             if(sayi % i ==0){
-                flag=false;
+                flag=false;//asal sayi deildir
                 break;
             }
         }

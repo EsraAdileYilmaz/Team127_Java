@@ -13,17 +13,17 @@ public class C06_WhileLoop {
         int girilenSayi= scanner.nextInt();
 
         int birlerBas=0;
-        int rakamlarTop=0;
-        int sayi=girilenSayi;// bu atamayi girilen sayiyi degistirmemek icin yapiyoruz
+        int rakamlarToplami=0;
+        int sayi=girilenSayi;// bu atamayi girilen sayiyi degistirmemek icin yapiyoruz. ilk atamayi biz yapmadik kullanicidan aldik.
 
         while (sayi > 0){ //birler basamagindan kurtulmak icin 10'a boldugumuzde sayi en son sifirlanir
 
-            birlerBas=sayi %10; // sayinin birler bas al
-            rakamlarTop += birlerBas;
-            sayi /= 10; //birler bas kurtul
+            birlerBas=sayi %10; // sayinin birler basamagini al
+            rakamlarToplami += birlerBas;
+            sayi /= 10; //birler basamagindan kurtul
 
         }
-        System.out.println(girilenSayi + " sayisinin rakamlar toplami: " + rakamlarTop);
+        System.out.println(girilenSayi + " sayisinin rakamlar toplami: " + rakamlarToplami);
 
 
     }

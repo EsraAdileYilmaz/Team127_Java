@@ -15,8 +15,8 @@ public class C09_DoWhileLoop {
         int sayi; //loop icinde kullanmak icin burda variable olusturmak gerekiyor
 
         do{
-            System.out.println("Lutfen toplanmak uzere pozitif bir sayi giriniz" +
-                    "\nIslemi bitirmek icin 0'a basiniz");
+            System.out.println("Lutfen toplanmak uzere pozitif bir sayilar giriniz" +
+                               "\nIslemi bitirmek icin 0'a basiniz");
 
             sayi= scanner.nextInt();
             toplam +=sayi;

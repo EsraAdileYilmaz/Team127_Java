@@ -7,8 +7,8 @@ public class C05_WhileLoop {
 
         //Soru    : Kullanicidan bir sifre isteyip,
         //         asagidaki sartlari kontrol edin ve
-        //         kullaniciya duzeltmesi gereken tum eksikleri soyleyin,ve yeni deger isteyin
-        //         eger tum sartlari saglarsa, "sifre basariyla kaydedildi" yazdirin
+        //         kullaniciya duzeltmesi gereken tum eksikleri soyleyin,ve yeni deger isteyin.
+        //         Eger tum sartlari saglarsa, "sifre basariyla kaydedildi" yazdirin
         //         	- ilk harf kucuk harf olmali
         //         	- son karakter rakam olmali
         //         	- sifre bosluk icermemeli
@@ -17,7 +17,7 @@ public class C05_WhileLoop {
         Scanner scanner=new Scanner(System.in);
         String sifre=" "; //soruda verilmis olan 4 sarti saglamayan bir deger girilmelidir
 
-        while(! sifreKontrolEt(sifre)){ //girilen sifre false oldugu muddetce loop calisir
+        while(! sifreKontrolEt(sifre)){ //girilen sifre false oldugu muddetce loop calisir,yani girilen sifre yanlis oldukca devam eder
 
             System.out.println("Lutfen sifrenizi giriniz"); // dogru sifre girene kadar tekrarlar
             sifre= scanner.nextLine();

@@ -6,7 +6,7 @@ public class C08_DoWhileLoop {
             While loop'u kullanicidan deger alinan
             ve/veya tekrar sayisi belli olmayan durumlarda kullanmayi tercih ediyoruz
 
-            while loop'un 2 tane negatif yonu vardir
+            while loop'un 2 tane negatif yonu vardir:
             1- loop oncesinde baslangic degerini bizim atamamiz gerekir
                kullanicidan degeri loop icinde aliriz
                eger ilk deger atamasinda dikkat edilmezse
@@ -39,6 +39,11 @@ public class C08_DoWhileLoop {
             System.out.println(sayi+ " ");
             sayi --;
         }while (sayi >3);
+
+        /*
+        do while loop'ta her durumda loop once 1 kez calisir,
+        sonra sarti kontrol eder.
+         */
 
 
     }

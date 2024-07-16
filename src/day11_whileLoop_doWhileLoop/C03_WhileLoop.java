@@ -10,7 +10,7 @@ public class C03_WhileLoop {
         //      Kullanici 0'a basincaya kadar islemi tekrar ettirin
         //      Kullanici 0'a bastiginda girilen sayilarin toplamini yazdirin
 
-        //kullanicinin kac kez sayi girecegini bilmedigimiz icin ,
+        //Kullanicinin kac kez sayi girecegini bilmedigimiz icin ,
         //Dongunun kac kere calisacagi belli olmayan islemlerde while loop tercih edilir
 
         /*
@@ -26,7 +26,7 @@ public class C03_WhileLoop {
 
 
         /*
-         Kullanicidan alacagimiz sayi 0 olmadigi surece kod calisacak
+            Kullanicidan alacagimiz sayi 0 olmadigi surece kod calisacak
             loop'dan once bu sayiyi olusturmamiz gerekir ki
             while() icinde kullanabilelim
 
@@ -36,14 +36,14 @@ public class C03_WhileLoop {
          */
 
         Scanner scanner=new Scanner(System.in);
-        double sayi=1;//buraya 0 disinda her sayi yazilabilir.
-        // buraya ilk atamayi 0 yapsak while loop hic calismaz.cunku 0'a basinca islem sonlandiriliyor
+        double sayi=18;//buraya 0 disinda her sayi yazilabilir.cunku degerleri kullanicidan alacagiz.
+        // buraya ilk atamayi 0 yapsak while loop hic calismaz.cunku 0'a esit olunca while loop sonlandiriliyor.
         double toplam=0;
 
         while(sayi != 0){ //sayi 0'a esit olmadigi surece dongu calisacak
 
             System.out.println("Lutfen toplanmak uzere sayi giriniz" +
-                    "\nIslemi bitirmek icin 0'a basiniz ");
+                               "\nIslemi bitirmek icin 0'a basiniz ");
             sayi= scanner.nextDouble();
             //bunu yaptigimizda atanan bu deger (double sayi=1;)tamamen degismis oluyor. artik deger kullanici tarafindan ataniyor
             toplam +=sayi;

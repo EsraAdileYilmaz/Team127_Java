@@ -12,13 +12,13 @@ public class C13_AsalSayiBulma {
         System.out.println("Lufen pozitif bir tamsayi giriniz");
         int girilenSayi= scanner.nextInt();
 
-        boolean asalMi=true;
+        boolean asalMi=true;//asal sayidir
         if (girilenSayi <=1){
             System.out.println("Bu sayi asal sayi degildir");
         }
         for (int i = 2; i <girilenSayi ; i++) {
                 if (girilenSayi % i ==0){
-                    asalMi=false;
+                    asalMi=false;//asal sayi deildir
                     break;
                 }
         }

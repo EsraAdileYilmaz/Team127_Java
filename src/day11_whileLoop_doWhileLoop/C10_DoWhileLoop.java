@@ -28,22 +28,16 @@ public class C10_DoWhileLoop {
 
         System.out.println("");
         System.out.println("======================");
-        // ayni soruyu while loop ile yapalim
 
+
+        // ayni soruyu while loop ile yapalim
         sayi =2;
         System.out.println("while loop ile : ");
         while (sayi >3){
 
             System.out.println( sayi +" ");
             sayi --;
-        } // consolda hicbir sey yazdirmaz
-
-
-
-
-
-
-
+        } // consolda hicbir sey yazdirmaz cunku loop calismaz.
 
     }
 }
