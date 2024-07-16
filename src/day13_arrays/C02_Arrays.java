@@ -27,7 +27,7 @@ public class C02_Arrays {
 
         /*
         Arrays'lerin tamamini toString() methodu ile yazdirirsak;
-        [] koseli parantezler icinde ve herbir elementin arasinda , (bosluk)
+        [] koseli parantezler icinde ve herbir elementin arasinda , (virgul bosluk)
         olur.
          */
 
@@ -40,12 +40,12 @@ public class C02_Arrays {
         System.out.println("===========================");
 
         //Kisa yolla tum elementleri yazdirmak icin:
-        for (int i = 0; i < arr.length ; i++) {
+        for (int i = 0; i < arr.length ; i++) {//0.indexten baslasin tum elementleri yazdirsin
             System.out.print(arr[i] +" ");
         } //4 6 1 2 yazdirir.
 
         /*
-        Biz ne zaman array'in tum elementleri ile ilgili bir islem yapmak istesek
+            Biz ne zaman array'in tum elementleri ile ilgili bir islem yapmak istesek
             bir for loop olusturup;
                  arr[i]
             uzerinden istenen islemleri yapabiliriz.

@@ -29,22 +29,23 @@ public class C07_Arrays {
 
         Scanner scanner=new Scanner(System.in);
         System.out.println("Lutfen array'in uzunlugunu giriniz");
-        int arrLength= scanner.nextInt();
+        int arrLength= scanner.nextInt();//array'in boyutu
 
         String [] kullaniciArrayi=new String[arrLength]; // orn 5 [null, null, null, null, null]
 
         for (int i = 0; i < kullaniciArrayi.length ; i++) {
-            System.out.println("Lutfen array'in kelimelerini giriniz");
-           kullaniciArrayi [i]= scanner.next();
+           System.out.println("Lutfen array'in kelimelerini giriniz");
+           kullaniciArrayi [i]= scanner.next();//kullanicidan isim isteyip array'e atadik
         }
 
-        return kullaniciArrayi;
+        return kullaniciArrayi;//String [] kullaniciArrayi bunu dondurecek
 
         /*  Ahmed hocanin yaptigi yontem:
 
-                Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Array'in uzunlugunu giriniz");
         int arrLength = scanner.nextInt();
+
         String[] kullaniciArrayi = new String[arrLength]; // orn 5 [null, null, null, null, null]
         scanner = new Scanner(System.in);
         for (int i = 0; i < kullaniciArrayi.length ; i++) {

@@ -9,7 +9,7 @@ public class C01_Arrays {
             1- icine konulacak elementlerin data turu
             2- array'in icine konulacak element sayisi (length)
 
-            Eger array'i yukardaki gibi olusturursak
+            Eger array'i yukardaki gibi olusturursak (int [] arr= new int[5];)
             biz hic bir deger atamasi yapmadigimiz icin
             Java default olarak belirledigi degerleri atayacaktir.
 
