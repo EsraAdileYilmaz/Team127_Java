@@ -32,7 +32,7 @@ public class C05_BaskaClassdanErisim {
         System.out.println(C03_Scope_ClassVariables.chr); // a (class 3 teki static variable)
         C03_Scope_ClassVariables.staticMethod(); // class 3 teki static method
 
-        C03_Scope_ClassVariables obj = new C03_Scope_ClassVariables();
+        C03_Scope_ClassVariables obj = new C03_Scope_ClassVariables();//static olmayanlara ulasmak icin classtan obje olusturulur
         System.out.println(obj.sayi); // 23
         System.out.println(obj.str); // Java
         obj.staticOlmayanMethod();

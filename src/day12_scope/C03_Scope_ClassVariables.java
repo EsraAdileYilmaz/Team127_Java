@@ -33,7 +33,7 @@ public class C03_Scope_ClassVariables {
     }
 
     /*
-        Class level variable'lar class'in icinde ama kod bloklarinin disinda olusturulur
+        Class level variable'lar class'in icinde ama kod bloklarinin disinda olusturulur,
         sonradan class'a bakildiginda ulasilmasi kolay olsun diye class'in basinda olusturulurlar.
 
         Class level'da olusturulan variable'larin scope'u BUTUN CLASS'dir.

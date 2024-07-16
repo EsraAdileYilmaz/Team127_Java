@@ -28,9 +28,9 @@ public class C04_Scope_defaultValues {
         // System.out.println(str);
         // System.out.println(sayi);
         System.out.println(bl); // true
-        System.out.println(bl2); // false
+        System.out.println(bl2); // false (default deger atandi)
         System.out.println(chr); // a
-        System.out.println(chr2); // hiclik
+        System.out.println(chr2); // hiclik (default deger atandi)
 
 
         // staticOlmayanMethod();
@@ -41,8 +41,7 @@ public class C04_Scope_defaultValues {
         // static olmayan (instance) class uyelerine ulasmak istersek
         // obje olusturmamiz gerekir. OBJE=Class anahtari
 
-        //OBJE OLUSTURMA=
-        //CLASS ADI+ OBJE ADI=new +CLASS ADI();
+        //OBJE OLUSTURMA==> CLASS ADI+ OBJE ADI=new +CLASS ADI();
         //Obje olusturduktan sonra instance variable'lara ve
         //static olmayan methodlara ulasabiliriz.
 
@@ -55,7 +54,7 @@ public class C04_Scope_defaultValues {
         Local variable'lar deger atamadan olusturulabilir
         ANCAK deger atanmadan KULLANILAMAZ.
 
-        class level variable'lar ise
+        Class level variable'lar ise
         ister static olsun, ister static olmasin
         deger atamadan olusturulabilir
         VE deger atanmadan da KULLANILABILIR.

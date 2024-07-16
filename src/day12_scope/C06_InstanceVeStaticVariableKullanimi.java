@@ -15,9 +15,10 @@ public class C06_InstanceVeStaticVariableKullanimi {
 
 
 
-    //Instance variable'lar objeye aittir. Ve obje ile birlikte kullanilmalidir.
+    //Instance(static olmayan) variable'lar objeye aittir. Ve obje ile birlikte kullanilmalidir.
     //her obje icin farklidir.
     //degisirse sadece o obje etkilenir.
+
     String ogretmenIsmi = "Isim atanmadi";
     String ogretmenAdresi = "Adres girilmedi";
     String ogretmenTel = "Tel girilmedi";
@@ -36,15 +37,15 @@ public class C06_InstanceVeStaticVariableKullanimi {
         System.out.println(ogr1.ogretmenAdresi); // Adres girilmedi
         ogr1.ogretmenIsmi="Omer";
         ogr1.ogretmenAdresi="Kizilay";
-        System.out.println(ogr1.mudur);// Fikret Zeybek
+        System.out.println(ogr1.mudur);// Fikret Zeybek (sari boyadi cunku java diyorki obje uzerinden cagirmana gerek yok)
 
-        //2.Objemizi olusturalim.
+        //2.Objemizi olusturalim.==>Class Adi +Obje adi=new +Class Adi();
         C06_InstanceVeStaticVariableKullanimi ogr2=new C06_InstanceVeStaticVariableKullanimi();
         System.out.println(ogr2.ogretmenIsmi); //Isim atanmadi
         ogr2.ogretmenIsmi="Zeliha";
 
-        //3.Objemizi olusturalim.
-        C06_InstanceVeStaticVariableKullanimi ogr3=new C06_InstanceVeStaticVariableKullanimi();
+        //3.Objemizi olusturalim.==>Class Adi +Obje adi=new +Class Adi();
+        C06_InstanceVeStaticVariableKullanimi ogr3=new C06_InstanceVeStaticVariableKullanimi();//Bu satiri yazinca java hemen instance variable lari bu ogr1 ile ilisiklendirir.
         System.out.println(ogr3.ogretmenIsmi); // isim atanmadi
         System.out.println(ogr3.ogretmenAdresi); // Adres girilmedi
         System.out.println(ogr3.ogretmenTel); // Tel girilmedi

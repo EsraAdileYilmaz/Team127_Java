@@ -8,16 +8,16 @@ public class C02_Scope_LocalVariables {
         Method scope=methodun kapsami ,nereden baslar nerede biter.
         Kod blogu=Methodlar,loop donguleri birer kod blogudur.
 
-        Bir method veya kod blogu icerisinde olusturulan variable'lara local variable denir
+        Bir method veya kod blogu icerisinde olusturulan variable'lara LOCAL VARIABLE denir
         ve local variable'larin scope'u icerisinde olusturulduklari kod blogudur.
 
         Bir method icindeki variable'lar sadece o method icinde kullanilirlar.Class
         icindeki diger methodlarda KULLANILAMAZ.
 
         Loop'lar da bagimsiz kod bloklaridir.
-        loop icerisinde olusturulan variable'larin scope'u
-        icerisinde olusturulduklari kod blogu olan loop ile sinirlidir
-        yani loop icerisinde olusturulan local variable'lar
+        Loop icerisinde olusturulan variable'larin scope'u
+        icerisinde olusturulduklari kod blogu olan loop ile sinirlidir.
+        Yani loop icerisinde olusturulan local variable'lar
         loop disinda KULLANILAMAZ.
          */
 
@@ -36,13 +36,13 @@ public class C02_Scope_LocalVariables {
         for (int i = 0; i <10 ; i++) {
             System.out.println(i);
             String str = "Java";
-            str += i ;
+            str += i ;//Java kelimesinin sonuna sayilari ekler
             s+=i;
 
         }
 
-        // System.out.println(str);
-        // System.out.println(i);
+        // System.out.println(str); loop un icinde
+        // System.out.println(i); loop un icinde
         System.out.println(s);
 
     }
