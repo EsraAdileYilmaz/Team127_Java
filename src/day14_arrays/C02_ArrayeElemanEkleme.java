@@ -23,13 +23,13 @@ public class C02_ArrayeElemanEkleme {
 
         System.out.println("arr1'in son hali : " + Arrays.toString(arr1)); // [4, 5, 6, 7, 8]
 
-        arr1=arrayeElemanEkle(arr1,10);
-        System.out.println("arr1'in method call'dan sonraki hali : " + Arrays.toString(arr1));
+        arr1=arrayeElemanEkle(arr1,10);//yani arr1=[4,5,6,7,8,10] oldu. method call'un mantigi bu
+        System.out.println("arr1'in method call'dan sonraki hali : " + Arrays.toString(arr1));//arr1'in method call'dan sonraki hali : [4, 5, 6, 7, 8, 10]
 
 
 
-        int[] yeniArr2=arrayeElemanEkle( arr1,8);
-        System.out.println(Arrays.toString(yeniArr2));
+        int[] yeniArr2=arrayeElemanEkle( arr1,8);//yeni bir eleman daha ekledi
+        System.out.println("yeniArr2'nin son hali: "+Arrays.toString(yeniArr2));//yeniArr2'nin son hali: [4, 5, 6, 7, 8, 10, 8]
 
     }
 
@@ -43,10 +43,10 @@ public class C02_ArrayeElemanEkleme {
 
         for (int i = 0; i < arr.length; i++) {
 
-            yeniArr[i] =arr[i]; // her bir indexi tek tek aktardik
+            yeniArr[i] =arr[i]; // yeni array'e eski array'in her bir indexini tek tek aktardik
         }
 
-        //3.adim:yeni array'in son indexine istenenElemani ekle
+        //3.adim:yeni array'in son indexine istenenElemani ekle.cunku yeni array'in son indexi default olarak 0 kaldi
 
         yeniArr[yeniArr.length-1]=istenenEleman;
 

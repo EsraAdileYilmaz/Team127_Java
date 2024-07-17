@@ -8,8 +8,8 @@ public class C05_BinarySearch {
 
     public static void main(String[] args) {
 
-        //Arrays.binarySearch() methodu aranan bir elementin int olarak bize
-        //indexini dondurur.
+        //Arrays.binarySearch() methodu aranan bir elementin
+        // int olarak bize indexini dondurur.
         //AMA oncesinde MUTLAKA Arrays.sort() yapilmalidir.
 
         int[] arr = {3,6,1,8,2,9,12,-1,4,3};
@@ -26,9 +26,9 @@ public class C05_BinarySearch {
         System.out.println(Arrays.binarySearch(arr,2));//4
         System.out.println(Arrays.binarySearch(arr,1));//-1
 
-        //Arrays.binarySearch() kullanmadan once Arrays.sort() kullanmazsaniz,
-        //  sonucun ne olacagini BILEMEYIZ,
-        //   dogru da olabilir, yanlis da olabilir.
+        // Arrays.binarySearch() kullanmadan once Arrays.sort() kullanmazsaniz,
+        // sonucun ne olacagini BILEMEYIZ,
+        // dogru da olabilir, yanlis da olabilir.
 
         String[] isimler = {"Esra","Ibrahim","Huseyin","Omer","Azim","Azim"};
 
@@ -39,12 +39,11 @@ public class C05_BinarySearch {
         //Array'de arama yapmadan once sort() yapilmalidir.
         //Aradigimiz element varsa, ilk kullanimin index'ini dondurur.
         //yani ilk buldugu indexi dondurur.
-        System.out.println(Arrays.binarySearch(isimler,"Esra"));//2
-        System.out.println(Arrays.binarySearch(isimler,"Azim"));//0
-        System.out.println(Arrays.binarySearch(isimler,"Omer"));//5
+        System.out.println(Arrays.binarySearch(isimler,"Esra"));//2. index
+        System.out.println(Arrays.binarySearch(isimler,"Azim"));//0. index
+        System.out.println(Arrays.binarySearch(isimler,"Omer"));//5. index
 
         //Aradigimiz element yoksa, olsaydi hangi sirada olacagini - isareti ile birlikte dondurur.
-
         System.out.println(Arrays.binarySearch(isimler,"Ahmed"));//-1 (olsaydi -1 olurdu)
         System.out.println(Arrays.binarySearch(isimler,"Deniz"));//-3 (olsaydi -3 olurdu)
 

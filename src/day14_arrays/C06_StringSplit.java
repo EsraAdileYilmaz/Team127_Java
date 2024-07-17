@@ -21,7 +21,7 @@ public class C06_StringSplit {
         //1.adim:String'i split() methodu ile kelime kelime ayirip,
         //ayrilan bu string'i olusturacagimiz bir array'e
         //atayalim.
-        String [] kelimeler=str.split(" ");
+        String [] kelimeler=str.split(" ");//kelimeleri space'lerinden ayirdik
         System.out.println(Arrays.toString(kelimeler));
         //Yeni olusan array= [About, 197.000.000, results, (0,43, seconds)]
 
@@ -51,8 +51,6 @@ public class C06_StringSplit {
         String [] ayiracVirgul=str.split(",");
         System.out.println(Arrays.toString(ayiracVirgul));
         //[About 197.000.000 results (0, 43 seconds) ]  virgulden ayirdi
-
-
 
 
 

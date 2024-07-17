@@ -23,7 +23,7 @@ public class C01_Arrays {
 
         int toplam=0;
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {//arr[] nin tum elemanlarina ulasiriz
 
             if(arr[i] > 0){
                 toplam += arr[i];

@@ -11,12 +11,12 @@ public class C03_Arrays {
         // Kullanicidan bir deger alip, array'e ekleyin
 
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Lutfen array'e eklemek istediginiz tam sayiyi giriniz");
-        int sayi= scanner.nextInt();
+        System.out.println("Lutfen array'e eklemek istediginiz pozitif tam sayiyi giriniz");
+        int eklenecekSayi= scanner.nextInt();
 
 
         //C02 classindan method call yaptik.
-        arr=C02_ArrayeElemanEkleme.arrayeElemanEkle(arr, sayi);
+        arr=C02_ArrayeElemanEkleme.arrayeElemanEkle(arr, eklenecekSayi);
         System.out.println("Array'in yeni hali : " + Arrays.toString(arr));
 
 

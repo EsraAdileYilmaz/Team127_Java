@@ -19,12 +19,13 @@ public class C07_MultiDimensionalArrays {
         }//3 6 8 1
 
         System.out.println("");
+        System.out.println("===============================");
 
-        int [][] sayilar={{3,5,6} ,{2,7} ,{1,5,8},{1}};
+        int [][] sayilar={{3,5,6} ,{2,7} ,{1,5,8},{1}};//2 katli array varsa 2 katli for loop lazim
         // sayilar array'indeki tum elementleri yazdirin.
 
-        for (int i = 0; i < sayilar.length ; i++) { // outer loop outer array'i kontrol eder
-            for (int j = 0; j <sayilar[i].length ; j++) {//inner loop da inner array'i kontrol eder
+        for (int i = 0; i < sayilar.length ; i++) { // outer loop= outer array'i kontrol eder
+            for (int j = 0; j <sayilar[i].length ; j++) {//inner loop da= inner array'i kontrol eder
 
                 System.out.print(sayilar [i][j] +" ");
             }

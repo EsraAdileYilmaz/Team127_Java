@@ -18,13 +18,15 @@ public class C04_ArraysSort {
         System.out.println(Arrays.toString(arr1));//[0, 1, 3, 4, 6, 9, 12, 87]
 
         String[] arr2 = {"Ibrahim","Huseyin","Hasan","Ismail","Ishak","israfil","isa"};
-        Arrays.sort(arr2);
+        Arrays.sort(arr2);//Kalici siralama yapar
         System.out.println(Arrays.toString(arr2));
         //[Hasan, Huseyin, Ibrahim, Ishak, Ismail, isa, israfil]
 
         /*
-        ASCII degerleri sebebiyle kucuk harfler siralamada
+         ASCII degerleri sebebiyle kucuk harfler siralamada
          buyuk harflerden sonra gelir.
+         Arrays'lerde method() larla yapilan degisiklik kalici olur.
+         orn:Arrays.sort(arr); Kalici olarak sirali hale getirir
          */
 
         // String'lerde: method() calisinca yapilan degisiklikler kalici olmaz
