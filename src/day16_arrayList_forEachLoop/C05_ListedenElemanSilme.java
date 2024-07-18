@@ -20,7 +20,7 @@ public class C05_ListedenElemanSilme {
 
             Bunu engellemek icin;
                 1- silme yapinca i bir azaltilabilir,
-                2- verilen listede silme yapilmaz. yeni bir liste olusturulup
+                2- verilen listede silme yapilmaz. Yeni bir liste olusturulup
                   silinmeyecek elemanlar yeni listeye eklenebilir.
          */
 
@@ -38,17 +38,18 @@ public class C05_ListedenElemanSilme {
 
 
         //method call yapalim
-        System.out.println(istenmeyenleriSil(isimler, silinecekHarf));//[Deniz, Omer, Mehmet]
+        System.out.println(istenmeyenleriSil(isimler, silinecekHarf));//[Deniz, Omer, Mehmet] 1.method
+        System.out.println(silinmeyeceklerList(isimler,silinecekHarf));//[Deniz, Omer, Mehmet] 2.method
 
     }
     public  static List<String> istenmeyenleriSil(List<String> isimler,String silinecekHarf){
 
         for (int i = 0; i <isimler.size() ; i++) {
 
-            if( isimler.get(i).toUpperCase().contains(silinecekHarf.toUpperCase())){
+            if( isimler.get(i).toUpperCase().contains(silinecekHarf.toUpperCase())){//buldugu tum a'lari getirecek
 
-                isimler.remove(isimler.get(i)); //icinde A bulunanlari sil.
-                i--;
+                isimler.remove(isimler.get(i)); //icinde tum A bulunanlari silecek
+                i--;//elementi silince bir oncekinden tekrar kontrol etmesi icin indexi 1 azaltiyoruz
             }
         }
 
@@ -62,8 +63,8 @@ public class C05_ListedenElemanSilme {
         List<String> silinmeyeceklerListesi = new ArrayList<>();
 
         for (int i = 0; i < isimler.size() ; i++) {
-            if (!isimler.get(i).toUpperCase().contains(silinecekHarf.toUpperCase())){
-                silinmeyeceklerListesi.add(isimler.get(i));
+            if (!isimler.get(i).toUpperCase().contains(silinecekHarf.toUpperCase())){//isimler listesindeki elementlerden silinecek harfi icermeyeni
+                silinmeyeceklerListesi.add(isimler.get(i));                          //silinmeyeceklerListesi'ne ekle
             }
 
         }

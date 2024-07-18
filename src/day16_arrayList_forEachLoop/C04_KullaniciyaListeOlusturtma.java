@@ -29,14 +29,14 @@ public class C04_KullaniciyaListeOlusturtma {
 
         do {
             System.out.println("List'e eklemek icin lutfen isim giriniz." +
-                    "\nIslemi bitirmek icin Q 'ya basiniz");
+                               "\nIslemi bitirmek icin Q 'ya basiniz");
 
             girilenIsim= scanner.nextLine();
 
-            if(! girilenIsim.equalsIgnoreCase("Q")){
-                isimler.add(girilenIsim);
+            if(! girilenIsim.equalsIgnoreCase("Q")){//girilen isim Q deilse
+                isimler.add(girilenIsim);                       //list'e ekle
             }
-        }while(! girilenIsim.equalsIgnoreCase("Q"));
+        }while(! girilenIsim.equalsIgnoreCase("Q"));//girilen isim Q'ya esit olmadigi muddetce devam et
 
         return isimler;
     }

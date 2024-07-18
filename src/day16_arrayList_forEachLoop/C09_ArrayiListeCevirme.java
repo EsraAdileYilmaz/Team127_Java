@@ -17,9 +17,9 @@ public class C09_ArrayiListeCevirme {
             Arrays class'inda asList() method'u da array'i list'e cevirir.
             ANCAK 2 buyuk problemi vardir;
 
-            1- array'den cevirdigimiz list'e ,ekleme- cikarma gibi
-               size'i degistiren islemler yapamazsiniz.
-            2- bu method array ve cevirdigi list'i eslestirir.
+            1- Array'den cevirdigimiz list'e ,ekleme- cikarma gibi
+               size()'i degistiren islemler yapamazsiniz.
+            2- Bu method array ve cevirdigi list'i eslestirir.
                array'de yaptiginiz degisiklik list'e,
                list'te yaptiginiz degisiklik array'e islenir.
          */

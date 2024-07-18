@@ -22,7 +22,7 @@ public class C10_ForEachLoop {
             For-each loop'da 3 seyi yazmaliyiz;
             1- calisacagimiz elementlerin data turu
             2- loop icinde gelen elemanlari hangi isimle kullanacagiz (array'de arr[i])(each veya w olarak adlandirilir.)
-            3- uzerinde islem yapacagimiz cok elementli obje (yani hangi kaynaktan aldigimiz)
+            3- uzerinde islem yapacagimiz cok elementli objenin ismi (yani hangi kaynaktan aldigimiz).
          */
 
         int [] arr={2,5,7,9,6,3,4,8};

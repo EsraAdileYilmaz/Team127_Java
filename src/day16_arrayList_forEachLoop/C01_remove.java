@@ -33,7 +33,7 @@ public class C01_remove {
         sayilar.add(8);
         System.out.println(sayilar);//[3, 2, 8]
 
-        // Eger List sayilardan olusuyorsa
+        // Eger List sayilardan olusuyorsa,
         // remove(2) yazdigimizda 2'nin element mi yoksa index mi olacagini netlestirmek gerekir.
         // Java bu durumu netlestirmek icin,
         // sayilardan olusan list'lerde yazilan sayiyi INDEX olarak kabul eder.
@@ -43,9 +43,9 @@ public class C01_remove {
 
         // Eger biz obje olan 2'yi silmek istiyorsak ve index'ini bilmiyorsak
         // Once silmek istedigimiz elementi bir obje (non-primitive) olarak tanimlamaliyiz.
-        //Yani bir variable olarak atayabiliriz.
+        // Yani bir variable olarak atayabiliriz.
 
-        Integer silinecekSayi =2;
+        Integer silinecekSayi =2;//Wrapper classtan variable olarak tanimlamak gerekir.
         System.out.println(sayilar.remove(silinecekSayi));//true
         System.out.println(sayilar);//[3]
 
