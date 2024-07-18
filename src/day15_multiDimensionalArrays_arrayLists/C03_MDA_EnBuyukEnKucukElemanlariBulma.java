@@ -6,7 +6,7 @@ public class C03_MDA_EnBuyukEnKucukElemanlariBulma {
 
 
         // SORU: Verilen bir MDA'de en buyuk ve en kucuk sayilari bulup,
-        //        yazdiran bir method olusturun.
+        //       yazdiran bir method olusturun.
 
 
         int[][] arr = {{1,4,7},{3,5},{1,9,0,8},{2}};

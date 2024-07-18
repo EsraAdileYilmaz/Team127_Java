@@ -8,7 +8,7 @@ public class C10_set {
     public static void main(String[] args) {
 
         /*
-        ArrayList' deki get() methodu parantez icine yazilan indexteki elemani dondurur.
+        ArrayList' deki get() methodu parantez icine yazilan indexteki elemani getirir,dondurur.
         ArrayList' deki set() methodu bir elementi UPDATE (yeni deger atamak) icin kullanilir
         bu methodda eski deger silinip yerine yeni deger atanir.
          */
@@ -24,7 +24,7 @@ public class C10_set {
         System.out.println(isimler);//[Deniz, Omer, Esra, Hamza, Basak]
 
         System.out.println(isimler.get(1));//Omer (list'teki 1.indexi getirir)
-        System.out.println(isimler.get(2));//Esra
+        System.out.println(isimler.get(2));//Esra (list'teki 2.indexi getirir)
         //System.out.println(isimler.get(8));//IndexOutOfBoundsException
 
         isimler.add(3,"Azim");
@@ -35,7 +35,8 @@ public class C10_set {
 
 
         // Method'larin yaptigi is ile bize döndürdüğü sonuç FARKLI OLABILIR.
-        //set() methodu update yaparken sout icinde yazdirirsak neyi update ettigini bize dondurur.
+        // set() methodu update yaparken sout icinde yazdirirsak neyi update ettigini bize dondurur.
+        // Yani hangi elementi sildigini bize dondurur.
 
         System.out.println(isimler.set(2,"Yusuf"));//Esra dondurdu cunku Esra'yi sildim demek istiyor burda
         System.out.println(isimler);//[Deniz, Omer, Yusuf, Gulnur, Hamza, Basak]

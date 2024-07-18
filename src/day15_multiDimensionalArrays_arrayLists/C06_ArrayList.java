@@ -7,7 +7,7 @@ public class C06_ArrayList {
 
     public static void main(String[] args) {
 
-        //Arraylist'in yazim sekli:
+        // Arraylist'in yazim sekli:
         // burada dikkat etmem gereken sey primitive data turlerini
         // wrapper class'dan almam gerekiyor.
         List <Integer> sayilar=new ArrayList<>();
@@ -25,8 +25,8 @@ public class C06_ArrayList {
         sayilar.add(9);
         System.out.println(sayilar);//[5, 8, 3, 6, 9]
 
-        //Eleman ekleme isinde istenen bir indexe eleman eklemek icin ( .add(2,11))
-        //yaparsak 2.indexe 11 'i ekle demis oluyoruz.
+        // Eleman ekleme isinde istenen bir indexe eleman eklemek icin ( .add(2,11))
+        // yaparsak 2.indexe 11 'i ekle demis oluyoruz.
         // Var olan elementleri degistirmez,
         // istenen elementi, istenen index'e yerlestirir,
         // ve kalan elementleri geriye oteler.

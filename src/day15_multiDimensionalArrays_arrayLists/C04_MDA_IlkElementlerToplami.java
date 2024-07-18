@@ -19,7 +19,7 @@ public class C04_MDA_IlkElementlerToplami {
     }
 
     public static int ilkElemanlarToplami (int [][] arr){
-
+        //tum elemanlara ihtiyacimiz yok
         //oncelikle arr[0][0] ini
         //          arr[1][0] ini
         //          arr[2][0] ini vs kac tane inner array varsa alip bunlari toplayacagiz.

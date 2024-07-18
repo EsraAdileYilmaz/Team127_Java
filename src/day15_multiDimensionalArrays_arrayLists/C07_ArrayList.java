@@ -31,8 +31,8 @@ public class C07_ArrayList {
         System.out.println("Liste bos mu : "+ sayilar.isEmpty());//Liste bos mu : false
 
 
-        System.out.println(sayilar.contains(5));//true 5 elemani list'in icinde var
-        System.out.println(sayilar.contains(3));//false 3 elemani list'in icinde yok
+        System.out.println(sayilar.contains(5));//true (5 elemani list'in icinde var)
+        System.out.println(sayilar.contains(3));//false (3 elemani list'in icinde yok)
 
 
         sayilar.add(3);

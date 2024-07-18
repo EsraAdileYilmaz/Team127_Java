@@ -14,6 +14,8 @@ public class C02_MDA_TumElemanlariToplama {
 
         arraydekiElementleriTopla(arr);//Arraydeki elementlerin toplami: 40
 
+        arraydekiElementleriTopla(new int [][]{{4,6,9},{7,5,8}});//Arraydeki elementlerin toplami: 39 (Bu satirda yeni bir int [][] array olusturup yollamis olduk)
+
 
 
     }

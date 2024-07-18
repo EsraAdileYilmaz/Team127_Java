@@ -8,7 +8,7 @@ public class C11_remove {
     public static void main(String[] args) {
 
 
-        //ArrayList icindeki remove(silinecekObject)  methodunu calistirinca,
+        // ArrayList icindeki remove(silinecekObject)  methodunu calistirinca,
         // silinecekObject varsa siler ve bize true dondurur,
         // silinecekObject yoksa silemez ve bize false dondurur.
 
@@ -21,7 +21,7 @@ public class C11_remove {
         isimler.add("Basak");
         System.out.println(isimler);//[Deniz, Omer, Esra, Hamza, Basak]
 
-        System.out.println(isimler.remove("Esra"));//true verdi. yani sildim diyor
+        System.out.println(isimler.remove("Esra"));//true verdi. yani buldum ve sildim diyor
         System.out.println(isimler);//[Deniz, Omer, Hamza, Basak]
 
         System.out.println(isimler.remove("Ercan"));//false verdi cunku bunu bulamadim ve silemedim
@@ -54,7 +54,7 @@ public class C11_remove {
         silinecekler2.add("Gulnur");
         System.out.println(silinecekler2);//[Ercan, Gulnur]
 
-        System.out.println(isimler.removeAll(silinecekler2));//true verdi cunku icinden 1 tane isim sildi
+        System.out.println(isimler.removeAll(silinecekler2));//true verdi cunku icinden 1 tane isim sildi yani Ercan'i sildi
         System.out.println(isimler);//[Ibrahim]
 
         System.out.println(isimler.removeAll(silinecekler));//false verdi cunku silecek bisey bulamadi

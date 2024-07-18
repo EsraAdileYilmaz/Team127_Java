@@ -19,15 +19,15 @@ public class C09_ArraydekiTekrarEdenElementleriSilme {
         List <Integer> sayilar=new ArrayList<>();//[]
 
         //2.Adim:Bu ArrayList'e eklemek icin array'in tum elemanlarini tek tek ele alalim,
-        //liste'de olup olmadigina bakalim, listede yoksa ekleyelim.
+        //       liste'de olup olmadigina bakalim, listede yoksa ekleyelim.
 
         for (int i = 0; i < arr.length ; i++) {
 
-            if(!sayilar.contains(arr[i])){ //sayilar list'i array'i icermiyorsa, yani elemanlardan birer tane ekle
-                sayilar.add(arr[i]); //array'in elemanlarini sayilara ekle
+            if(!sayilar.contains(arr[i])){ //sayilar list'i array'in elemanini icermiyorsa,
+                sayilar.add(arr[i]);       //array'in elemanlarini sayilara ekle.Yani elemanlardan birer tane ekle
             }
         }
-        System.out.println(sayilar);//[3, 2, 5, 6, 7, 8, 9, 0, 1, 4] ArrayList bu hale donustu
+        System.out.println("Sayilar unique listi: "+sayilar);//Sayilar unique listi: [3, 2, 5, 6, 7, 8, 9, 0, 1, 4] ArrayList bu hale donustu
 
 
         //3.Adim:Uzunlugu ArrayList kadar olan Yeni bir array olusturalim.
@@ -39,7 +39,7 @@ public class C09_ArraydekiTekrarEdenElementleriSilme {
 
         for (int i = 0; i < yeniArr.length; i++) {
 
-            yeniArr[i]= sayilar.get(i);// sayilar'daki herbir indexi get ile getirip yeniArr'ye atayacak
+            yeniArr[i]= sayilar.get(i);// sayilar'daki herbir elementi get ile getirip yeniArr'ye atayacak
         }
 
 
