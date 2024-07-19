@@ -15,7 +15,7 @@ public class C06_Runner {
         class'lara default constructor koyar.
 
         DEFAULT CONSTRUCTOR GORUNMEZ.
-        Eger bir class'ta GORUNEN bir constructor YOKSA o class'ta
+        Eger bir class'ta GORUNEN bir constructor YOKSA, o class'ta
         default constructor vardir.
 
 

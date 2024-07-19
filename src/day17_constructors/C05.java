@@ -8,10 +8,10 @@ public class C05 {
         System.out.println("Merhaba, ben constructor.");
     }
     // Bu constructor gorunur oldugu icin
-    //buna default constructor degil
-    //PARAMETRESIZ CONSTRUCTOR denir.
-    //Default constructorlarin body'si bos olur.
-    //Parametresiz constructorlarin body'sine kod ekleyebiliriz.
+    // buna default constructor degil
+    // PARAMETRESIZ CONSTRUCTOR denir.
+    // Default constructorlarin body'si bos olur.
+    // Parametresiz constructorlarin body'sine kod ekleyebiliriz.
 
     int sayi =0;
     String str;

@@ -10,7 +10,7 @@ public class C02_Runner {
 
         /*
 
-        Constructor: Bir class'tan obje olusturmak istedigimizde o objeye
+        Constructor: Bir class'tan obje olusturmak istedigimizde, o objeye
         olusturuldugu class'daki variable ve methodlarla ilgili ilk atamayi
         (initialize) yapan yapidir.
 
@@ -22,6 +22,7 @@ public class C02_Runner {
         //C01 class'indaki tum variable'lara ve methodlara bu obje yardimiyla ulasabilirim.
 
         System.out.println(obj.sayi);
+        System.out.println(obj.str);
 
         //Bana rastgele bir sayi lazim.
         obj.rastgeleSayiUret(); //Bugunku sansli sayi: 66 (her seferinde farkli bir sayi verir.)
@@ -42,7 +43,7 @@ public class C02_Runner {
         //C01 :Class adi
         //obj2 :obje adi
         //= atama isareti
-        //new: keyword (obje olustururken mutlaka kullanilmali.)
+        //new: keyword (yeni obje olustururken mutlaka kullanilmali.)
         //C01() : CONSTRUCTOR iste bu C01 class'indan obje olusturan ve o class'taki tum ozellikleri getiren yapidir.
 
 

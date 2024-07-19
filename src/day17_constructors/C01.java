@@ -11,7 +11,7 @@ public class C01 {
 
         Random random= new Random(); // bu class bize rasgele sayilar uretir.
 
-        int rastgeleSayi= random.nextInt(1000);// random'un sececegi sayiyi 1000'e kadar sinirlandirdik.
+        int rastgeleSayi= random.nextInt(1000);// random'un sececegi sayiyi 1000'e kadar sinirlandirdik.Yani 0-1000 araliginda verir
         System.out.println("Bugunku sansli sayi: "+ rastgeleSayi);
     }
 

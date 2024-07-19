@@ -25,7 +25,7 @@ public class C04_HemsireRunner {
         //System.out.println(hemsire3.hemsireAdresi);//degeri yokki ne yazdirayim diyor.
 
         //hemsire3.method1();//hemsire3'e deger atamadinki bir method calistirasin diyor.
-        //once deger atamasi yapilmali sonra kullanilmalidir.
+                             //once deger atamasi yapilmali sonra kullanilmalidir.
 
     }
 }
