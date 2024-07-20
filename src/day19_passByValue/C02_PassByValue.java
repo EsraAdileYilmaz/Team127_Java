@@ -11,10 +11,10 @@ public class C02_PassByValue {
         System.out.println("Method return degeri "+ sayiDegistir(sayi));//25
         //burada dondurulen sayi methodun sayi degeridir.yani return sayi'dir.
 
-        System.out.println("method call sonrasi sayi: "+ sayi);// 20 Bu sayi ise main'deki sayidir.
+        System.out.println("Method call sonrasi sayi: "+ sayi);// 20 Bu sayi ise main'deki sayidir.
 
         sayi =sayiDegistir(sayi);//main'deki sayi= return sayi. return sayinin degerini main sayiya atadik.
-        //sayi=return sayi degeri=25 oldu
+                                //sayi=return sayi degeri=25 oldu
 
         System.out.println("Atama sonrasi sayi:"+ sayi);//25 Main'deki deger degisti
 
@@ -25,7 +25,7 @@ public class C02_PassByValue {
          */
     }
 
-    public static int sayiDegistir(int sayi) {//local'de yeni bir variable olustu.int sayi=20; variable'i olustu.
+    public static int sayiDegistir(int sayi) {//local'de int sayi=20; yeni bir variable olustu.int sayi=20; variable'i olustu.
                                                //sadece main methoddaki sayinin degeri buraya aktarilir.
 
         sayi +=5; //methoddaki variable'in degeri 5 artti.

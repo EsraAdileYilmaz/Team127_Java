@@ -11,14 +11,14 @@ public class C04_PassByValue_CokluElement {
         int [] arr= {1,2,3};
         System.out.println("arr'nin ilk hali: "+ Arrays.toString(arr));//arr'nin ilk hali: [1, 2, 3]
 
-
+        //method call yapalim
         elemanlari2Artir(arr);//eleman artir method'unda degistirilen arr: [3, 4, 5]
         System.out.println("elemanlari artir method call'dan sonra arr : "+ Arrays.toString(arr));
         //elemanlari artir method call'dan sonra arr : [3, 4, 5]
         //Java array'i kontrol eder;array degismemisse eleman degisikligini kabul eder
-        //ve eleman degisikligi kalici olur.
+        //ve eleman degisikligi KALICI OLUR.
 
-
+        //method call yapalim
         arrayiDegistir(arr);//Array'i degistir methodunda olusan arr: [94, 71, 87]
         System.out.println("array'i degistir method call'dan sonra arr : "+Arrays.toString(arr));
         //array'i degistir method call'dan sonra arr : [3, 4, 5]
@@ -40,7 +40,7 @@ public class C04_PassByValue_CokluElement {
         System.out.println("eleman artir method'unda degistirilen arr: "+ Arrays.toString(arr));
 
         /*
-        bu method icinde arr degismedi,
+        bu method icinde arr(array) degismedi,
         sadece her bir elemanina 2 eklendi.
          */
 
@@ -66,7 +66,7 @@ public class C04_PassByValue_CokluElement {
         System.out.println("Array'i degistir methodunda olusan arr: "+ Arrays.toString(arr));
 
         /*
-        bu method icinde ise arr tamamen degisti,
+        bu method icinde ise arr(array) tamamen degisti,
         yeniArr uzerinden islem yapildi.
          */
     }
