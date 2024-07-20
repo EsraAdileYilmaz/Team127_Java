@@ -22,14 +22,13 @@ public class C02_CarRunner {
 
         //Marka, model ve renk degerlerini parametre olarak yollayabilecegimiz
         //bir constructor olusturalim.bunun icin C01'e gidiyoruz
-
         C01_Car car2= new C01_Car("Nissan","Micra","Gri");
         System.out.println("Car2 "+car2);
-        //Car2Car Ozellikler ==>marka: 'Nissan', model: 'Micra', renk: 'Gri', yil: 1900, fiyat: 0
+        //Car2 Ozellikler ==>marka: 'Nissan', model: 'Micra', renk: 'Gri', yil: 1900, fiyat: 0
 
         C01_Car car3=new C01_Car("Opel","Corsa","Beyaz");
         System.out.println("Car3 "+car3);
-        //Car3 Car Ozellikler ==>marka: 'Opel', model: 'Corsa', renk: 'Beyaz', yil: 1900, fiyat: 0
+        //Car3 Ozellikler ==>marka: 'Opel', model: 'Corsa', renk: 'Beyaz', yil: 1900, fiyat: 0
 
         // Marka,model,renk ve fiyat parametreleri olan
         // bir constructor olusturun. bunun icin C01'e gidiyoruz
@@ -37,6 +36,6 @@ public class C02_CarRunner {
         C01_Car car4= new C01_Car("Peugeot","206", "Beyaz",4000);
         //objenin argumentlerini yazinca constructor icinde atamalari yapmamiz gerekir.
         System.out.println("Car4 "+ car4);
-        //Car4 Car Ozellikler ==>marka: 'Peugeot', model: '206', renk: 'Beyaz', yil: 1900, fiyat: 4000
+        //Car4 Ozellikler ==>marka: 'Peugeot', model: '206', renk: 'Beyaz', yil: 1900, fiyat: 4000
     }
 }
