@@ -14,7 +14,7 @@ public class C07_StringBuilder_Insert_Delete {
          */
 
         StringBuilder sb= new StringBuilder("Java Candir");
-        sb.append(".");// elemani sona ekler ve kalici olur
+        sb.append(".");// elemani sona ekler ve kalici olur.cunku mutable class
         System.out.println(sb);// Java Candir.
 
 
@@ -23,11 +23,10 @@ public class C07_StringBuilder_Insert_Delete {
         System.out.println(sb);// Java Candir.cok
 
 
-        sb.insert(5,"cok ");//yani sb'nin 5.indexine "cok" u ekle
+        sb.insert(5,"cok ");//yani sb'nin 5.indexine "cok " u ekle
         System.out.println(sb);// Java cok Candir.cok
 
-        sb.insert(19,str,8,14);
-        //sb'nin 19.indexine, str'in 8.indexi ile 14.indexi arasini ekle
+        sb.insert(19,str,8,14);//sb'nin 19.indexine, str'in 8.indexi ile 14.indexi arasindaki metni ekle
         System.out.println(sb);// Java cok Candir.cok guzel
 
 

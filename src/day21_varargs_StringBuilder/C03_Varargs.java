@@ -13,13 +13,13 @@ public class C03_Varargs {
 
         islemYap(5,"a","b","c");// 5*3 adet string =15
         islemYap(2,"a");// 2*1 adet string =2
-        islemYap(5);// 5*0 adet string =0
+        islemYap(5);// 5*0 adet string =0 (bos array'in length'i 0'dir)
         islemYap(3,"","","","","");//  3*5 adet string =15
 
     }
 
     public static void islemYap(int sayi,String... strings){
-        //(String...) array gibi davranir ve array methodlari kullanilir. String [] strings olusacak
+        //(String...) array gibi davranir ve array methodlarini kullanir. String [] strings olusacak
         System.out.println(sayi* strings.length);
     }
 }

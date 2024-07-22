@@ -62,6 +62,11 @@ public class C06_DateTimeFormatter {
         System.out.println(ldt.format(istenenSaatFormati2)); // 10:00
 
 
+        /*
+        Once LocalDateTime ldt= LocalDateTime.now(); class'indan bir obje olusturuyoruz.
+        Sonra bunu yani ldt'yi istedigimiz formatta yazmak icin DateTimeFormatter class'indan bir obje olusturuyoruz.
+        Ve bu class'dan DateTimeFormatter.ofPattern("H:mm"); methodu yardimi ile istedigimiz formata ceviriyoruz.
+         */
 
     }
 }

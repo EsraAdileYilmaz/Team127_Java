@@ -11,19 +11,21 @@ public class C06_StringBuilder_length_capacity {
         capacity() methodu ile kapasitesi bulunur ve sinirlandirilabilir.
         length() methodu ile uzunlugu bulunabilir.
         trimToSize() methodu ile  kapasite ve length'i esitlenebilir.
+        sb2.append() methodu ile metin eklenebilir.
 
          */
+
         //Oncelikle StringBuilder class'indan obje olusturulur.or:sb1 ,sb2 ,...
         StringBuilder sb1= new StringBuilder();//icinde hic bir yazi yok, length ==> 0
         System.out.println("sb1 length: "+ sb1.length());//0
-        System.out.println("sb1 capacity:"+ sb1.capacity());//16 standart kapasitedir
+        System.out.println("sb1 capacity: "+ sb1.capacity());//16 standart kapasitedir
 
         StringBuilder sb2= new StringBuilder("Ali Can");
         System.out.println("sb2 length: "+ sb2.length());//sb2 length: 7 (icindeki Ali Can indexlerinin toplami)
         System.out.println("sb2 capacity:" + sb2.capacity());//sb2 capacity:23 (standart kapasite=16+7=23)
 
-        StringBuilder sb3= new StringBuilder(11);// // icinde hic bir yazi yok, length ==> 0
-        System.out.println("sb3 length:"+ sb3.length());// sb3 length:0
+        StringBuilder sb3= new StringBuilder(11);// icinde hic bir yazi yok, length ==> 0
+        System.out.println("sb3 length:"+ sb3.length());// sb3 icinde hic bir yazi yok,length:0
         System.out.println("sb3 capacity:"+ sb3.capacity());// sb3 capacity:11 (kapasitesini belirleyerek sinirlandirdik)
 
         // Eger StringBuilder'a ekleme yaparsaniz,
@@ -37,7 +39,7 @@ public class C06_StringBuilder_length_capacity {
 
         // Eger kapasite ve length'i esitlemek isterseniz; trimToSize() bu method kullanilir.
 
-        sb2.trimToSize();
+        sb2.trimToSize();//fazla kalanlari sil.length=capacity oldu
         System.out.println("sb2: "+sb2);// sb2: Ali Can okula gitmek istiyor.
         System.out.println("sb2 length: "+ sb2.length());// sb2 length: 29
         System.out.println("sb2 capacity: "+ sb2.capacity());// sb2 capacity: 29

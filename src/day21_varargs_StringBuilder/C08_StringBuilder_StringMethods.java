@@ -7,8 +7,8 @@ public class C08_StringBuilder_StringMethods {
 
         /*
             StringBuilder ile bazi String method'lari da kullanilabilir.
-            Bize String veya char donduren method'lar
-            StringBuilder'da kalici degisiklik yapmazlar.
+            Return'u String veya char donduren method'lar
+            StringBuilder'da kalici degisiklik YAPMAZLAR.
 
             Bazi String method'lari ise StringBuilder'da yoktur.
             String methodlari StringBuilder ile kullanmak istersek;
@@ -37,7 +37,7 @@ public class C08_StringBuilder_StringMethods {
         // sb "a" iceriyor mu?
         System.out.println(sb.toString().contains("a"));// true
         // burada once toString() methodu ile String'e cevirdik.
-        //sonra String methodu olan contains() methodunu kullandik.
+        //sonra String methodu olan contains() methodunu kullandik.Bu durumda da KALICI OLMAZ.
 
 
 

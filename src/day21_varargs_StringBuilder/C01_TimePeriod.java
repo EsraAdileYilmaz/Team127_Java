@@ -7,7 +7,7 @@ public class C01_TimePeriod {
 
     public static void main(String[] args) {
 
-        //kac yasindayim?
+        //Ben kac yasindayim?
         LocalDate dogumTarihi= LocalDate.of(1980,01,03);
         LocalDate bugun=LocalDate.now();
 

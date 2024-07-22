@@ -9,14 +9,18 @@ public class C02_Varargs {
         Java -> variety of arguments(Varargs) kullanir.
         Varargs array alt yapisini kullanarak,
         istedigimiz kadar argument yazmamiza imkan tanir.
+
+        Varargs argumentle parametre arasindaki gecisi saglar.
+        Bunun icin tum argumentlerin parametre ile ayni data turunden olmasi gerekir.
+        Varargs Array alt yapisini kullanir.
       */
         topla(4,9);//Toplam : 13
         topla(3,5,7);//Toplam : 15
-        topla(2);//2
-        topla(2,5,9,1,3,5,7,1,3,4);//40
-        topla(1,2,3,4,5,6);//21
-        topla(1,2,3,4,5,6,7,8);//36
-        topla(3,4,5,6,7);//25
+        topla(2);//Varargs ile toplam: 2
+        topla(2,5,9,1,3,5,7,1,3,4);//Varargs ile toplam: 40
+        topla(1,2,3,4,5,6);//Varargs ile toplam: 21
+        topla(1,2,3,4,5,6,7,8);//Varargs ile toplam: 36
+        topla(3,4,5,6,7);//Varargs ile toplam: 25
 
 
     }
@@ -28,7 +32,7 @@ public class C02_Varargs {
              ) {
             toplam+=each;
         }
-        System.out.println(toplam);
+        System.out.println("Varargs ile toplam: "+toplam);
 
     }
 
