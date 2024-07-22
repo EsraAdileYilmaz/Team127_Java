@@ -42,6 +42,7 @@ public class C04_PassByValue_CokluElement {
         /*
         bu method icinde arr(array) degismedi,
         sadece her bir elemanina 2 eklendi.
+        Eleman degisiklikleri kalici olur.
          */
 
     }
@@ -68,6 +69,7 @@ public class C04_PassByValue_CokluElement {
         /*
         bu method icinde ise arr(array) tamamen degisti,
         yeniArr uzerinden islem yapildi.
+        Array degisirse kalici olmaz.
          */
     }
 }

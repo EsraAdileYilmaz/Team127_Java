@@ -15,7 +15,7 @@ public class C02_StringPool {
         String str8 = str6+str7;
 
         /*
-        equals() methodu ile karsilastirma yapilirken sadece metinler esas alinir.
+        equals() methodu ile karsilastirma yapilirken SADECE METINLER esas alinir.
         Metinler ayni ise true,deilse false dondurur.
 
         ==(double equal sign) ile karsilastirma yapilirken ise hem metinler hemde referanslar

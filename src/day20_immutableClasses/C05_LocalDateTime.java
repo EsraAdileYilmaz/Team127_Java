@@ -23,13 +23,12 @@ public class C05_LocalDateTime {
 
         // Kullaniciya zamani 3 ekim 2023 sali  seklinde yazdirin
 
-        System.out.println(ldt.getDayOfMonth() + " "
-                + ldt.getMonth()+ " "
-                + ldt.getYear()+ " "
-                + ldt.getDayOfWeek());
+        System.out.println(ldt.getDayOfMonth() + " " //3
+                         + ldt.getMonth()+ " "       //october
+                         + ldt.getYear()+ " "        //2023
+                         + ldt.getDayOfWeek());      //Tuesday
 
         // 3 OCTOBER 2023 TUESDAY
-        // 03 Oct 2023 Tue
 
 
     }

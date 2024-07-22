@@ -27,8 +27,8 @@ public class C04_LocalTime {
 
         System.out.println(localTime.toNanoOfDay());//72415390491000 (bugunun 72415390491000 nano saniyesindeyiz)
 
-        // yuzbin ile 1 milyon arasindaki sayilarin toplamini
-        // ve toplama isleminin kac nanosaniye surdugunu yazdirin
+        // SORU: Yuzbin ile 1 milyon arasindaki sayilarin toplamini
+        //       ve toplama isleminin kac nanosaniye surdugunu yazdirin.
 
         System.out.println("loop basinda locatime : "+ localTime);
         LocalTime baslangic = LocalTime.now();
