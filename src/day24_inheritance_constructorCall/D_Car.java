@@ -4,7 +4,7 @@ public class D_Car {
 
     D_Car(){
 
-        //extendes yapilmadigi icin super() super cons.call da yok
+        //extends yapilmadigi icin super() super cons.call da yok.
         //cunku parent class'i yok.
     }
     String marka="Marka atanmamis";

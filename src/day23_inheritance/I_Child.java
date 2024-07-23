@@ -15,7 +15,7 @@ public class I_Child extends H_Parent{
 
 
         // default access modifier normalde inheritance icin uygun degildir.
-        // ama bu class parent'i ile ayni package'da oldugu icin kullanilabilir.
+        // ama bu class parent'i ile AYNI PACKAGE'da oldugu icin kullanilabilir.
         // Parent baska package'da olursa,child class
         // parent class'daki default access modifier'a sahip
         // class uyelerine ulasamaz.

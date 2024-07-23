@@ -13,7 +13,8 @@ public class F_Corolla extends E_Toyota {
 
     F_Corolla(){//parametresiz cons.
 
-        super();//once parent'taki parametresiz constructor calisir.
+        super();//super constructor call ile once parent'taki parametresiz constructor calisir.
+                //Yani once E_Toyota class'indaki parametresiz constructor calisir.
     }
 
     public static void main(String[] args) {

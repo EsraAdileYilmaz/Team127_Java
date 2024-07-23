@@ -14,8 +14,8 @@ public class F_Corolla extends E_Toyota{//bu class'ta kendisine E_Toyota class'i
     public static void main(String[] args) {
 
         F_Corolla corolla1= new F_Corolla();
-        //bu class'tan bir obje olusturduk.simdi parent ve
-        //grand parent'taki tum ozellikleri kullanacagiz.
+        //bu class'tan bir obje olusturduk.cunku variable'lar instance, onlara obje uzerinden ulasabiliyoruz.
+        //simdi parent ve grand parent'taki tum ozellikleri kullanacagiz.
 
 
         System.out.println(corolla1.marka);// Toyota class'indan Toyota yazdirir
@@ -34,8 +34,8 @@ public class F_Corolla extends E_Toyota{//bu class'ta kendisine E_Toyota class'i
         System.out.println(corolla1.tekerCapi);// Corolla class'indan 19 inc yazdirir
         System.out.println(corolla1.bagajHacmi);//Corolla class'indan 200 litre yazdirir
 
-        // toplamda 11 ozellige sahip oldu.parent ve grand parent class'lardaki tum ozelliklere
-        //sahip oldu.
+        //Toplamda 11 ozellige sahip oldu.parent ve grand parent class'lardaki tum ozelliklere sahip oldu.
+        //2 ozellik Car class'indan,2 ozellik Toyota class'indan,7ozellik Corolla class'indan aldi.
 
 
     }

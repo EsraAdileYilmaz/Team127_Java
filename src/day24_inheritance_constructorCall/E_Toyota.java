@@ -5,7 +5,7 @@ public class E_Toyota extends D_Car {
     E_Toyota(){
 
         super();//super constructor call ile once parent'taki parametresiz
-                //constructor calisir.Yani D_Car classindaki once calisir.
+                //constructor calisir.Yani D_Car classindaki constructor once calisir.
     }
 
 

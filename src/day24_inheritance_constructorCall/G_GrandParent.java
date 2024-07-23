@@ -16,6 +16,7 @@ public class G_GrandParent {
         this("b"); //bu class'ta string parametreli cons. varsa oraya git.(cons call)
         System.out.println("GP int ");
     }
+
     G_GrandParent(boolean bl){//boolean parametreli constructor olusturuldu.
 
         this(5);//bu class'ta integer parametreli cons.varsa oraya git.(cons call)

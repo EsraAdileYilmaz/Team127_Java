@@ -5,8 +5,8 @@ public class H_Parent {
     private String araba = "Toyota";
     static String kasa = "kasa bos";
 
-    int sayi = 10;
-    String adres = "Cankaya";
+    int sayi = 10;//default access modifier'a sahip
+    String adres = "Cankaya";//default access modifier'a sahip
 
     protected String isim = "Ali";
     protected int yas = 45;

@@ -23,9 +23,9 @@ public class M_GrandChild extends K_Child{
         int sayi = 5;
         int sansliSayi= 44;
 
-        System.out.println(sayi); // 5 bu scope daki sayi
-        System.out.println(this.sayi); // 100 bu class'taki sayi
-        System.out.println(super.sayi); // 25 parent'taki sayi
+        System.out.println(sayi); // 5 bu scope daki sayi.Yani runnerMethod() icindeki sayi
+        System.out.println(this.sayi); // 100 bu class'taki sayi.Class level de arar
+        System.out.println(super.sayi); // 25 parent'taki sayiyi getirir. int sayi = 25;
 
         System.out.println(sinif); // 8
         System.out.println(isim); // Ali Can
@@ -42,12 +42,12 @@ public class M_GrandChild extends K_Child{
         System.out.println(super.memleket); // Konya
 
         System.out.println(sansliSayi); // 44
-        // System.out.println(this.sansliSayi); //
-        // System.out.println(super.sansliSayi);
+        // System.out.println(this.sansliSayi); //Class level ve parentlarda sansliSayi olmadigi icin CTE verdi
+        // System.out.println(super.sansliSayi);//parentlarda sansliSayi olmadigi icin CTE verdi
 
         System.out.println(arkadas); // Reyhan
         System.out.println(this.arkadas); // Reyhan
-        //System.out.println(super.arkadas);
+        //System.out.println(super.arkadas);//parentlarda arkadas olmadigi icin CTE verdi
 
         method2();//Parent method2
         this.method2(); // Parent method2
@@ -75,7 +75,7 @@ public class M_GrandChild extends K_Child{
          */
 
         M_GrandChild obj = new M_GrandChild();
-        obj.runnerMethod();
+        obj.runnerMethod();//runnerMethod() method call var.
 
     }
 

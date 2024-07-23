@@ -10,7 +10,7 @@ public class E_Toyota extends D_Car {//burada E_Toyota class'i D_Car class'ini p
     String guvenlik="Toyota araclar ekstra guvenlik donanimina sahiptir.";
     String aku="Aku atanmadi";
 
-    //burada yazilan ozelliklere ek olarak parent class olan D_Car class'indan
+    //Burada yazilan ozelliklere ek olarak parent class olan D_Car class'indan
     //model,renk,yakit ozelliklerini alir.boylece toplamda 9 ozellik
     //kazanmis oluyor.
 

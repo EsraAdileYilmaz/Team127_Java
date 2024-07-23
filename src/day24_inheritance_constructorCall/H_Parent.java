@@ -9,7 +9,9 @@ public class H_Parent extends G_GrandParent{
     }
 
     H_Parent(String str){//String parametreli constructor olusturuldu
-        this();//bu class'ta parametresiz cons. varsa oraya git.(cons call)
+        this();//bu class'ta parametresiz cons. varsa oraya git.(cons call).yani  H_Parent(){} buraya goturur
+               //this() const call yapildigi icin super() const call yapilamaz
+               //ikisinden biri tercih edilir.
         System.out.println("P String");
     }
 

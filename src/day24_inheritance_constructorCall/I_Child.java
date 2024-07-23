@@ -57,7 +57,7 @@ public class I_Child extends H_Parent{
         GIBI,
         eger extends kullanan bir class'daki
         herhangi bir constructor'in ilk satirina
-        gorunur bir constructor call yazarsak( super(5) gibi)
+        gorunur bir constructor call yazarsak(or: super(5) gibi)
         Java default super() constructor call'u siler.
 
      */
