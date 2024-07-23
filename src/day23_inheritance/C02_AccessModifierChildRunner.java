@@ -2,7 +2,8 @@ package day23_inheritance;
 
 import day22_stringBuilder_accessModifier_encapsulation.C02_AccessModifier;
 
-public class C02_AccessModifierChildRunner extends C02_AccessModifier {//day22 package'nin icindeki C02 class'i parent class secildi.
+public class C02_AccessModifierChildRunner extends C02_AccessModifier {
+    //day22 package'nin icindeki C02 class'i parent class secildi.
     //C02_AccessModifierChildRunner class'ini extends keywordu ile day22 packege'nin C02_AccessModifier class'inin child class'i yapiyoruz.
     //C02_AccessModifierChildRunner= Child
     //C02_AccessModifier = Parent

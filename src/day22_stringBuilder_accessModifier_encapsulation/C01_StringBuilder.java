@@ -10,7 +10,7 @@ public class C01_StringBuilder {
         Buna karsin equals() methodu ile  karsilastirma YAPILAMAZ.
         (==) ile de karsilastirma YAPILAMAZ.
 
-       replace() methodu ile baslangic indexi, bitis indexi ve
+        replace() methodu ile baslangic indexi, bitis indexi ve
                              update etmek istedigimiz metni yaziyoruz.
 
          */
@@ -26,8 +26,8 @@ public class C01_StringBuilder {
         StringBuilder sb4= new StringBuilder("Ne bu simdi?");
         StringBuilder sb5= new StringBuilder("Java Candir");
 
-        System.out.println(sb.compareTo(sb2));// -4
-        System.out.println(sb.compareTo(sb3));// 2
+        System.out.println(sb.compareTo(sb2));// -4 (C D E F G arasinda 4 harf var. ve C G'ye gore daha geride _4)
+        System.out.println(sb.compareTo(sb3));// 2 (H I J arasinda 2 harf var. ve J H'den 2 ilerde +2)
         System.out.println(sb.compareTo(sb4));// -4
         System.out.println(sb.compareTo(sb5));// 0
 

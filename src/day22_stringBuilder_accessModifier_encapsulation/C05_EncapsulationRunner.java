@@ -13,7 +13,7 @@ public class C05_EncapsulationRunner {
 
         obj.setDegerAtanabilsin("Ali");
         //bu methodun return'u void oldugu icin yeni deger atayabilirsin.
-        //ama goremezsin, atadigin degeri yazdiramazsin.
+        //ama goremezsin, atadigin degeri YAZDIRAMAZSIN.
 
         //obj.setDegerAtanabilsin("esra").sout  (yazdirmayi kabul etmiyor.)
         //Bizim argument olarak yazdigimiz degerleri atama yapiyor.

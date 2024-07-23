@@ -4,9 +4,9 @@ public class C02_AccessModifier {
 
     /*
      Access modifier'leri en genisten en dar kapsamliya gore siralarsak;
-    public access mod. >protected access mod. >default access mod. >private access mod.
+     public access mod. >protected access mod. >default access mod. >private access mod.
 
-    Gorunur bir access modifier yoksa DEFAULT Access Modifier GECERLIDIR
+     Gorunur bir access modifier yoksa DEFAULT Access Modifier GECERLIDIR
      */
 
     public static String marka="Toyota";// access modifier==> public
