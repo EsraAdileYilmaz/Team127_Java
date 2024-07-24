@@ -8,6 +8,15 @@ public class M_Child extends L_Parent{
 
     public static void main(String[] args) {
 
+        /*
+        Constructor nerdeyse obje orda olusur.
+        Ancak method aramaya data turunden baslar.
+        Buldugu ilk methodu yazdirmaz constructor'un olusturuldugu
+        class'a kadar iner.Ve en guncelini yazdirir.
+        Ayrica data turunde olmayan bir methodun guncelini aramaz.
+        Data turunde var olan methodun guncelini arar.
+         */
+
         M_Child child1 = new M_Child();
         child1.method1(); // Child method1
 
@@ -18,12 +27,12 @@ public class M_Child extends L_Parent{
         child3.method1(); // Child method1
 
         L_Parent parent1 = new L_Parent();
-        parent1.method1(); // parent method1
+        parent1.method1(); // Parent method1
 
         K_GrandParent parent2 = new L_Parent();
-        parent2.method1(); // parent method1
+        parent2.method1(); // Parent method1
 
         K_GrandParent gp1 = new K_GrandParent();
-        gp1.method1(); // GP method1
+        gp1.method1(); // Grandparent method1
     }
 }
