@@ -36,11 +36,11 @@ public interface I01_InterfaceIstisnaiDurum {
          System.out.println("default istisnai method");
     }
 
-    public static int methodIstisna2(){
+     public static int methodIstisna2(){
          return 44;
     }
 
-    void method1();
+     void method1();
      int method2();
      String method3();
 }

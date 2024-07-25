@@ -26,10 +26,12 @@ public class C01_ChildOfInterfaces implements I01_InterfaceIstisnaiDurum {
 
 
         System.out.println(I01_InterfaceIstisnaiDurum.methodIstisna2());//44
-        //(methodIstisna2() methodu static oldugu icin direk interfaceismi ile ulasildi.
+        //public static int methodIstisna2() methodu static oldugu icin direk interfaceismi ile ulasildi.
+
+        //I01_InterfaceIstisnaiDurum.methodIstisna(); public default void methodIstisna() methodu static olmadigi icin ulasilamaz.
 
         C01_ChildOfInterfaces obj=new C01_ChildOfInterfaces();
-        obj.methodIstisna();//default istisnai method
+        obj.methodIstisna();//default istisnai method.Obje uzerinden cagirinca static olmayan public default void methodIstisna() method geldi.
         obj.runnerMethod();//default istisnai method
 
         List<String> liste=new ArrayList<>();

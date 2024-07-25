@@ -8,7 +8,7 @@ public class C03_Exceptions {
     public static void main(String[] args) {
 
         /*
-         Bir kod yazarken
+            Bir kod yazarken;
             olasi risk durumlarini analiz etmek
             ve bu riskler gerceklesirse ne yapacagini Java'ya soylemek
             iyi bir kod yazarinin gorevidir.
@@ -21,7 +21,7 @@ public class C03_Exceptions {
             2- olasi exception'i catch (olasiExceptionAdi exceptioniKaydedecegimizObje)
                seklinde yaz
             3- exception olusmasi durumunda calismasini istedigimiz kodu
-               catch() { catch blogu} na yaz
+               catch() { catch blogu or:System.out.println("ikinci sayi 0 olamaz");} na yaz
 
              Eger birden fazla olasi exception varsa;
              1- ic ice try-catch bloklari olusturabiliriz,
@@ -38,6 +38,7 @@ public class C03_Exceptions {
         Scanner scanner = new Scanner(System.in);
 
        /*1- ic-ice try-catch
+
         try {//ic ice try methodu
 
             try {//once burayi yap
@@ -47,10 +48,9 @@ public class C03_Exceptions {
 
                 System.out.println("Sayilarin bolumu: " + sayi1 / sayi2);
 
-            } catch (ArithmeticException e) {//problem cikarsa bunu yap
+            } catch (ArithmeticException e) {//problem cikarsa bunu yap.Cikan problemi e variable'ina kaydet
                 System.out.println("ikinci sayi 0 olamaz");
             }
-
 
         } catch (InputMismatchException f) {
             System.out.println("Tamsayi girmelisiniz");
@@ -60,24 +60,25 @@ public class C03_Exceptions {
 
 
        /* 2-bir try birden fazla catch
+
         try{
             System.out.println("Lutfen iki tamsayi giriniz");
             int sayi1 = scanner.nextInt();
             int sayi2 = scanner.nextInt();
 
             System.out.println("Sayilarin bolumu: " + sayi1 / sayi2);
-        }catch (ArithmeticException e){//ArithmeticException hatasini yakala e variable'ina kaydet
-            System.out.println("ikinci sayi 0 olamaz");
-        }catch (InputMismatchException f){//InputMismatchException hatasini yakala f variable'ina kaydet
-            System.out.println("Tamsayi girmelisiniz");
-        }
+          }catch (ArithmeticException e){//ArithmeticException hatasini yakala e variable'ina kaydet
+              System.out.println("ikinci sayi 0 olamaz");
+          }catch (InputMismatchException f){//InputMismatchException hatasini yakala f variable'ina kaydet
+              System.out.println("Tamsayi girmelisiniz");
+          }
 
         */
 
 
         //3- Eger tum olasi exception'lari kapsayan bir Exception varsa;
         System.out.println("Lutfen iki tamsayi giriniz");
-        try {
+        try {//Riskli olan kisim secilir.Code=>Surround with=>Uygun method secilir(try/catch)
             int sayi1 = scanner.nextInt();
             int sayi2 = scanner.nextInt();
 
@@ -85,9 +86,9 @@ public class C03_Exceptions {
         } catch (Exception e) {//Exception tum exceptionlarin parent'idir.
            // throw new RuntimeException(e); burayi silebiliriz cunku yukarda Exception ile genel bir hata raporu olustu
             System.out.println("Hatali giris yaptiniz");
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage());//String bir msj dondurur
             System.out.println(e.toString());
-            e.printStackTrace();//hatanin tum raporunu yazdirdi.hata takibini daha rahat yapariz.
+            e.printStackTrace();//hatanin tum raporunu yazdirdi.hata takibini daha rahat yapariz.Ama kodlarimiz sorunsuz calisti
             /*
             java.util.InputMismatchException
 	        at java.base/java.util.Scanner.throwFor(Scanner.java:939)
@@ -101,10 +102,10 @@ public class C03_Exceptions {
 
         /*
             catch() icinde yazdigimiz e
-            yakalanan exception'in kaydedildigi obje olacaktir.
+            yakalanan exception'in kaydedildigi variable olacaktir.
 
             Eger exception ile ilgili daha detayli bilgi almak istersek;
-            e objesi kullanilarak
+            e variable'i kullanilarak
             hatanin detayi yazdirilabilir.
 
             ornegin : e.printStackTrace(); asagidaki detayli hata raporunu yazdirir
@@ -115,9 +116,11 @@ public class C03_Exceptions {
             at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
             at day28_exceptions.C03_Exceptions.main(C03_Exceptions.java:78)
 
-            e.getMessage() ;  bize null veya / by zero  yazdirdi
+            e.printStackTrace(); asagidaki detayli hata raporunu yazdirir
 
-            e.toString() ; bize java.lang.ArithmeticException: / by zero yazdirdi
+            e.getMessage() ;  bize null veya / by zero  yazdirdi.String bir msj dondurur.
+
+            e.toString() ; bize java.lang.ArithmeticException: / by zero yazdirdi.String bir msj dondurur.
          */
 
 
