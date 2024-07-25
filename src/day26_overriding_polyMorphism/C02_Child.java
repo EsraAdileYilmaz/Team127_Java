@@ -3,19 +3,19 @@ package day26_overriding_polyMorphism;
 public class C02_Child extends C01_Parent{
 
     public void method1(){
-        // bir method'un overriding yapmasi icin
+        // Bir method'un overriding yapmasi icin
         // parent class'daki method ile
-        // ayni SIGNATURE'a sahip olmalidir
+        // ayni SIGNATURE'a sahip olmalidir.
     }
 
     @Override
     public void method1(String str) {
-
+        //Overriding method'u intelliJ'e olusturtunca; Code=>Generate=>Override methods=>Method sec
         // Overriding method'u intelliJ'e olusturtunca
         // otomatik olarak @Override notasyonu ekliyor.
         // Bu notasyonu kullanmak zorunlu degildir.
         // Ama kullanmanin bir artisi var.
-        // @Override kullanildiginda parent class'daki
+        // @Override notasyonu kullanildiginda parent class'daki
         // overridden method'u takip eder.
         // Eger overridden method silinir veya signature degistirilirse
         // CTE verir
@@ -26,7 +26,7 @@ public class C02_Child extends C01_Parent{
         super.method2();
         // Herhangi bir obje icin
         // ya overriding method veya overridden method calisir.
-        // EGER ikisinin de calismasini isterseniz
+        // EGER her iki methodunda calismasini isterseniz;
         // overriding method'un icine
         // super.overriddenMethod() yazabilirsiniz.
     }

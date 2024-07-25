@@ -7,6 +7,6 @@ public interface I09_InterfaceChild extends I08_Interface{
 
         extends keyword kullanarak OLUR.
 
-        bir interface baska bir concrete class veya abstract class'a CHILD OLAMAZ
+        Bir interface baska bir concrete class veya abstract class'a CHILD OLAMAZ
      */
 }

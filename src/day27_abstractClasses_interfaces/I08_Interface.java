@@ -9,6 +9,7 @@ public interface I08_Interface {
         3- Interface'de olusturulan her variable
            yazsak da yazmasak da
            public,final ve static'tir.
+        4-Interface'lerin constructor'i yoktur.
 
      */
 
@@ -25,6 +26,8 @@ public interface I08_Interface {
     String method4();
 
     public static void main(String[] args) {
+
+        //sayi1=30; final oldugu icin sonradan deger atanamaz
 
     }
 

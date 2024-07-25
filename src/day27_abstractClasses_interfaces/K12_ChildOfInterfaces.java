@@ -3,9 +3,10 @@ package day27_abstractClasses_interfaces;
 public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
 
     public void method1(){
-        // method1() hem I08 ve hemde I10 da var.
+        // void method1(); hem I08 ve hemde I10 da var.
         // Her ikisinde olsa da, ikisininde return type'i void oldugundan
         // hangisini implement ettigimizin bir onemi yoktur.
+        // Cunku body'si olmadigi icin sadece bunun concretelestirilmesi onemlidir.
     }
 
     public void method2(){
@@ -21,7 +22,7 @@ public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
         return null;
     }
     public int method5(){
-        // birden fazla interface'i implement ettigimizde,
+        // Birden fazla interface'i implement ettigimizde,
         // bu interface'lerde ayni isimde method varsa,
         // EGER return type'lari ayni ise sorun olmaz,
         // ama return type'lar farkli ise bir karar vermemiz gerekir:
@@ -37,7 +38,7 @@ public class K12_ChildOfInterfaces implements I08_Interface,I10_Interface{
         // interface'lerdeki tum variable'lar final oldugundan, sonradan deger atanamaz.
 
         System.out.println(I10_Interface.isim); // veli Cem
-        //burada da iki interface'deki isim variable'indan birini sectik.
+        //burada da iki interface'deki isim variable'indan birini sectik.I10_Interface classindakini sectik
     }
 
 }

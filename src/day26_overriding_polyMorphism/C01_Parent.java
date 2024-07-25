@@ -11,7 +11,7 @@ public class C01_Parent {
     }
 
 
-    public final void method3(){
+    public final void method3(){//final method demek;bu methodun son hali degistirilemez demektir
 
     }
 

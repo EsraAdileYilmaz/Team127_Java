@@ -18,22 +18,24 @@ public class C07_ConcreteChildClass extends C06_AbstractParent{
 
 
     @Override
-    public void method2() {// GP'de abstract method2()
+    public void method2() {// GP'deki abstract method2() burada concretelestirildi
 
     }
 
     @Override
-    public void method3() {// GP'de abstract method3()
+    public void method3() {// GP'deki abstract method3() burada concretelestirildi
 
     }
 
     @Override
-    public int method5() {//Parent'ta abstract method5()
+    public int method5() {//Parent'taki abstract method5() burada concretelestirildi
+
         return 0;
     }
 
     @Override
-    public String method6() {//Parent'ta abstract method6()
+    public String method6() {//Parent'taki abstract method6() burada concretelestirildi
+
         return null;
     }
 

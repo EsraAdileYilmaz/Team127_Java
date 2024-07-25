@@ -9,14 +9,16 @@ public abstract class C06_AbstractParent extends C05_AbstractGrandParent{
 
         Abstract parent - child arasindaki iliski
         normal inheritance kullanan parent - child class'lar gibidir.
-        YANI isterse uyarlar, istemezse uyarlamaz
+        YANI abstract methodlari isterlerse kendine uyarlarlar, istemezlerse kendilerine uyarlamazlar
      */
 
     public void method1(){//GP deki abstract method burda concrete hale donusturuldu
+
         System.out.println("GP'daki abstract method1 P'da concrete yapildi");
-    }
+    }// public abstract void method1(); bu method concrete hale donusturuldu.
 
     public void method4(){//bu class'taki concret method.
+
         System.out.println("P'daki concrete method4");
     }
 

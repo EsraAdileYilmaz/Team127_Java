@@ -1,6 +1,6 @@
 package day26_overriding_polyMorphism;
 
-public class C04_Child {
+public class C04_Child extends C03_Parent{
 
         /*
         Klasik inheritance
@@ -11,5 +11,5 @@ public class C04_Child {
         2- istedigini kendisine uyarlar
         3- isterse de parent class'da olmayan yeni uyeler ekleyebilir.
      */
-
+         //Abstraction daha cok methodlarla ilgilidir.
 }

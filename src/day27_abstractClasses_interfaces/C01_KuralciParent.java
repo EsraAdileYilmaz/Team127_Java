@@ -6,28 +6,28 @@ import java.util.List;
 public abstract class C01_KuralciParent {//bu class abstract bir class'tir
 
         /*
-        1- bir class'in child class'lari override etmeye zorlayacagi
+        1- Bir class'in child class'lari override etmeye zorlayacagi
            method'lari abstract olarak tanimlamasi gerekir.
-        2- bir class'in abstract method'lar barindirabilmesi icin
+        2- Bir class'in abstract method'lar barindirabilmesi icin
            kendisinin de abstract class olarak tanimlanmasi gerekir.
-        3- abstract method'lar child class'larin OVERRIDE etmesi icin olusturulur,
+        3- Abstract method'lar child class'larin OVERRIDE etmesi icin olusturulur,
            dolayisiyla body'ye ihtiyaclari yoktur.
-        4- bir abstract class abstract method'lar bulundurdugu gibi,
+        4- Bir abstract class abstract method'lar bulundurdugu gibi,
            abstract olmayan (concrete) method'lar da bulundurabilir.
            buna partial abstraction denir.
-        5- abstract class'da bulunan concrete method'lar
+        5- Abstract class'da bulunan concrete method'lar,
            child class'lar tarafindan overide EDILMEK ZORUNDA DEGILDIR.
-        6-!!!! abstract class'lar class olduklari icin constructor'lari vardir
+        6-!!!! Abstract class'lar class olduklari icin constructor'lari vardir
            AMA iclerinde abstract method'lar bulundugundan
            abstract class'lardan OBJE OLUSTURULAMAZ.
      */
 
 
-    public abstract void method1();// abstract bir methoddur.buyuzden body'si yoktur.
+    public abstract void method1();// abstract bir methoddur.buyuzden body'si yoktur.Yani gercek bir method deildir
 
-    public abstract void method2();// abstract bir methoddur.buyuzden body'si yoktur.
+    public abstract void method2();// abstract bir methoddur.buyuzden body'si yoktur.Yani gercek bir method deildir
 
-    public abstract void method3();// abstract bir methoddur.buyuzden body'si yoktur.
+    public abstract void method3();// abstract bir methoddur.buyuzden body'si yoktur.Yani gercek bir method deildir
 
     public void method4(){ // bu method concrete yani normal bir methoddur.body' si vardir
 
@@ -38,7 +38,11 @@ public abstract class C01_KuralciParent {//bu class abstract bir class'tir
     public static void main(String[] args) {
 
         //C01_KuralciParent obj = new C01_KuralciParent();
-        // obj.method1();
+        // obj.method1(); Absract class'dan obje olusturulamaz
+
+        C01_KuralciParent obj2=new C04_ChildOfKuralciParent();
+        obj2.method3();//Eger data turu abstract ama constructor olarak child class secilirse ozaman obje olusturulabilir.
+        //cunku child class ta tum abstract methodlar concretelestirildi.
 
         List<String > isimler = new ArrayList<>();
         //constructor kismina ArrayList yerine List yazdigimizda java diyorki List bir abstract class'dir

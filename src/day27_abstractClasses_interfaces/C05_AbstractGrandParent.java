@@ -8,4 +8,9 @@ public abstract class C05_AbstractGrandParent {
 
     public abstract void method3();
 
+    /*
+    Abstract classlarin constructor'i vardir.
+    Ancak kendisinden obje olusturulamaz.
+     */
+
 }
