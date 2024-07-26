@@ -21,7 +21,7 @@ public class C02_ListIterator {
 
         ListIterator listIterator=sayilar.listIterator();
 
-        //biz iterator olusturdugumuzda, listenin basina konumlanir.
+        //Biz iterator olusturdugumuzda, listenin basina konumlanir.
         //Eger sondan basa dogru islem yapmak istiyorsak,
         //once iterator'i sona gondermeliyiz.
 
@@ -31,7 +31,7 @@ public class C02_ListIterator {
 
         //Artik iterator sona gittigi icin,basa dogru istenen islemi yaparak gelebiliriz.
 
-        while (listIterator.hasPrevious()){//oncesinde eleman oldugu muddetce git
+        while (listIterator.hasPrevious()){//oncesinde eleman oldugu muddetce git.Sondan basa dogru gidiyoruz
             System.out.print(listIterator.previous()+" ");
 
         }//2 7 6 5 2 4 3 1 0 4 7 9 2 6 5 3 (boylece iterator basa geldi)
@@ -67,7 +67,7 @@ public class C02_ListIterator {
         //SORU4: 5'den buyuk olanlari 1 azaltin, diger sayilari 1 artirin.
 
         //iterator basta. bastan sona gidicez
-        System.out.println(listIterator.nextIndex());//0 (yani en basta)
+        System.out.println(listIterator.nextIndex());//0 nextIndex() bu method iteratorun oldugu indexi verir(0 yani en basta)
 
         while (listIterator.hasNext()){
 

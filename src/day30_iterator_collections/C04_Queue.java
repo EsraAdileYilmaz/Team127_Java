@@ -17,8 +17,8 @@ public class C04_Queue {
         6)poll() methodu Queue'nun ilk elementini siler ve bize dondurur.bulamazsa null dondurur
 
         **add() methodu ile offer() methodu arasindaki fark=
-        add() methodu verilen elementi her halukarda eklerken,
-        offer() methodu kapasite uygunsa ekler.
+        add() methodu verilen elementi sona her halukarda eklerken,
+        offer() methodu kapasite uygunsa elementi sona ekler.
 
          */
 
@@ -32,7 +32,7 @@ public class C04_Queue {
 
         System.out.println(harfler.remove());//y (ilk indextekini siler)
         System.out.println(harfler);//[K, M, s]
-        //tekrar remove() yapsak K silinir
+        //tekrar remove() yapsak K silinir.Yani silme islemi bastan sona dogru yapilir
         //tekrar remove() yapsak M silinir
         //tekrar remove() yapsak s silinir.Sirayla siliyor.
 
@@ -50,7 +50,7 @@ public class C04_Queue {
         System.out.println(harfler.peek());//K
         System.out.println(harfler);//[K, s, M, M]
 
-        //element() method ile peek() method arasindaki fark, bos bir Queue'da kullanildiginda gorulur
+        //element() method ile peek() method arasindaki fark, bos bir Queue'da kullanildiginda gorulur.
         Queue <String> deneme=new LinkedList<>();//[]
         //System.out.println(deneme.element());//NoSuchElementException (boyle bir element yok)
         System.out.println(deneme.peek());//null

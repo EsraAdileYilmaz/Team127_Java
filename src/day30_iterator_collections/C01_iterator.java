@@ -57,22 +57,23 @@ public class C01_iterator {
         //yaninda eleman oldugu muddetce tum cift sayilari sil=while(iterator.hasNext()){
         while(iterator.hasNext()){//yaninda eleman oldugu muddetce ilerle
 
-            if((Integer)iterator.next() % 2==0){//next() methodu object dondurur.onu cast etmek lazim
-                //getirdigin bir sonraki eleman cift sayi ise once cast et
+            if((Integer)iterator.next() % 2==0){//next() methodu Object dondurur.onu (Integer)'a cast etmek lazim
+                                   //Getirdigin bir sonraki eleman cift sayi ise once cast et
                 iterator.remove();//sonrada onu sil
             }
         }
         System.out.println(sayilar);//[3, 5, 9, 7, 1, 3, 5, 7]
 
         // iterator olusturduktan sonra sadece ileri gidebilir.
-        // onceki olusturdugumuz iterator'a yaninda eleman oldukca ;[iterator.hasNext() == true]
+        // onceki olusturdugumuz iterator'a yaninda eleman oldukca [iterator.hasNext() == true]
         // ileriye git dedigimiz icin, loop'un sonunda iterator en sona ulasti.
         // Eger yeniden list'teki tum elementleri, bastan itibaren taramak istersek;
         // yeni bir iterator olusturmaliyiz yada olusturulmus objeye yeniden
         //deger atayarak yapabiliriz.
 
-        //SORU4:ayni listede 5'ten buyuk olan sayilari silin
-        iterator=sayilar.iterator();//var olan objeye tekrar atama yaptik.
+        //SORU4:Ayni listede 5'ten buyuk olan sayilari silin
+        iterator=sayilar.iterator();//var olan objeye tekrar atama yaptik.Boylece yeni bir iterator olusturduk.
+
         while(iterator.hasNext()){//yaninda eleman oldugu muddetce ilerle
 
             int sayi=(Integer)iterator.next();
@@ -83,11 +84,11 @@ public class C01_iterator {
             }
         }
         System.out.println(sayilar);//[3, 5, 1, 3, 5] suanda iterator sonda.
-        //eger bir daha next() kullanirsak;
+        //Eger bir daha next() kullanirsak;
         //gidecegi eleman kalmadigindan exception firlatir.
 
        // iterator.next();//NoSuchElementException
-        // zaten sondasin daha ilerde eleman yok demek.
+       // zaten sondasin daha ilerde eleman yok demek.
 
 
 

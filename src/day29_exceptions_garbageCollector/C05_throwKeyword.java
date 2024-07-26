@@ -12,13 +12,13 @@ public class C05_throwKeyword {
         try {
 
             if(sayi<0) throw new RuntimeException("sayi sifirdan kucuk");
-            //sayi sifirdan kucukse RuntimeException firlat
+            //sayi sifirdan kucukse RuntimeException firlat ve mesajini "sayi sifirdan kucuk" yazdir
             System.out.println(1);
             System.out.println(2);
             System.out.println(3);
         } catch (Exception e) {
 
-            System.out.println(e.getMessage());
+            System.out.println(e.getMessage());//("sayi sifirdan kucuk"); mesajini yazdirir
 
         }
         System.out.println(4);
@@ -26,8 +26,8 @@ public class C05_throwKeyword {
 
 
         //SORU:Kullanicidan yasini isteyin,
-        //yasini negatif girerse exception firlatin
-        //ve hic bir islem yapmayin.
+        //     yasini negatif girerse exception firlatin
+        //     ve hic bir islem yapmayin.
 
         Scanner scanner=new Scanner(System.in);
         System.out.println("Lutfen yasinizi giriniz");

@@ -13,9 +13,13 @@ public class C02_CheckedExceptions {
 
         /*
             Eger birden fazla exception olusma ihtimali varsa,
-            ve biz try-catch yerine throws keyword kullanmak istiyorsak,
+            ve biz try-catch blok yerine throws keyword kullanmak istiyorsak,
             en genis yakalama kapasitesi olan (en ince elek araligi olan)
-            parent exception'i yazmamiz yeterli olacaktir
+            parent Exception'i yazmamiz yeterli olacaktir.
+
+            throws Exception=> bunu method declaration'a eklemek su demek:
+            ben sikinti olacaginin farkindayim.Sen calismaya devam et.
+            Sikinti olursa exception firlat.Ve calismayi durdur.
          */
         FileInputStream fis=new FileInputStream("src/day28_exceptions/text.txt");
 

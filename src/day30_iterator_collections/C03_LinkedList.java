@@ -19,14 +19,13 @@ public class C03_LinkedList {
 
         LinkedList <String> ll1=new LinkedList<>();
 
-        List<Integer> ll2=new LinkedList<>();
-        // Eger data turu olarak List<> secilirse,
-        // bizim simdiye kadar kullandigimiz ArrayList<> ile ayni ozelliklere sahip olur.
-
-
         Queue <String> ll3=new LinkedList<>();
 
         Deque <String> ll4= new LinkedList<>();
+
+        List<Integer> ll2=new LinkedList<>();
+        // Eger data turu olarak List<> secilirse,
+        // bizim simdiye kadar kullandigimiz ArrayList<> ile ayni ozelliklere sahip olur.
 
         ll2.add(4);
         ll2.add(5);
@@ -59,13 +58,14 @@ public class C03_LinkedList {
         System.out.println(list);//[4, 6, 9, 10]
 
         System.out.println(list.retainAll(ll2));//true
-        System.out.println("ll2 :"+ll2);//ll2 :[4, 5] hicbir degisiklik olmadi
-        System.out.println("list :"+list);//list :[4] bu list tamamen degisti.sadece her iki list icinde ortak olan eleman kaldi
+        System.out.println("ll2 : "+ll2);//ll2 :[4, 5] hicbir degisiklik olmadi
+        System.out.println("list : "+list);//list :[4] bu list tamamen degisti.sadece her iki list icinde ortak olan eleman kaldi
 
         /*
             retainAll() methodu iki list uzerinde yapilir.
-            iki listin ortak elemanlarina bakilir.
-            ilk listte sadece ortak elemanlar kalir,gerisi silinir.
+            retainAll() methodu ortak elemanlar disindakileri siler
+            iki listin ortak elemanlarina (kesisim elemanlari) bakilir.
+            ilk listte sadece ortak elemanlar kalir,gerisi silinir.KALICI OLARAK SILINIR.
             ikinci listte ise hicbir degisiklik olmaz.
             ornegin;System.out.println(list.retainAll(ll2));
             list'den ll2'da olmayan elemanlari siler.
@@ -78,10 +78,10 @@ public class C03_LinkedList {
         list.add(10);
         System.out.println(list.removeAll(ll2));
         System.out.println("ll2 :"+ll2);//ll2 :[4, 5]
-        System.out.println("list :"+list);//list :[6, 9, 10] icindeki her iki list'te bulunan ortak elemanlar silindi.
+        System.out.println("list :"+list);//list :[6, 9, 10] icindeki her iki list'te bulunan ortak elemanlar (yani 4 u) silindi.
 
         // retainAll() ortak elemanlar disindakileri siler
-        // removeAll() ise ortak elemanlari siler
+        // removeAll() ortak elemanlari siler
 
 
 
