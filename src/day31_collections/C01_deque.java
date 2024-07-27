@@ -7,7 +7,7 @@ public class C01_deque {
 
     public static void main(String[] args) {
 
-        Deque <String> harfler=new LinkedList<>();//deque interface oldugu icin obje olusturulamaz
+        Deque <String> harfler=new LinkedList<>();//Deque interface oldugu icin obje olusturulamaz.Index yapisi icermez.
         harfler.add("g");
         harfler.add("K");
         harfler.add("A");
@@ -18,29 +18,29 @@ public class C01_deque {
         harfler.addFirst("A");//en basa eklenir
         System.out.println(harfler);//[A, g, K, A, e, K]
 
-        System.out.println(harfler.removeLastOccurrence("X")); // false
-
+        System.out.println(harfler.removeLastOccurrence("X")); // false(Yani x yokki sileyim)
+        // [A, g, K, A, e, K]
         // harfler.remove(); ilk elementi siler yani A yi siler.
         // harfler.remove("A"); A'nin ilk kullanimini siler
-        // harfler.removeFirst(); ilk elementi siler
-        // harfler.removeFirstOccurrence("A"); // A'nin ilk kullanimini siler.yani ilk buldugu A'yi siler
-        //harfler.removeLastOccurrence("A"); A'nin son kullanimini siler.yani en son A'yi siler
+        // harfler.removeFirst(); Listedeki ilk elementi siler
+        // harfler.removeFirstOccurrence("A"); true A'nin ilk kullanimini siler.yani ilk buldugu A'yi siler
+        // harfler.removeLastOccurrence("A"); A'nin son kullanimini siler.yani en son A'yi siler
 
-        //System.out.println(harfler.poll()); // A (ilk elementi siler)
-        System.out.println(harfler.pollFirst()); // A
+        //System.out.println(harfler.poll()); // A (Listenin basindaki ilk elementi siler ve sildigi elementi dondurur)
+        System.out.println(harfler.pollFirst()); // A (Listenin basindaki ilk elementi siler ve sildigi elementi dondurur)
         System.out.println(harfler); // [g, K, e, K]
 
 
-        Deque<String> bosDeque = new LinkedList<>();
-        // bosDeque.remove(); // NoSuchElementException
+        Deque<String> bosDeque = new LinkedList<>();//Bos bir liste
+        // bosDeque.remove(); // NoSuchElementException (remove() methodu bos bir listede NoSuchElementException firlatir)
         // bosDeque.removeFirst(); // NoSuchElementException
-        System.out.println(bosDeque.poll()); // null
+        System.out.println(bosDeque.poll()); // null (poll() methodu bos bir listede null dondurur)
         System.out.println(bosDeque.pollFirst()); // null
 
 
-        // System.out.println(harfler.removeLast()); // K (enson elementi siler)
-        // System.out.println(harfler.removeLastOccurrence("K")); // true (yani K'nin son kullanimini siler)
-        System.out.println(harfler.pollLast()); // K (son elementi siler ve bize dondurur)
+        // System.out.println(harfler.removeLast()); // K (Listedeki enson elementi siler ve sildigi elementi dondurur)
+        // System.out.println(harfler.removeLastOccurrence("K")); // true (yani Listedeki K'nin son kullanimini siler)
+        System.out.println(harfler.pollLast()); // K (Listedeki son elementi siler ve bize dondurur)
 
         System.out.println(harfler); // [g, K, e]
 
@@ -68,12 +68,14 @@ public class C01_deque {
         // eger deque icin bir kapasite sinirlamasi varsa,
         // ve o sinir asilirsa IllegalStateException  verir.
 
+
+        //offer() methodu sona elemen ekler.ama kapasite sinirlamasi olan durumlarda kapasite asilirsa, eklemek yerine exception firlatir.
         System.out.println(harfler); // [A, K, e]
         System.out.println(harfler.offer("R")); // true
         System.out.println(harfler); // [A, K, e, R]
-        // add ile ayni islemi yapar
+        // offer() methodu = add() methodu ile ayni islemi yapar.
         // ama kapasite sinirlamasi olan durumlarda
-        // kapasite asilirsa, eklemek yerine exception firlatir.
+        // kapasite asilirsa, eklemek yerine exception firlatir.Buyuzden add() methodu tercih edilir.
 
 
     }

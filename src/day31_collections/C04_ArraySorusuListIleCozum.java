@@ -8,8 +8,8 @@ public class C04_ArraySorusuListIleCozum {
 
     public static void main(String[] args) {
 
-        //SORU: verilen array'den tekrar eden elementleri silip
-        // array'i her bir elementin unique oldugu hali ile kaydedin
+        //SORU: Verilen array'den tekrar eden elementleri silip,
+        //      array'i her bir elementin unique oldugu hali ile kaydedin.
 
         int[] arr = {2,4,6,4,1,2,5,7,9,4,5,7,2,6,8,2,1};
 
@@ -31,7 +31,7 @@ public class C04_ArraySorusuListIleCozum {
             if(! tekrarsizList.contains(each)){
                 tekrarsizList.add(each);
             }
-        }//bu loop ile list'te unique elementleri olustu
+        }//bu loop ile list'e unique elementleri ekledik
         System.out.println("List olarak tekrarsiz elementler: "+tekrarsizList);//[2, 4, 6, 1, 5, 7, 9, 8]
 
         // array'e list'in uzunlugunu tasiyan yeni bir deger atayalim

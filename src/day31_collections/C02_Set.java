@@ -7,8 +7,8 @@ public class C02_Set {
 
     public static void main(String[] args) {
 
-        Set <String> harfler= new HashSet<>();
-        System.out.println(harfler.hashCode());// 0
+        Set <String> harfler= new HashSet<>();//Set unique degerler icerir ve index yapisi yoktur.
+        System.out.println(harfler.hashCode());// 0 (set'in ici bosken)
 
         harfler.add("B");
         harfler.add("Ali");
