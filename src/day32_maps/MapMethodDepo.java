@@ -6,10 +6,11 @@ import java.util.Map;
 import java.util.Set;
 
 public class MapMethodDepo {
+
     /*
         Map kompleks bilgiler barindirabilir.
         Ne kadar cok bilgi barindirirsa, bilgilere erismek o kadar islem gerektirebilir.
-        Ama temel olarak Map <key ve value'dan> olusur.
+        Ama temel olarak Map <Key , Value> dan olusur.
 
         value bir cok bilgi barindiran bir String ise;
         bilgilere ulasmak icin split() methodu ile String'i array'e ceviririz.
@@ -17,14 +18,14 @@ public class MapMethodDepo {
         1- Eger sadece value'dan bilgiler istenirse;
            - ogrenciMap.values() ile value'ler bir Collection'a kaydedilir
            - sonra Collection'daki String'ler for-each loop ile ele alinip
-           - split() ile array'e cevrilir
+           - split() methodu ile array'e cevrilir
            - ve ISTENEN SARTLARA uyan value'lardan ISTENEN BILGILER kullanilir
 
         2- Eger key ve value birlikte istenirse;
             - ogrenciMap.keySet() ile key'lere ulasilir ve key'ler bir Set'e kaydedilir.
             - for each loop ile key'ler elden gecirilir.
             - sadece key degil, ogrenciMap.get(each) ile value'lere ulasilir
-            - value split() ile array'e cevrilir.
+            - value split() methodu ile array'e cevrilir.
             - ve ISTENEN SARTLARA uyan value'lardan ISTENEN BILGILER kullanilir.
 
      */
@@ -38,7 +39,7 @@ public class MapMethodDepo {
         System.out.println(valueCollection);
         //[Ali-Can-11-H-MF, Veli-Cem-10-K-TM, Ali-Cem-11-K-TM, Ayse-Can-10-H-MF, Sevgi-Cem-11-M-TM, Sevgi-Can-10-K-MF]
 
-        String [] valueArr;//split()le olusan array'i atamak icin
+        String [] valueArr;//split()le olusan verileri atamak icin array olusturduk
         System.out.println("========"+istenenSube + " subesi ogrenci Listesi"+"======");
 
         for (String each:valueCollection
@@ -52,7 +53,7 @@ public class MapMethodDepo {
 
 
     }
-
+    //Asagidaki method okul listesini iceren bir Map'tir.
     public static Map<Integer, String> okulMapDondur() {
         //Genel kullanilan ogrenci listesi
         Map<Integer,String> ogrenciMap= new HashMap<>();
@@ -72,12 +73,15 @@ public class MapMethodDepo {
 
     }
 
+    // SORU:Verilen bir ogrenci map'inde istenen bolumdeki ogrencilerin sinif, sube, isim, soyisim'lerini yazdiran bir method olusturun.
+
     public static void bolumListesiYazdir(Map<Integer, String> ogrenciMap, String istenenBolum) {
         // istenen bolumdeki ogrencilerin sinif, sube, isim, soyisim'lerini yazdiran
 
         Collection<String> valueCollection=ogrenciMap.values();
         String [] valueArr;
         System.out.println("======="+ istenenBolum + " bolumu ogrenci listesi=========");
+
         for (String each:valueCollection
              ) {//each ==> "Esra-Han-11-M-SOZ"
            valueArr=each.split("-");//each'in getirdigi herbir String'i parcalayip valueArr'in icine aticam
@@ -91,12 +95,16 @@ public class MapMethodDepo {
         }
     }
 
+    // SORU:Ogrenci map'inde istenen soyisimdeki ogrencilerin
+    //      sinif, sube, isim, soyisim bilgilerini yazdiran bir method olusturun
+
     public static void soyisimdenOgrenciBulma(Map<Integer, String> ogrenciMap, String istenenSoyisim) {
         // sinif, sube, isim, soyisim bilgilerini yazdiran bir method olusturun
 
         Collection<String> valueCollection=ogrenciMap.values();
         String [] valueArr;
         System.out.println("=======" + istenenSoyisim+" soyismindeki ogrenci listesi =========");
+
         for (String each:valueCollection
              ) {// each ==> "Azim-Kayisi-11-K-TM"
             valueArr=each.split("-");
@@ -107,18 +115,20 @@ public class MapMethodDepo {
         }
     }
 
+    // SORU:Verilen siniftaki ogrencilerin
+    //      numara, isim, soyisim ve subelerini yazdiran bir method olusturun.
     public static void numaraliSinifOgrenciListesiYazdir(Map<Integer, String> ogrenciMap, String sinifNo) {
 
         // numara, isim, soyisim ve subelerini yazdiran bir method olusturun.
         Set<Integer> keySeti =ogrenciMap.keySet();//keyleri elde ediyoruz ve Set'e atiyoruz
         // [101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
 
-        String valueEach;//keylerin getirdigi bilgileri icine atayacagiz.
+        String valueEach;//keylerin getirdigi bilgileri(value'leri) icine atayacagiz.
         String [] valueArr;
 
         System.out.println("======= Numarali "+ sinifNo + ". sinif listesi ========");
         for (Integer each:keySeti
-             ) {//// each ==> key'leri getirecek 101 ...
+             ) {// each ==> key'leri getirecek 101 ...
             valueEach=ogrenciMap.get(each);// "Azim-Kayisi-11-K-TM" (each'in getirdigi bilgiler buraya atanir)
             valueArr=valueEach.split("-");
 
@@ -128,12 +138,15 @@ public class MapMethodDepo {
         }
     }
 
+    // SORU:Ogrenci map'inde verilen baslangic ve bitis numaralari (dahil) arasindaki
+    //      ogrencilerin numara, isim, soyisim'lerini yazdiran bir method olusturun
+
     public static void numaraAraligindakiOgrenciListesi(Map<Integer, String> ogrenciMap, int baslangicNo , int bitisNo) {
 
         // ogrencilerin numara, isim, soyisim'lerini yazdiran bir method olusturun
         Set<Integer> keySeti=ogrenciMap.keySet();
         //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
-        String valueEach;
+        String valueEach;//her bir key'in value'sunu koyuyoruz
         String [] valueArr;
         int sayac=0;
 
@@ -141,14 +154,14 @@ public class MapMethodDepo {
              ) {//each ==> 101
             if(baslangicNo<=each && each <=bitisNo){
 
-                valueEach=ogrenciMap.get(each);//each'in getirdigi bilgiler buraya atanir.
+                valueEach=ogrenciMap.get(each);//her bir each'in getirdigi bilgiler(values'ler) buraya atanir.
                 valueArr=valueEach.split("-");
                 System.out.println(each+" "+valueArr[0]+" "+valueArr[1]);
                 sayac++;
             }
 
         }
-        if(sayac==0){
+        if(sayac==0){//yani aralik disinda bir key verilirse;
             System.out.println("Verilen aralikta ogrenci bulunmamaktadir");
         }
     }

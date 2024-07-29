@@ -7,6 +7,7 @@ public class C03_Maps {
 
     public static void main(String[] args) {
 
+        //Map' e konulacak bilgiler ayni ozellikleri tasimali ve ayni sirada olmalidir.
 
         Map<Integer,String> ogrenciMap = new HashMap<>();
         ogrenciMap.put(101,"Ali-Can-11-H-MF");
@@ -16,20 +17,22 @@ public class C03_Maps {
         ogrenciMap.put(105,"Sevgi-Cem-11-M-TM");
         ogrenciMap.put(106,"Sevgi-Can-10-K-MF");
 
-        System.out.println(ogrenciMap);//{101=Ali-Can-11-H-MF,
-                                       // 102=Veli-Cem-10-K-TM,
+        System.out.println(ogrenciMap); //{
+                                        // 101=Ali-Can-11-H-MF,
+                                        // 102=Veli-Cem-10-K-TM,
                                         // 103=Ali-Cem-11-K-TM,
                                         // 104=Ayse-Can-10-H-MF,
                                         // 105=Sevgi-Cem-11-M-TM,
-                                       // 106=Sevgi-Can-10-K-MF}
+                                        // 106=Sevgi-Can-10-K-MF
+                                        // }
 
         System.out.println(ogrenciMap.size());//6
 
-        System.out.println(ogrenciMap.keySet());//[101, 102, 103, 104, 105, 106]
         //keyset() methodu Set<Integer> dondurur ve bize key'leri getirir.
+        System.out.println(ogrenciMap.keySet());//[101, 102, 103, 104, 105, 106]
 
-        System.out.println(ogrenciMap.values());
         //values() methodu Collection<String> dondurur ve bize value'leri getirir.
+        System.out.println(ogrenciMap.values());
         //[
         // Ali-Can-11-H-MF,
         // Veli-Cem-10-K-TM,
@@ -39,7 +42,7 @@ public class C03_Maps {
         // Sevgi-Can-10-K-MF
         // ]
 
-        // SORU:verilen sube'deki ogrencilerin isim ve soyisimlerini yazdiran bir method olusturun
+        // SORU: Verilen sube'deki ogrencilerin isim ve soyisimlerini yazdiran bir method olusturun
 
         //method call yapalim
         MapMethodDepo.subeListesiYazdir(ogrenciMap,"K");

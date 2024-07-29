@@ -6,8 +6,8 @@ public class C05_SoyisimdenOgrenciBulma {
 
     public static void main(String[] args) {
 
-        // SORU:ogrenci map'inde istenen soyisimdeki ogrencilerin
-        // sinif, sube, isim, soyisim bilgilerini yazdiran bir method olusturun
+        // SORU:Ogrenci map'inde istenen soyisimdeki ogrencilerin
+        //      sinif, sube, isim, soyisim bilgilerini yazdiran bir method olusturun
 
         Map <Integer,String> ogrenciMap=MapMethodDepo.okulMapDondur();
 

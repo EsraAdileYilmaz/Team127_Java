@@ -7,10 +7,13 @@ public class C01_StringManipulations {
     public static void main(String[] args) {
 
         // SORU:Bir ogrencinin bilgileri arada "-" olarak String bir variable'a atanmistir.
-        // isim-soyisim-sinif-sube-bolum
-        // bu formatta verilen bilgiden, subeyi yazdiran bir method olusturun
+        //      isim-soyisim-sinif-sube-bolum
+        //      bu formatta verilen bilgiden, subeyi yazdiran bir method olusturun
 
         String bilgi = "Ali Can-Yildiz-10-K-Soz";
+
+        //Aradaki ayirac ve siralamasi sabit olmalidir.
+
 
         //method call yapalim
 
@@ -37,7 +40,7 @@ public class C01_StringManipulations {
         //String bilgi variable'ini split() methodu ile ayiracindan parcalayip array'e donusturduk.
         System.out.println(Arrays.toString(bilgilerArr));//[Ali Can, Yildiz, 10, K, Soz]
 
-        System.out.println("Ogrenci sube: "+bilgilerArr[3]);//Ogrenci sube: K
+        System.out.println("Ogrenci sube: "+bilgilerArr[3]);//Ogrenci sube: K olarak dondurur
 
     }
 
