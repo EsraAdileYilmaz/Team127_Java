@@ -34,7 +34,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
                                                                    true,"2023-12-01",
                                                                 "2023-12-10","wi-fi");
 
-        System.out.println(bookingMap);
+        System.out.println(bookingMap);//ilk rezervasyon bilgileri
         //{
         // firstname=Hasan,
         // additionalneeds=wi-fi,
@@ -42,7 +42,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
         //               checkin=2023-12-01,
         //               checkout=2023-12-10
         //               },
-        //totalprice=300,
+        // totalprice=300,
         // depositpaid=true,
         // lastname=Yan
         // }
@@ -51,7 +51,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
                                                        1000,true,"2024-10-12",
                                                        "2024-10-24","breakfast");
 
-        System.out.println(bookingMap2);
+        System.out.println(bookingMap2);//ikinci rezervasyon bilgileri
         //{
         // firstname=Esra,
         // additionalneeds=breakfast,
@@ -59,7 +59,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
         //               checkin=2024-10-12,
         //               checkout=2024-10-24
         //               },
-        //totalprice=1000,
+        // totalprice=1000,
         // depositpaid=true,
         // lastname=Yilmaz
         // }
@@ -72,6 +72,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
 
         //SORU:checkin'i yazdirin
         bookingMap2.get("bookingdates");
+
         //bu bize bir Map donduruyor.buyuzden bizim bunu casting yaparak sorumlulugu almamiz lazim
         System.out.println(((Map) bookingMap2.get("bookingdates")).get("checkin"));//2024-10-12
 
@@ -79,7 +80,7 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
         System.out.println(((Map) bookingMap2.get("bookingdates")).get("checkout"));//2024-10-24
 
         //SORU:totalprice'i 300 olarak update edin.
-        bookingMap2.put("totalprice",300);//boylece update edilmis oldu
+        bookingMap2.put("totalprice",300);//boylece update edilmis oldu.Eski degeri silip yeni deger ekledi.
 
         //SORU:checkin degerini 2023-10-18 olarak update edelim
         bookingMap2.get("bookingdates");//bu bana bir Map dondurur.casting yapmam lazim
@@ -94,14 +95,10 @@ public class C03_FarkliDataTurleriIleMapOlusturma {
         //             checkin=2023-10-18,
         //             checkout=2024-10-24
         //             },
-        //totalprice=300,
-        //depositpaid=true,
-        //lastname=Yilmaz
+        // totalprice=300,
+        // depositpaid=true,
+        // lastname=Yilmaz
         //}
-
-
-
-
 
 
 

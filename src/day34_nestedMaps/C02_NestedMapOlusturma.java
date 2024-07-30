@@ -13,8 +13,8 @@ public class C02_NestedMapOlusturma {
         //        ogrenciMap.put(104,"Ayse-Can-10-H-MF");
         //        ogrenciMap.put(105,"Sevgi-Cem-11-M-TM");
 
-        Map<Integer ,Map<String,String>> ogrenciMap=new HashMap<>();
-        //Distaki outer Map,Icteki inner Map
+        Map<Integer ,Map<String,String>> ogrenciMap=new HashMap<>(); //Distaki outer Map,Icteki inner Map
+
 
         ogrenciMap=ogrenciEkle(ogrenciMap,101,"Ali","Can","11","H","MF");
         // ogrenciEkle() methodu ile ogrenci olusturup ana Map'e yukleyecegiz.
@@ -31,7 +31,7 @@ public class C02_NestedMapOlusturma {
         // 104={sinif=10, sube=H, soyisim=Can, bolum=MF, isim=Ayse},
         // 105={sinif=11, sube=M, soyisim=Cem, bolum=TM, isim=Sevgi}
         // }
-        //nestedMap ile olusturdugumuz ogrenci listemiz.
+        //nestedMap ile olusturdugumuz ogrenci listemiz.Map index yapisini desteklemez. Bu yuzden siralamayi kendi istedigi gibi getirdi
 
 
     }
@@ -46,7 +46,7 @@ public class C02_NestedMapOlusturma {
         ogrMap.put("sinif",sinif);
         ogrMap.put("sube",sube);
         ogrMap.put("bolum",bolum);
-        //boylece inner Map icindeki her bir ogrenci icin,
+        // Boylece inner Map icindeki her bir ogrenci icin,
         // {sinif=sinif, sube=sube, soyisim=soyisim, bolum=bolum, isim=isim}  olusturuldu.
 
         //ogrMap isimli inner Map hazir olunca bunu ogrenciMap'e ekleyelim

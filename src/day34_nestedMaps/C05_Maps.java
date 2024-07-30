@@ -19,8 +19,8 @@ public class C05_Maps {
 
         Map<String,Integer> kullanimMiktarlariMap=new TreeMap<>();
         Integer eskiKullanimMiktari;//Integer sayac; ayni amacta kullanilir.Bu herbir harfin value'sune esittir.
-        for (String each: input
-             ) {
+
+        for (String each: input ) {//verileri array'den aliyoruz
 
             // bizim oglanin getirdigi harf map'de yoksa , kullanim miktari 1 olarak Map'e ekleriz
             if( ! kullanimMiktarlariMap.containsKey(each)){
@@ -30,7 +30,7 @@ public class C05_Maps {
                 // bizim oglanin getirdigi harf map'de varsa ,
                 // eski kullanim miktarini alip, kullanim miktarinin 1 fazlasini Map'e eklerim
 
-                eskiKullanimMiktari=kullanimMiktarlariMap.get(each);//her bir harfin value'su
+                eskiKullanimMiktari=kullanimMiktarlariMap.get(each);//her bir harfin value'sunu getir
                 kullanimMiktarlariMap.put(each,eskiKullanimMiktari+1);
             }
         }

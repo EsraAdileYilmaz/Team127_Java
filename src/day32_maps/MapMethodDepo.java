@@ -468,12 +468,14 @@ public class MapMethodDepo {
 
     }
 
+
+    //Nested Map
     public static Map<String, Object> rezervasyonOlustur(String firstname, String lastname, int totalprice ,
                                                          boolean depositpaid, String checkin,
                                                          String checkout, String additionalneeds) {
 
           /*
-        {
+           {
             "firstname" : "Ahmet",
             "lastname" : "Bulut",
             "totalprice" : 500,
@@ -482,7 +484,8 @@ public class MapMethodDepo {
                    "checkin" : "2023-07-21",
                    "checkout" : "2023-08-10"
                       },
-            "additionalneeds" : "wi-fi" }
+            "additionalneeds" : "wi-fi"
+             }
          */
 
         Map<String,Object> rezervasyonMap =new HashMap<>();//outer Map
@@ -494,7 +497,8 @@ public class MapMethodDepo {
         Map<String,String> innerMap=new HashMap<>();//inner Map'taki degerlere ulasmak icin yeni bir Map yaptik
         innerMap.put("checkin",checkin);
         innerMap.put("checkout",checkout);
-        rezervasyonMap.put("bookingdates",innerMap);//values'sune Map olarak ekledik
+
+        rezervasyonMap.put("bookingdates",innerMap);//value'sune Map olarak ekledik
         rezervasyonMap.put("additionalneeds",additionalneeds);
         //boylece tum data girislerini rezervasyon Map'ine yapmis olduk.
 

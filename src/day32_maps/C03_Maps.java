@@ -8,6 +8,7 @@ public class C03_Maps {
     public static void main(String[] args) {
 
         //Map' e konulacak bilgiler ayni ozellikleri tasimali ve ayni sirada olmalidir.
+        //Map index yapisini desteklemez
 
         Map<Integer,String> ogrenciMap = new HashMap<>();
         ogrenciMap.put(101,"Ali-Can-11-H-MF");

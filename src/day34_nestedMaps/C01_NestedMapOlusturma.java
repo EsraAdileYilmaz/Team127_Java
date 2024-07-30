@@ -12,9 +12,9 @@ public class C01_NestedMapOlusturma {
         //        ogrenciMap.put(103,"Ali-Cem-11-K-TM");
 
 
-        //Key = 101,  Value = "Ali-Can-11-H-MF"
+        //Key = 101,  Value = "Ali-Can-11-H-MF" Bu yapida value String'di.
         //Key = 101   Value Map olsun {isim=Ali,soyisim=Can,sinif=11,sube=H,bolum=MF}
-        //Key = 102,  Value = "Veli-Cem-10-K-TM"
+        //Key = 102,  Value = "Veli-Cem-10-K-TM" Bu yapida value String'di.
         //Key = 102   Value Map olsun {isim=Veli,soyisim=Cem,sinif=10,sube=K,bolum=TM}
 
         //ogrenci Map'i{101=ogrMap101, 102=ogrMap102, 103=ogrMap103}
@@ -24,9 +24,9 @@ public class C01_NestedMapOlusturma {
         //101 numarali ogrenciyi eklemek istersek,once value Map'ini olusturmamiz lazim.
         Map<String,String> ogrMap101=new HashMap<>();//inner Map
         ogrMap101.put("isim","Ali");//isim=Ali olacak.key=Value oluyor
-        ogrMap101.put("soyisim","Can");//key:soyisim, value:Can
-        ogrMap101.put("sinif","11");
-        ogrMap101.put("sube","H");
+        ogrMap101.put("soyisim","Can");//key=soyisim, value=Can
+        ogrMap101.put("sinif","11");//key=sinif, value=11
+        ogrMap101.put("sube","H");//key=sube, value=H
         ogrMap101.put("bolum","MF");//boylece 101 nolu ogrenci olusturuldu.
 
         //ogrMap101 bitince bunu ogrenciMap'e ekleyelim
@@ -62,14 +62,14 @@ public class C01_NestedMapOlusturma {
         // }
 
         // 102 numarali ogrencinin soyismini yazdirin
-        ogrenciMap.get(102);//{sinif=10, sube=K, bolum=TM, isim=Veli}  bunu elde edicez
+        ogrenciMap.get(102);//{sinif=10, sube=K, bolum=TM, isim=Veli}  bu Map'i elde ediyoruz.
         System.out.println(ogrenciMap.get(102).get("soyisim"));//Cem
 
         //103 numarali ogrencinin bolumunu yazdirin.
         System.out.println(ogrenciMap.get(103).get("bolum"));//TM
 
 
-        //101 numarali ogrencinin souismini BULUT yapin
+        //101 numarali ogrencinin soyismini BULUT yapin
         ogrenciMap.get(101).put("soyisim","BULUT");//burda put() methodu ile update ettik
         System.out.println(ogrMap101);//{sinif=11, sube=H, soyisim=BULUT, bolum=MF, isim=Ali}
         System.out.println(ogrenciMap.get(101));//{sinif=11, sube=H, soyisim=BULUT, bolum=MF, isim=Ali}

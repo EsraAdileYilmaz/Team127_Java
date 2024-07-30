@@ -18,7 +18,7 @@ public class C07_PutIfAbsent {
         String[] input = {"a","b","c","d","e","c","d","b","e","a","c","b","d","a"} ;
         Map<String , Integer> kullanimMiktarlariMap = new TreeMap<>();
 
-        for (String each : input) {
+        for (String each : input) {//verileri array'den aliyoruz
 
             //each'in getirdigi eleman varsa value'sunu 1 artir.
             kullanimMiktarlariMap.computeIfPresent(each,(k,v)-> v+1);

@@ -27,24 +27,25 @@ public class C04_Maps {
 
 
         Map<Integer,Integer> kullanimMiktariMap= new TreeMap<>();
-        for (Integer each: input ) {
+        for (Integer each: input ) {//Array'den elemanlari aldik
 
             // map'i kontrol edecegim
             // bizim oglanin getirdigi sayi map'de yoksa, kullanim adedi = 1 olarak ekleyelim.
-            if(!kullanimMiktariMap.containsKey(each)){//array'den gelen herbir sayi Map'te yoksa;
+            if(!kullanimMiktariMap.containsKey(each)){//array'den gelen herbir sayiyi Map icermiyorsa;
                 kullanimMiktariMap.put(each,1);
             }else{
                 // bizim oglanin array'den getirdigi herbir sayi map'de varsa, kullanim adedini 1 artiralim.
-                Integer eskiKullanimMiktari=kullanimMiktariMap.get(each);//herbir array'in valuesunu getirir
-                //Integer eskiKullanimMiktari=sayac
-                kullanimMiktariMap.put(each,eskiKullanimMiktari+1);
+                Integer eskiKullanimMiktari=kullanimMiktariMap.get(each);//herbir Map'in valuesunu getirir.Yukarda En az 1 kere eklendi
+                //Integer eskiKullanimMiktari=Integer sayac
+                kullanimMiktariMap.put(each,eskiKullanimMiktari+1);//burada 1 kere eklenmis olanlarin, sayac gibi sayilarini silip, yeni ekleme sayilari yazilir
             }
         }
 
         System.out.println(kullanimMiktariMap);//{1=3, 2=3, 3=3, 4=3, 5=2, 6=1}
 
 
-        /*  //1.COZUM YOLU:
+        /*
+        //1.COZUM YOLU: Tamamlanmamis bir cozum yolu
         Arrays.sort(input);
 
         int sayilanSayi; //herbir siradaki sayiyi getirir
