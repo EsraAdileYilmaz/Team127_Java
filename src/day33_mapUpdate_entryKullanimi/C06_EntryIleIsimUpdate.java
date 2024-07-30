@@ -9,13 +9,13 @@ public class C06_EntryIleIsimUpdate {
     public static void main(String[] args) {
 
         // SORU:Tum listeyi gozden gecirerek,
-        // isimleri ilk harfi buyuk, sonraki harfler kucuk olacak sekilde
-        // update eden bir method olusturun.
+        //      isimleri ilk harfi buyuk, sonraki harfler kucuk olacak sekilde
+        //      update eden bir method olusturun.
 
         Map <Integer,String> ogrenciMap= MapMethodDepo.okulMapDondur();
 
         ogrenciMap=MapMethodDepo.isimDuzenle(ogrenciMap);
-        //tum ogrencilerin ismini duzenleyecek ve bize map dondurecek.Map'i degistirecek.
+        //tum ogrencilerin ismini duzenleyecek ve bize map dondurecek.Yapilan degisikligin kalici olmasi icin atama yapmaliyiz.
 
         //update'ler Map'i degistirir.oyuzden atama yapariz
 

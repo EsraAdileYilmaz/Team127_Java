@@ -9,8 +9,8 @@ public class C03_SinifUpdate {
     public static void main(String[] args) {
 
         // SORU:Yil sonunda calistirilmak uzere
-        // tum ogrencileri bir ust sinifa cikartan method olusturun.
-        // 12.siniftaki ogrencilerin sinif bilgisi olarak mezun yaziniz.
+        //      tum ogrencileri bir ust sinifa cikartan method olusturun.
+        //      12.siniftaki ogrencilerin sinif bilgisi olarak mezun yaziniz.
 
         Map <Integer,String>  ogrenciMap= MapMethodDepo.okulMapDondur();
 

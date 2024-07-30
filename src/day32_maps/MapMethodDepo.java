@@ -166,24 +166,27 @@ public class MapMethodDepo {
         }
     }
 
+
+    // SORU:Ogrenci numarasi verilen elemanin,
+    //      soyismini, verilen yeni deger olarak update edin.
     public static Map<Integer, String> numaraIleSoyisimUpdate(Map<Integer, String> ogrenciMap, int ogrenciNo, String yeniSoyisim) {
 
-        //once istenen ogrenci numarasina ait value'u alalim.
+        //1)once istenen ogrenci numarasina ait value'u alalim.
         //Ali-Cem-11-K-TM
 
         String ogrenciValue=ogrenciMap.get(ogrenciNo);//ogrenciNo'nun bilgilerini getirecek.
 
 
-        //split() ile datayi manipule edilebilir hale getirelim.
+        //2)split() methodu ile datayi manipule edilebilir hale getirelim.
         //[Ali, Cem, 11, K, TM]
 
         String [] ogrenciValueArr=ogrenciValue.split("-");//gelen bilgileri rahat kullanmak icin array'e cevirdik.
 
-        //array'in 1.index'indeki soyismi yeniSoyisim olarak update edelim.
+        //3)array'in 1.index'indeki soyismi yeniSoyisim olarak update edelim.
         //[Ali, Celik, 11, K, TM]
         ogrenciValueArr[1] =yeniSoyisim;
 
-        //array'deki elemanlari, yeniden value formatina sokmamiz lazim.
+        //4)array'deki elemanlari, Map'e donusturmek icin yeniden value formatina sokmamiz lazim.
         //String olarak "Ali-Celik-11-K-TM" toplama yoluyla elde ederiz.
 
         String yeniValue=ogrenciValueArr[0]+"-"+
@@ -193,13 +196,16 @@ public class MapMethodDepo {
                          ogrenciValueArr[4];
 
 
-        //elimizde key var(ogrenciNo),elimizde yeniValue de var
+        //5)elimizde key var(ogrenciNo),elimizde yeniValue de var
         ogrenciMap.put(ogrenciNo,yeniValue);
 
 
         return ogrenciMap;
     }
 
+
+    // SORU:ogrenci map'inden verilen bir sube'deki
+    //      tum ogrencilerin subesini verilen yeniSube yapan bir method olusturun.
     public static Map<Integer, String> subedekiOgrencileriTasi(Map<Integer, String> ogrenciMap, String eskiSube, String yeniSube) {
 
         //1)Hangi ogrenci numarasinin subesi degisecek bilmedigimden
@@ -217,7 +223,7 @@ public class MapMethodDepo {
              ) {//each'in getirdigi herbir key'in value'sune ulasmaliyim.
             //3)Value'deki bilgileri kullanabilmek icin split() ile array'e cevirelim.
             //[Ali, Cem, 11, K, TM]
-            valueArr=ogrenciMap.get(each).split("-");
+            valueArr=ogrenciMap.get(each).split("-");//ogrenciMap.get(each) burasi bize String value dondurur.Bunu split() ile parcalayip array'e atariz
 
             //4)array[3]'e bakip istenen eskiSube degerine esit ise
             //yeni Sube olarak update edelim.[Ali, Cem, 11, C, TM]
@@ -241,17 +247,27 @@ public class MapMethodDepo {
         return ogrenciMap;
     }
 
+
+    // SORU:Yil sonunda calistirilmak uzere
+    //      tum ogrencileri bir ust sinifa cikartan method olusturun.
+    //      12.siniftaki ogrencilerin sinif bilgisi olarak mezun yaziniz.
     public static Map<Integer, String> yilSonuSinifArtir(Map<Integer, String> ogrenciMap) {
 
+        //1)Hangi ogrenci numarasinin subesi degisecek bilmedigimden
+        //once keySet() ile tum key'leri alalim.
+        //[101, 102, 103, 104, 105, 106, 107, 108, 109, 110]
        Set<Integer> keySeti= ogrenciMap.keySet();
 
        String [] valueArr;
-
+        //2)for-each loop ile her key'e ait value'yu ele alalim
+        //Ali-Cem-11-K-TM
         for (Integer each: keySeti
              ) {
+            //3)Value'deki bilgileri kullanabilmek icin split() ile array'e cevirelim.
+            //[Ali, Cem, 11, K, TM]
             valueArr=ogrenciMap.get(each).split("-");
 
-            //array'deki sinif bilgisini 1 artirmam lazim
+            //4)array(valueArr)'deki her bir sinif bilgisini 1 artirmam lazim
             switch (valueArr[2]){
                 case "9":
                     valueArr[2]="10";
@@ -268,12 +284,13 @@ public class MapMethodDepo {
                 default:
                     valueArr[2]=null;
             }
-
+            //5)Map'i update edebilmek icin,
+            //array'i value formatina uygun String'e donusturelim.
             String yeniValue=valueArr[0]+"-"+
-                    valueArr[1]+"-"+
-                    valueArr[2]+"-"+
-                    valueArr[3]+"-"+
-                    valueArr[4];
+                             valueArr[1]+"-"+
+                             valueArr[2]+"-"+
+                             valueArr[3]+"-"+
+                             valueArr[4];
 
             ogrenciMap.put(each,yeniValue);
         }
@@ -282,13 +299,16 @@ public class MapMethodDepo {
         return ogrenciMap;
     }
 
+
+    // SORU:Verilen sinif ve sube bilgisi ile,
+    //      sinif listesini numara,isim,soyisim olarak yazdiran bir method olusturun.
     public static void sinifListesiYazdirma(Map<Integer, String> ogrenciMap, String sinif, String sube) {
 
-        //numara,isim,soyisim
+        //numara,isim,soyisim= key+value
        Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet();//Map'i entrySet() ile entry'e cevirdik
 
        //entry'leri elden gecirip (for-each loop ile),
-        //sinif ve sube bilgisi istenen degere esit olanlari yazdiralim.
+       //sinif ve sube bilgisi istenen degere esit olanlari yazdiralim.
 
         String eachValue;
         String [] valueArr;
@@ -310,43 +330,48 @@ public class MapMethodDepo {
 
     }
 
+
+    // SORU:Tum listeyi gozden gecirerek,
+    //      isimleri ilk harfi buyuk, sonraki harfler kucuk olacak sekilde
+    //      update eden bir method olusturun.
     public static Map<Integer, String> isimDuzenle(Map<Integer, String> ogrenciMap) {
 
-        //Bir entrySeti olusturalim
+        //1)Bir entrySeti olusturalim
         Set<Map.Entry<Integer,String>> entrySeti=ogrenciMap.entrySet();
         /*
         Collection<String> values=ogrenciMap.values(); +
         Set<Integer> keyler=ogrenciMap.keySet();
         = Set<Map.Entry<Integer,String>> keyValues=ogrenciMap.entrySet();
+        Mapte 2 ayri adimda yapilan islem Set<Map.Entry<Integer,String>>  ile tek adimda yapiliyor
          */
 
         String eachValue;
         String [] valueArr;
         String isim;
-        //her bir entry'i ele almak icin for-each kullanalim
+        //2)Her bir entry'i ele almak icin for-each kullanalim
         for (Map.Entry<Integer,String> eachEntry:entrySeti
-             ) {//herbir key+value'yu aldik
-               //her bir entry'deki value'yu alalim
+             ) {//herbir entry=key+value'yu aldik
+            //3)her bir entry'deki value'yu alalim
             eachValue=eachEntry.getValue();//"Ali-Can-11-H-MF"
 
-            //value'yu degistirebilmek icin array yapalim
+            //4)value'yu degistirebilmek icin array yapalim
             valueArr=eachValue.split("-");
 
-            //array[0] da bulunan isim bilgisini istenen formata getirelim
+            //5)array[0] da bulunan isim bilgisini istenen formata getirelim
             isim=valueArr[0];
             valueArr[0]=isim.substring(0,1).toUpperCase()+isim.substring(1).toLowerCase();
-            // valueArr[0]=valueArr[0].substring(0,1).toUpperCase()+valueArr[0].substring(1).toLowerCase();
+            // valueArr[0]=valueArr[0].substring(0,1).toUpperCase()+valueArr[0].substring(1).toLowerCase(); variable olarak atamazsak boyle yapabiliriz
 
-            //Map'i update edebilmek icin array'i String olarak birlestirelim
+            //6)Map'i update edebilmek icin array'i String olarak birlestirelim.Boylece Map'in formatina donusturmus oluyoruz
             String yeniValue=valueArr[0]+"-"+
-                    valueArr[1]+"-"+
-                    valueArr[2]+"-"+
-                    valueArr[3]+"-"+
-                    valueArr[4];
+                             valueArr[1]+"-"+
+                             valueArr[2]+"-"+
+                             valueArr[3]+"-"+
+                             valueArr[4];
 
 
-            //setValue() methodu ile guncellenen value'yu update edelim.
-            eachEntry.setValue(yeniValue);
+            //7)setValue() methodu ile guncellenen value'yu update edelim.
+            eachEntry.setValue(yeniValue);//Her bir eachEntry'i setValue() methodu ile kalici olarak update etmis oluyoruz
 
         }
 
@@ -354,6 +379,8 @@ public class MapMethodDepo {
         return ogrenciMap;
     }
 
+
+    // SORU:okulMap'deki tum soyisimleri buyuk harf yapan bir method olusturun
     public static Map<Integer, String> soyisimleriBuyukHarfyap(Map<Integer, String> ogrenciMap) {
 
         Set<Map.Entry<Integer,String>> entrySeti=ogrenciMap.entrySet();
@@ -375,10 +402,10 @@ public class MapMethodDepo {
 
             //Map'i update edebilmek icin array'i String olarak birlestirelim
             String yeniValue=valueArr[0]+"-"+
-                    valueArr[1]+"-"+
-                    valueArr[2]+"-"+
-                    valueArr[3]+"-"+
-                    valueArr[4];
+                             valueArr[1]+"-"+
+                             valueArr[2]+"-"+
+                             valueArr[3]+"-"+
+                             valueArr[4];
 
 
             //setValue() methodu ile guncellenen value'yu update edelim.

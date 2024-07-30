@@ -8,12 +8,12 @@ public class C01_SoyisimGuncelleme {
 
     public static void main(String[] args) {
 
-        // SORU:ogrenci numarasi verilen elemanin,
-        // soyismini, verilen yeni deger olarak update edin.
+        // SORU:Ogrenci numarasi verilen elemanin,
+        //      soyismini, verilen yeni deger olarak update edin.
 
         Map<Integer,String> ogrenciMap= MapMethodDepo.okulMapDondur();
-        ogrenciMap=MapMethodDepo.numaraIleSoyisimUpdate(ogrenciMap,103,"Celik");
-        //update etmis halini kalici hale getirdik.update'ler Map'i degistirir.oyuzden atama yapariz
+        ogrenciMap=MapMethodDepo.numaraIleSoyisimUpdate(ogrenciMap,103,"Celik");//Yani 103 nolu ogrenciyi bulup soyadini celik yapicak
+        //update etmis halini kalici hale getirmek icin ogrenciMap'ine atama yaptik.update'ler Map'i degistirir.oyuzden atama yapariz
         System.out.println(ogrenciMap.get(103));//Ali-Celik-11-K-TM
 
 

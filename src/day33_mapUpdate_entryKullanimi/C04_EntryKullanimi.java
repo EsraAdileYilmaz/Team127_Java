@@ -23,10 +23,10 @@ public class C04_EntryKullanimi {
          */
 
         Map<Integer,String> ogrenciMap= MapMethodDepo.okulMapDondur();
-        Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet();
-        //Set Entry'lerden olusacak,Entry'ler de Integer,String'lerden olusacak.
+        Set<Map.Entry<Integer,String>> entrySeti =ogrenciMap.entrySet(); //Set Entry'lerden olusacak,Entry'ler de Integer,String'lerden olusacak.
 
-        System.out.println(entrySeti);
+
+        System.out.println("Entry seti: "+entrySeti);
         //[101=Ali-Can-11-H-MF,
         // 102=Veli-Cem-10-K-TM,
         // 103=Ali-Cem-11-K-TM,
@@ -36,11 +36,11 @@ public class C04_EntryKullanimi {
         // 107=Esra-Han-11-M-SOZ,
         // 108=Azim-Kan-12-L-SOZ,
         // 109=Ercan-Fan-12-H-MF,
-        // 110=Azim-Kayisi-11-K-TM] *** map'le farki map={} yerine entry=[] ile liste olusuyor.
+        // 110=Azim-Kayisi-11-K-TM] *** Map'le farki Map={} yerine Entry=[] ile liste olusuyor.
 
         for ( Map.Entry<Integer,String> eachEntry:entrySeti
              ) {
-            eachEntry.setValue("hacklendi");//setValue() Map'i otomatik olarak update eder.
+            eachEntry.setValue("hacklendi");//setValue() Map'in value'sunu otomatik olarak kalici update eder.
             //herbir each'in value'sunu hacklendi diye kalici degistir
 
         }

@@ -8,8 +8,8 @@ public class C05_EntryIleSinifListesiYazdirma {
 
     public static void main(String[] args) {
 
-        // SORU:verilen sinif ve sube bilgisi ile,
-        // sinif listesini numara,isim,soyisim olarak yazdiran bir method olusturun.
+        // SORU:Verilen sinif ve sube bilgisi ile,
+        //      sinif listesini numara,isim,soyisim olarak yazdiran bir method olusturun.
 
         Map<Integer,String> ogrenciMap= MapMethodDepo.okulMapDondur();
 
@@ -17,7 +17,7 @@ public class C05_EntryIleSinifListesiYazdirma {
         String sube="M";
 
         MapMethodDepo.sinifListesiYazdirma(ogrenciMap,sinif,sube);
-        //yazdiran(void) bir method oldugu icin atama yapmaya gerek yok.
+        //yazdiran(void) bir method oldugu icin atama yapmaya gerek yok.Cunku update islemi yapmayacagiz
 
 
     }

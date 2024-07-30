@@ -13,7 +13,7 @@ public class C07_EntryIleSoyisimUpdate {
         Map<Integer, String> ogrenciMap = MapMethodDepo.okulMapDondur();
 
         ogrenciMap = MapMethodDepo.soyisimleriBuyukHarfyap(ogrenciMap);//tum soyisimleri buyuk harfle degistirecek
-        //update'ler Map'i degistirir.oyuzden atama yapariz
+        //Methodla gelen degisikligin kalici olmasi icin atama yapiyoruz.
 
         System.out.println(ogrenciMap);
         //{101=Ali-CAN-11-H-MF,

@@ -8,8 +8,7 @@ public class C08_NumaraIleOgrenciSilme {
 
     public static void main(String[] args) {
 
-        //SORU: verilen numaradaki ogrenciyi
-        // map'den silelim.
+        //SORU: Verilen numaradaki ogrenciyi  map'den silelim.
 
         Map <Integer,String> ogrenciMap= MapMethodDepo.okulMapDondur();
 
@@ -23,7 +22,7 @@ public class C08_NumaraIleOgrenciSilme {
         //replace() hic bir kontrol yapmadan verdigimiz degeri yeni deger olarak update eder
         ogrenciMap.replace(104,"Ali-Cem-11-K-TM");
 
-        // replace() eger key ile eski value eslesirse ,verdigimiz yeni value'yu atama yapar.key ayni kalir value degisir.
+        // replace(key,oldValue,newValue) eger key ile eski value eslesirse ,verdigimiz yeni value'yu atama yapar.key ayni kalir value degisir.
         ogrenciMap.replace(104,"Ali-Cem-11-K-TM","Ali-Yan-10-S-TM");
 
         System.out.println(ogrenciMap.containsKey(103));//false (cunku ust saturlarda sildik)
