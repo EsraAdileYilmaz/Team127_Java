@@ -10,7 +10,7 @@ public class C03_ForLoop {
     public static void main(String[] args) {
 
         /*
-        soru --- Anne, baba ve çocuktan oluşan çekirdek ailenin
+        SORU=    Anne, baba ve çocuktan oluşan çekirdek ailenin
                  Süper aile olup olmadığını bulan kodu yazın.
                  isimleri kullanıcıdan isteyin.
                  (Çocuğun ismindeki sessiz harflerin hepsi,
